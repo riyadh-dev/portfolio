@@ -1,0 +1,39 @@
+:root {
+	--header-height: 3.5rem;
+
+	/*============ Colors ============*/
+	--color-white: hsl(252, 30%, 100%);
+	--color-light: hsl(252, 30%, 92%);
+	--color-gray: hsl(252, 15%, 65%);
+	--color-primary: #db4b34;
+	--color-dark: hsl(252, 30%, 17%);
+
+	/*============ Font and topography ============*/
+	--body-font: 'Rubik', sans-serif;
+	--h1-font-size: 2.25rem;
+	--h2-font-size: 1.75rem;
+	--h3-font-size: 1.25rem;
+	--normal-font-size: 1rem;
+	--small-font-size: 0.875rem;
+
+	/*============ Font weight ============*/
+	--font-medium: 400;
+	--font-semi-bold: 600;
+
+	/*============ Margins Bottom ============*/
+	--m-0-5: 0.5rem;
+	--m-0-75: 0.75rem;
+	--m-1: 1rem;
+	--m-1-5: 1.5rem;
+	--m-2: 2rem;
+	--m-2-5: 2.5rem;
+
+	/*============ Card padding ============*/
+	--card-padding: 1.9rem 0.95rem;
+
+	/*============ Border radius ============*/
+	--border-radius: 0.25rem;
+
+	/*============ Box shadow ============*/
+	--box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+}

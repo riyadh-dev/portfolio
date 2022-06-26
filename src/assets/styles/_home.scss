@@ -1,0 +1,50 @@
+@use 'vars';
+
+.home {
+	display: flex;
+	justify-content: center;
+	height: calc(100vh - var(--header-height) - 1.5rem);
+	flex-direction: column;
+
+	.intro {
+		text-align: center;
+
+		img {
+			border-radius: 50%;
+			height: 144px;
+			margin-bottom: var(--m-1-5);
+		}
+
+		.social-icons {
+			margin-top: var(--m-1-5);
+			margin-bottom: var(--m-1-5);
+
+			li {
+				display: inline-block;
+
+				&:not(:last-of-type) {
+					margin-right: var(--m-1-5);
+				}
+			}
+
+			a {
+				font-size: (--h3-font-size);
+			}
+		}
+
+		&-paragraph {
+			text-align: left;
+			max-width: 500px;
+			margin: auto;
+			font-size: 20;
+			font-weight: var(--h3-font-size);
+		}
+	}
+}
+
+.scroll-down {
+	position: absolute;
+	bottom: var(--m-2-5);
+	left: 0;
+	width: 100%;
+}
