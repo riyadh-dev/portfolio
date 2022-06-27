@@ -1,0 +1,32 @@
+.about-content {
+	background-color: aliceblue;
+	display: flex;
+	flex-direction: column;
+	align-items: var(--color-white);
+	padding: var(--card-padding);
+	border-radius: var(--card-border-radius);
+
+	p {
+		text-align: justify;
+		margin-bottom: var(--m-1);
+	}
+}
+
+.stats {
+	&-items {
+		margin-top: var(--m-2-5);
+		justify-content: space-around;
+	}
+
+	&-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+
+		i {
+			font-size: var(--h2-font-size);
+			color: var(--color-gray);
+		}
+	}
+}

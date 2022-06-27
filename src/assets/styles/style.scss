@@ -1,6 +1,8 @@
 @use 'vars';
 @use 'header';
 @use 'home';
+@use 'about';
+@use 'skills';
 @use 'animations';
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
@@ -71,11 +73,17 @@ h3 {
 	padding-inline: 15px;
 }
 
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
 /*============ Buttons ============*/
 .btn {
 	padding: 0.75rem 2rem;
 	line-height: 1;
-	border-radius: var(--border-radius);
+	border-radius: var(--btn-border-radius);
 
 	&:focus {
 		outline: 0;
@@ -97,4 +105,16 @@ h3 {
 			animation-iteration-count: 1;
 		}
 	}
+}
+
+/*============ Reuseable classes ============*/
+.section .container {
+	padding-top: 3.75rem;
+	padding-bottom: 4.75rem;
+}
+
+.section-title {
+	font-size: 2.25rem;
+	// margin-left: var(--m-0-75);
+	margin-bottom: var(--m-2-5);
 }

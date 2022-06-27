@@ -11,6 +11,13 @@
 		<!-- Line Icons -->
 		<link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
 
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			crossorigin="anonymous"
+		/>
+
 		<!-- Swiper -->
 		<link
 			rel="stylesheet"
@@ -33,11 +40,12 @@
 						<li class="nav-item">
 							<a href="#" class="nav-link">About</a>
 						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link">Experience</a>
-						</li>
+
 						<li class="nav-item">
 							<a href="#" class="nav-link">Skills</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Experience</a>
 						</li>
 						<li class="nav-item">
 							<a href="#" class="nav-link">Projects</a>
@@ -50,12 +58,9 @@
 
 				<!-- Nav Buttons -->
 				<div class="nav-btn-group">
-					<i
-						class="lni lni-pallet nav-btn nav-theme-btn"
-						id="nav-theme-btn"
-					></i>
+					<i class="fa-solid fa-palette" id="nav-theme-btn"></i>
 					<div class="nav-btn nav-toggle" id="nav-toggle">
-						<i class="lni lni-grid-alt"></i>
+						<i class="fa-solid fa-gear"></i>
 					</div>
 				</div>
 			</nav>
@@ -73,19 +78,16 @@
 					<span>FULL STACK WEB DEVELOPER</span>
 					<ul class="social-icons">
 						<li>
-							<a href="#"><i class="lni lni-github-original"></i></a>
+							<a href="#"><i class="fa-brands fa-github"></i></a>
 						</li>
 						<li>
-							<a href="#"><i class="lni lni-linkedin-original"></i></a>
+							<a href="#"><i class="fa-brands fa-linkedin"></i></a>
 						</li>
 						<li>
-							<a href="#"><i class="lni lni-twitter-original"></i></a>
+							<a href="#"><i class="fa-brands fa-twitter"></i></a>
 						</li>
 						<li>
-							<a href="#"><i class="lni lni-github-original"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="lni lni-github-original"></i></a>
+							<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
 						</li>
 					</ul>
 
@@ -93,7 +95,303 @@
 
 					<div class="scroll-down">
 						<h3>Scroll For More</h3>
-						<i class="lni lni-angle-double-down"></i>
+						<i class="fa-solid fa-angles-down"></i>
+					</div>
+				</div>
+			</section>
+
+			<!-- About -->
+			<section class="about section" id="about">
+				<div class="container">
+					<h2 class="section-title px-15">About Me</h2>
+					<div class="about-content">
+						<p class="about-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Temporibus, quae eum blanditiis magnam nulla quas est, molestias
+							non optio nam at, illum corporis explicabo? Tempore natus
+							recusandae consectetur ut quisquam.
+						</p>
+						<div class="btn btn-default"><a href="#">DOWNLOAD CV</a></div>
+					</div>
+
+					<div class="row stats-items">
+						<div class="stats-item px-15">
+							<i class="fa-solid fa-circle-check"></i>
+							<div class="details">
+								<h3>5</h3>
+								<p>Projects Done</p>
+							</div>
+						</div>
+						<div class="stats-item px-15">
+							<i class="fa-solid fa-code-commit"></i>
+							<div class="details">
+								<h3>25</h3>
+								<p>GitHub Commits</p>
+							</div>
+						</div>
+						<div class="stats-item px-15">
+							<i class="fa-solid fa-briefcase"></i>
+							<div class="details">
+								<h3>2</h3>
+								<p>Years of Experience</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Skills -->
+			<section class="skills section" id="skills">
+				<div class="container">
+					<h2 class="section-title px-15">Skills</h2>
+
+					<div class="skills-container container grid">
+						<div class="skills-tabs">
+							<div class="skills-tab skills-active" data-target="#frontend">
+								<i class="fa-brands fa-firefox-browser skills-icon"></i>
+
+								<div>
+									<h1 class="skills-title">Web Frontend</h1>
+									<span class="skills-subtitle">subtitle placeholder</span>
+								</div>
+								<i class="fa-solid fa-chevron-down skills-arrow"></i>
+							</div>
+
+							<div class="skills-tab" data-target="#backend">
+								<i class="fa-solid fa-server skills-icon"></i>
+
+								<div>
+									<h1 class="skills-title">Web Backend</h1>
+									<span class="skills-subtitle">subtitle placeholder</span>
+								</div>
+								<i class="fa-solid fa-chevron-down skills-arrow"></i>
+							</div>
+
+							<div class="skills-tab" data-target="#desktop">
+								<i class="fa-solid fa-display skills-icon"></i>
+
+								<div>
+									<h1 class="skills-title">Desktop</h1>
+									<span class="skills-subtitle">subtitle placeholder</span>
+								</div>
+								<i class="fa-solid fa-chevron-down skills-arrow"></i>
+							</div>
+							<div class="skills-tab" data-target="#other">
+								<i class="fa-solid fa-laptop-code skills-icon"></i>
+
+								<div>
+									<h1 class="skills-title">Other Skills</h1>
+									<span class="skills-subtitle">subtitle placeholder</span>
+								</div>
+								<i class="fa-solid fa-chevron-down skills-arrow"></i>
+							</div>
+						</div>
+
+						<div class="skills-content">
+							<div
+								class="skills-group skills-active"
+								data-content
+								id="frontend"
+							>
+								<div class="skill-container">
+									<img
+										src="https://cdn-icons-png.flaticon.com/128/174/174854.png"
+										alt="TypeScript"
+									/>
+									<h3>HTML</h3>
+								</div>
+								<div class="skill-container">
+									<img
+										src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png"
+										alt="TypeScript"
+									/>
+									<h3>JavaScript</h3>
+								</div>
+								<div class="skill-container">
+									<img
+										src="https://cdn-icons-png.flaticon.com/128/5968/5968381.png"
+										alt="TypeScript"
+									/>
+									<h3>TypeScript</h3>
+								</div>
+								<div class="skill-container">
+									<img
+										src="https://cdn-icons-png.flaticon.com/128/732/732190.png"
+										alt="TypeScript"
+									/>
+									<h3>CSS</h3>
+								</div>
+								<div class="skill-container">
+									<img
+										src="https://cdn-icons-png.flaticon.com/128/5968/5968358.png"
+										alt="TypeScript"
+									/>
+									<h3>SASS</h3>
+								</div>
+								<div class="skill-container">
+									<img
+										src="https://cdn-icons-png.flaticon.com/512/753/753244.png"
+										alt="TypeScript"
+									/>
+									<h3>React</h3>
+								</div>
+								<div class="skill-container">
+									<img
+										src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png"
+										alt="TypeScript"
+									/>
+									<h3>Bootstrap</h3>
+								</div>
+								<div class="skill-container">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="52"
+										height="52"
+										viewBox="0 0 36 32"
+										fill="none"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M30.343 21.976a1 1 0 00.502-.864l.018-5.787a1 1 0 01.502-.864l3.137-1.802a1 1 0 011.498.867v10.521a1 1 0 01-.502.867l-11.839 6.8a1 1 0 01-.994.001l-9.291-5.314a1 1 0 01-.504-.868v-5.305c0-.006.007-.01.013-.007.005.003.012 0 .012-.007v-.006c0-.004.002-.008.006-.01l7.652-4.396c.007-.004.004-.015-.004-.015a.008.008 0 01-.008-.008l.015-5.201a1 1 0 00-1.5-.87l-5.687 3.277a1 1 0 01-.998 0L6.666 9.7a1 1 0 00-1.499.866v9.4a1 1 0 01-1.496.869l-3.166-1.81a1 1 0 01-.504-.87l.028-16.43A1 1 0 011.527.86l10.845 6.229a1 1 0 00.996 0L24.21.86a1 1 0 011.498.868v16.434a1 1 0 01-.501.867l-5.678 3.27a1 1 0 00.004 1.735l3.132 1.783a1 1 0 00.993-.002l6.685-3.839zM31 7.234a1 1 0 001.514.857l3-1.8A1 1 0 0036 5.434V1.766A1 1 0 0034.486.91l-3 1.8a1 1 0 00-.486.857v3.668z"
+											fill="#007FFF"
+										></path>
+									</svg>
+									<h3>MUI</h3>
+								</div>
+								<div class="skill-container">
+									<img
+										src="https://images.opencollective.com/chakra-ui/eb43264/logo/256.png"
+										alt="Chakra UI"
+									/>
+									<h3>Chakra UI</h3>
+								</div>
+							</div>
+
+							<div class="skills-group" data-content id="backend">
+								<div class="skill-container">
+									<img
+										src="https://cdn-icons-png.flaticon.com/128/174/174854.png"
+										alt="TypeScript"
+									/>
+									<h3>HTML</h3>
+								</div>
+								<div class="skill-container">
+									<img
+										src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png"
+										alt="TypeScript"
+									/>
+									<h3>JavaScript</h3>
+								</div>
+								<div class="skill-container">
+									<img
+										src="https://cdn-icons-png.flaticon.com/128/5968/5968381.png"
+										alt="TypeScript"
+									/>
+									<h3>TypeScript</h3>
+								</div>
+								<div class="skill-container">
+									<img
+										src="https://cdn-icons-png.flaticon.com/128/732/732190.png"
+										alt="TypeScript"
+									/>
+									<h3>CSS</h3>
+								</div>
+							</div>
+
+							<div class="skills-group" data-content id="desktop">
+								<div class="skill-container">
+									<img
+										src="https://cdn-icons-png.flaticon.com/128/174/174854.png"
+										alt="TypeScript"
+									/>
+									<h3>HTML</h3>
+								</div>
+								<div class="skill-container">
+									<img
+										src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png"
+										alt="TypeScript"
+									/>
+									<h3>JavaScript</h3>
+								</div>
+								<div class="skill-container">
+									<img
+										src="https://cdn-icons-png.flaticon.com/128/5968/5968381.png"
+										alt="TypeScript"
+									/>
+									<h3>TypeScript</h3>
+								</div>
+								<div class="skill-container">
+									<img
+										src="https://cdn-icons-png.flaticon.com/128/732/732190.png"
+										alt="TypeScript"
+									/>
+									<h3>CSS</h3>
+								</div>
+							</div>
+
+							<div class="skills-group" data-content id="backend">
+								<div class="skill-container">
+									<img
+										src="https://cdn-icons-png.flaticon.com/128/174/174854.png"
+										alt="TypeScript"
+									/>
+									<h3>HTML</h3>
+								</div>
+								<div class="skill-container">
+									<img
+										src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png"
+										alt="TypeScript"
+									/>
+									<h3>JavaScript</h3>
+								</div>
+								<div class="skill-container">
+									<img
+										src="https://cdn-icons-png.flaticon.com/128/5968/5968381.png"
+										alt="TypeScript"
+									/>
+									<h3>TypeScript</h3>
+								</div>
+								<div class="skill-container">
+									<img
+										src="https://cdn-icons-png.flaticon.com/128/732/732190.png"
+										alt="TypeScript"
+									/>
+									<h3>CSS</h3>
+								</div>
+							</div>
+
+							<div class="skills-group" data-content id="other">
+								<div class="skill-container">
+									<img
+										src="https://cdn-icons-png.flaticon.com/128/174/174854.png"
+										alt="TypeScript"
+									/>
+									<h3>HTML</h3>
+								</div>
+								<div class="skill-container">
+									<img
+										src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png"
+										alt="TypeScript"
+									/>
+									<h3>JavaScript</h3>
+								</div>
+								<div class="skill-container">
+									<img
+										src="https://cdn-icons-png.flaticon.com/128/5968/5968381.png"
+										alt="TypeScript"
+									/>
+									<h3>TypeScript</h3>
+								</div>
+								<div class="skill-container">
+									<img
+										src="https://cdn-icons-png.flaticon.com/128/732/732190.png"
+										alt="TypeScript"
+									/>
+									<h3>CSS</h3>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
