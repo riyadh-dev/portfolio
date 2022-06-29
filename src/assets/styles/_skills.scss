@@ -5,20 +5,21 @@
 		column-gap: var(--m-2-5);
 		row-gap: var(--m-2-5);
 		justify-content: center;
+		align-items: center;
 	}
 
 	&-group {
 		display: flex;
 		flex-wrap: wrap;
-		align-items: flex-start;
+		align-items: center;
 		justify-content: center;
-		width: 360px;
+		width: 380px;
 		column-gap: var(--m-0-75);
 		row-gap: var(--m-2-5);
 	}
 
 	&-tabs {
-		width: 320px;
+		width: 380px;
 	}
 
 	&-tab {
@@ -33,7 +34,7 @@
 
 	&-icon,
 	&-arrow {
-		color: var(--color-primary);
+		color: var(--color-gray);
 	}
 
 	&-icon {
@@ -52,7 +53,13 @@
 
 	&-active &-arrow {
 		transform: rotate(-90deg);
+		color: var(--color-primary);
 		transition: 0.3s;
+	}
+
+	&-active &-icon {
+		color: var(--color-primary);
+		transition: color 0.5s ease;
 	}
 }
 
@@ -70,7 +77,7 @@
 		& > img,
 		h3,
 		svg {
-			animation: fadeIn 1.5s;
+			animation: fade-in 1.5s;
 		}
 	}
 }

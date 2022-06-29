@@ -3,6 +3,8 @@
 @use 'home';
 @use 'about';
 @use 'skills';
+@use 'experience';
+@use 'projects';
 @use 'animations';
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
@@ -99,8 +101,8 @@ h3 {
 		}
 
 		&:hover {
-			animation-name: btn-push;
-			animation-duration: 0.3s;
+			animation-name: btn-hover;
+			animation-duration: 0.5s;
 			animation-timing-function: linear;
 			animation-iteration-count: 1;
 		}
