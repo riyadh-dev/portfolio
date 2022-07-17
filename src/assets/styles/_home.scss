@@ -28,10 +28,10 @@
 				&:not(:last-of-type) {
 					margin-right: var(--m-1-5);
 				}
-			}
 
-			a {
-				font-size: (--h3-font-size);
+				i:hover {
+					color: var(--color-primary);
+				}
 			}
 		}
 
