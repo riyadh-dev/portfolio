@@ -2,29 +2,9 @@
 	&-container {
 	}
 
-	&-filter {
-		margin-bottom: 2.5rem;
-		&-items {
-			display: flex;
-			justify-content: center;
-			column-gap: 1.75rem;
-
-			.active {
-				background-color: var(--color-primary);
-				border-radius: var(--btn-border-radius);
-				color: white;
-			}
-		}
-
-		li {
-			padding: 0.25rem 0.75rem;
-			cursor: pointer;
-			font-size: var(--h3-font-size);
-		}
-	}
-
 	&-tags {
 		margin-bottom: 2.5rem;
+
 		&-items {
 			display: flex;
 			justify-content: center;
@@ -77,6 +57,19 @@
 		li.active::after {
 			border-left-color: var(--color-primary);
 		}
+	}
+
+	&-clear-filter {
+		margin-top: 1rem;
+		margin-inline: auto;
+		text-align: center;
+		padding: 0.25rem 0.75rem;
+		cursor: pointer;
+		font-size: var(--h3-font-size);
+		width: fit-content;
+		background-color: var(--color-primary);
+		border-radius: var(--btn-border-radius);
+		color: white;
 	}
 }
 

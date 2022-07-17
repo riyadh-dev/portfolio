@@ -28,36 +28,45 @@ const projectsContainer = document.querySelector<HTMLDivElement>(
 const shuffleInstance = new Shuffle(projectsContainer, {
 	itemSelector: '.project-card',
 	isCentered: true,
+	filterMode: Shuffle.FilterMode.ALL,
 });
 
-const filterButtons = document.querySelectorAll<HTMLLIElement>(
-	'.projects-filter-items li[data-filter]'
+const clearFilterButton = document.querySelector<HTMLDivElement>(
+	'.projects-clear-filter'
 );
 
 const tagButtons = document.querySelectorAll<HTMLLIElement>(
 	'.projects-tags-items li[data-filter]'
 );
 
-filterButtons.forEach((btn) => {
-	btn.addEventListener('click', () => {
-		shuffleInstance.filter(btn.dataset.filter);
-
-		filterButtons.forEach((tabContent) => {
-			tabContent.classList.remove('active');
-		});
-
-		if (btn.dataset.filter === 'all')
-			tagButtons.forEach((tabContent) => {
-				tabContent.classList.remove('active');
-			});
-
-		btn?.classList.add('active');
+clearFilterButton?.addEventListener('click', () => {
+	shuffleInstance.filter('all');
+	tagButtons.forEach((tabContent) => {
+		tabContent.classList.remove('active');
 	});
 });
 
+const tagMap = new Map<string, boolean>();
+
 tagButtons.forEach((btn) => {
 	btn.addEventListener('click', () => {
-		shuffleInstance.filter(btn.dataset.filter);
-		btn?.classList.add('active');
+		console.log(shuffleInstance.lastFilter);
+
+		const key = btn.dataset.filter;
+
+		if (key && !tagMap.get(key)) {
+			tagMap.set(key, true);
+			btn?.classList.add('active');
+		} else if (key && tagMap.get(key)) {
+			tagMap.set(key, false);
+			btn?.classList.remove('active');
+		}
+
+		const tags: string[] = [];
+		tagMap.forEach((val, key) => {
+			if (val) tags.push(key);
+		});
+
+		shuffleInstance.filter(tags);
 	});
 });

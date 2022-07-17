@@ -13,8 +13,7 @@
 	<link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
 
 	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-		crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css">
 
 	<!-- Swiper -->
 	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
@@ -375,13 +374,7 @@
 			<div class="container">
 				<h2 class="section-title px-15">Projects</h2>
 
-				<div class="projects-filter">
-					<ul class="projects-filter-items">
-						<li class="active" data-filter="all">All</li>
-						<li data-filter="web">Web</li>
-						<li data-filter="desktop">Desktop</li>
-					</ul>
-				</div>
+
 
 				<div class="projects-tags">
 					<ul class="projects-tags-items">
@@ -392,10 +385,17 @@
 						<li data-filter="mui">#MUI</li>
 						<li data-filter="chrakra-ui">#Chakra UI</li>
 					</ul>
+
+					<div class="projects-clear-filter">
+						RESET <i class="fa-solid fa-filter-circle-xmark"></i>
+					</div>
+
 				</div>
 
-				<div class="projects-container" >
-					<div class="project-card" data-groups='["web"]'>
+
+
+				<div class="projects-container">
+					<div class="project-card" data-groups='["web","js","ts","sass"]'>
 						<img src="https://images.unsplash.com/photo-1530435460869-d13625c69bbf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
 							alt="" class="project-img">
 						<h3 class="project-title">Demo App</h3>
