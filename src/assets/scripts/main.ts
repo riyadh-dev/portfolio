@@ -70,3 +70,22 @@ tagButtons.forEach((btn) => {
 		shuffleInstance.filter(tags);
 	});
 });
+
+const projectPopupOpenButtons = document.querySelectorAll<HTMLDivElement>(
+	'.open-project-popup'
+);
+
+const projectPopupCloseButtons = document.querySelectorAll<HTMLDivElement>(
+	'.project-popup-close'
+);
+
+const toggleProjectPopup = (selector: string = '.project-popup-container') =>
+	document.querySelector<HTMLDivElement>(selector)?.classList.toggle('open');
+
+projectPopupOpenButtons.forEach((btn) => {
+	btn.addEventListener('click', () => toggleProjectPopup(btn.dataset.model));
+});
+
+projectPopupCloseButtons.forEach((btn) => {
+	btn.addEventListener('click', () => toggleProjectPopup());
+});
