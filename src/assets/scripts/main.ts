@@ -67,7 +67,7 @@ tagButtons.forEach((btn) => {
 			if (val) tags.push(key);
 		});
 
-		shuffleInstance.filter(tags);
+		shuffleInstance.filter(tags.length > 0 ? tags : 'all');
 	});
 });
 
