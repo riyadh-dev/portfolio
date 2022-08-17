@@ -594,49 +594,44 @@
 		<!-- Contact -->
 		<section class="section contact" id="contact">
 			<div class="container">
-				<!--- section title -->
+
 				<h2 class="section-title px-15">Contact Me</h2>
 				<div class="row">
-					<!--- contact box -->
+
 					<div class="contact-box px-15">
 						<div class="contact-data">
 							<div class="contact-info">
 								<h3 class="contact-subtitle">Text Me</h3>
 								<span class="contact-description">
-									<i class="lni lni-phone"></i>+212 657 73 50 82
+									<i class="fa-solid fa-phone"></i>+212 657 73 50 82
 								</span>
 							</div>
-							<!--- contact info -->
 
-							<!--- contact info -->
 							<div class="contact-info">
 								<h3 class="contact-subtitle">Email Me</h3>
 								<span class="contact-description">
-									<i class="lni lni-envelope"></i>
+									<i class="fa-solid fa-envelope"></i>
 									Placeholder@mail.com
 								</span>
 							</div>
 						</div>
 					</div>
 
-					<!--- contact form -->
 					<form action="" method="POST" class="contact-form px-15">
 						<div class="contact-inputs">
-							<!--- contact content -->
+
 							<div class="contact-content">
 								<input type="text" name="email" class="contact-input">
 								<label class="contact-label">Email</label>
 								<span></span>
 							</div>
 
-							<!--- contact content -->
 							<div class="contact-content">
 								<input type="text" name="subject" class="contact-input">
 								<label class="contact-label">Subject</label>
 								<span></span>
 							</div>
 
-							<!--- contact content -->
 							<div class="contact-content contact-area">
 								<textarea name="message" cols="30" rows="10" class="contact-input"></textarea>
 								<label class="contact-label">Message</label>
@@ -659,14 +654,65 @@
 		</div>
 
 	</main>
-	<!-- Swiper -->
-	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-	<!-- Shuffle -->
-	<script src="https://cdn.jsdelivr.net/npm/shufflejs@6.0.0/dist/shuffle.min.js"></script>
+	<!-- Theming -->
+	<div class="theme">
+		<div class="theme-card">
+			<h2>Customize The Theme</h2>
+			<p>Manage the font size, color and theme mode.</p>
+			<!-- font size -->
+			<div class="theme-font-size">
+				<h3>Font Size</h3>
+				<div class="theme-font-size-slider">
+					<h6>Aa</h6>
+					<ul>
+						<li class="font-size-1"></li>
+						<li class="font-size-2"></li>
+						<li class="font-size-3 active"></li>
+						<li class="font-size-4"></li>
+					</ul>
+					<h3>Aa</h3>
+				</div>
+			</div>
+			<!-- color -->
+			<div class="theme-color">
+				<h3>Color</h3>
+				<ul>
+					<li class="color-1"></li>
+					<li class="color-2"></li>
+					<li class="color-3 active"></li>
+					<li class="color-4"></li>
+					<li class="color-5"></li>
+				</ul>
+			</div>
+			<!-- background -->
+			<div class="theme-background">
+				<h3>Theme Mode</h3>
+				<ul>
+					<li class="bg-1 active">
+						<span></span>
+						<h5 for="bg-1">Light</h5>
+					</li>
+					<li class="bg-2">
+						<span></span>
+						<h5 for="bg-2">Dim</h5>
+					</li>
+					<li class="bg-3">
+						<span></span>
+						<h5 for="bg-3">Dark</h5>
+					</li>
+				</ul>
+			</div>
+		</div>
 
-	<!-- Main Script -->
-	<script type="module" src="assets/scripts/main.ts"></script>
+		<!-- Swiper -->
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+		<!-- Shuffle -->
+		<script src="https://cdn.jsdelivr.net/npm/shufflejs@6.0.0/dist/shuffle.min.js"></script>
+
+		<!-- Main Script -->
+		<script type="module" src="assets/scripts/main.ts"></script>
 </body>
 
 </html>
