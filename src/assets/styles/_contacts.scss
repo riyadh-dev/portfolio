@@ -1,20 +1,37 @@
 .contact {
 	&-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 
 	&-box {
-		flex: 0 0 40%;
-		max-width: 40%;
+		width: 40%;
 	}
 
 	&-form {
-		flex: 0 0 60%;
-		max-width: 60%;
+		width: 60%;
 	}
 
 	&-data {
 		display: grid;
 		row-gap: 2rem;
+	}
+
+	@media screen and (max-width: 600px) {
+		&-container {
+			justify-content: center;
+			row-gap: 2.5rem;
+		}
+
+		&-box,
+		&-form {
+			width: 90%;
+		}
+
+		&-data {
+			justify-content: center;
+		}
 	}
 
 	&-subtitle {
