@@ -89,3 +89,54 @@ projectPopupOpenButtons.forEach((btn) => {
 projectPopupCloseButtons.forEach((btn) => {
 	btn.addEventListener('click', () => toggleProjectPopup());
 });
+
+const navMenu = document.querySelector<HTMLDivElement>('.nav-menu');
+const navToggle = document.querySelector<HTMLDivElement>('.nav-toggle');
+const navClose = document.querySelector<HTMLDivElement>('.nav-close');
+
+if (navToggle)
+	navToggle.addEventListener('click', () => navMenu?.classList.add('show'));
+
+if (navClose)
+	navClose.addEventListener('click', () => navMenu?.classList.remove('show'));
+
+const sections = document.querySelectorAll<HTMLElement>('section[id]');
+
+//add event listener for scroll
+window.addEventListener('scroll', navHighlighter);
+
+function navHighlighter() {
+	//get the current scroll position
+	let scrollY = window.pageYOffset;
+
+	//loop through all the sections and get the height, top and id of each section
+	sections.forEach((section) => {
+		const sectionHeight = section.offsetHeight;
+		const sectionTop = section.offsetTop - 72;
+		const sectionId = section.getAttribute('id');
+
+		//if the scroll position is greater than the section top and less than the section height + top
+		if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+			//add the active class to the section
+			document
+				.querySelector<HTMLAnchorElement>(`a[href="#${sectionId}"]`)
+				?.classList.add('active-link');
+		} else {
+			//remove the active class from the section
+			document
+				.querySelector<HTMLAnchorElement>(`a[href="#${sectionId}"]`)
+				?.classList.remove('active-link');
+		}
+	});
+}
+
+function scrollHeader() {
+	const header = document.querySelector<HTMLElement>('#header');
+	if (this.scrollY >= 80) {
+		header?.classList.add('header-scroll');
+	} else {
+		header?.classList.remove('header-scroll');
+	}
+}
+
+window.addEventListener('scroll', scrollHeader);

@@ -14,6 +14,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
 
 /*============ Base ============*/
+html {
+	scroll-behavior: smooth;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -120,7 +124,8 @@ h3 {
 }
 
 .section-title {
-	font-size: 2.25rem;
+	font-size: var(--h1-font-size);
 	// margin-left: var(--m-0-75);
 	margin-bottom: var(--m-2-5);
+	text-align: center;
 }
