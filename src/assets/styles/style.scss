@@ -129,3 +129,18 @@ h3 {
 	margin-bottom: var(--m-2-5);
 	text-align: center;
 }
+
+::-webkit-scrollbar {
+	width: 0.6rem;
+	background: var(--color-white);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--color-primary);
+	border-radius: 0.5rem;
+}
+
+html {
+	scrollbar-color: var(--color-primary) var(--color-white);
+	scrollbar-width: 0.6rem;
+}

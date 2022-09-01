@@ -53,6 +53,7 @@
 		display: flex;
 		align-items: center;
 		column-gap: 1rem;
+		font-size: 1.25rem;
 	}
 
 	&-btn {
@@ -111,4 +112,8 @@
 	background-color: var(--color-primary);
 	color: var(--color-white);
 	transition: 0.3s;
+}
+
+#nav-theme-btn {
+	cursor: pointer;
 }

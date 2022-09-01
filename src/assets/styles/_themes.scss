@@ -1,5 +1,4 @@
 .theme {
-	display: flex;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
@@ -13,11 +12,15 @@
 	font-size: var(--small-font-size);
 	display: none;
 
+	&-show {
+		display: flex;
+	}
+
 	&-card {
 		background: var(--color-white);
 		padding: 3rem;
 		border-radius: var(--card-border-radius);
-		width: 80%;
+		width: 95%;
 		max-width: 600px;
 	}
 

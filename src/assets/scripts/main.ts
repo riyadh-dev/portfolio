@@ -140,3 +140,72 @@ function scrollHeader() {
 }
 
 window.addEventListener('scroll', scrollHeader);
+
+const themeBtn = document.querySelector<HTMLElement>('#nav-theme-btn');
+const themeCard = document.querySelector<HTMLDivElement>('.theme');
+
+themeBtn?.addEventListener('click', () =>
+	themeCard?.classList.add('theme-show')
+);
+
+themeCard?.addEventListener('click', (e) => {
+	const classes = (e.target as HTMLElement).classList;
+	if (classes.contains('theme')) themeCard?.classList.remove('theme-show');
+});
+
+const fontSizeSelectors = document.querySelectorAll<HTMLLIElement>(
+	'.theme-font-size-slider li'
+);
+
+const deactivateFontSizeSelectors = () => {
+	fontSizeSelectors.forEach((size) => size.classList.remove('active'));
+};
+
+const style = document.querySelector('html')?.style;
+fontSizeSelectors.forEach((fontSizeSelector) => {
+	fontSizeSelector.addEventListener('click', () => {
+		deactivateFontSizeSelectors();
+		fontSizeSelector.classList.add('active');
+		if (style) style.fontSize = fontSizeSelector.dataset.size ?? '';
+	});
+});
+
+const themeColorSelectors =
+	document.querySelectorAll<HTMLLIElement>('.theme-color li');
+
+const deactivateThemeColorSelectors = () => {
+	themeColorSelectors.forEach((color) => color.classList.remove('active'));
+};
+
+themeColorSelectors.forEach((themeColorSelector) => {
+	themeColorSelector.addEventListener('click', () => {
+		deactivateThemeColorSelectors();
+		themeColorSelector.classList.add('active');
+		style?.setProperty(
+			'--primary-color-hue',
+			themeColorSelector.dataset.hue ?? ''
+		);
+	});
+});
+
+const themeBgSelectors = document.querySelectorAll<HTMLLIElement>(
+	'.theme-background li'
+);
+
+const deactivateThemeBgSelectors = () => {
+	themeBgSelectors.forEach((bg) => bg.classList.remove('active'));
+};
+
+themeBgSelectors.forEach((themeBgSelector) => {
+	themeBgSelector.addEventListener('click', () => {
+		deactivateThemeBgSelectors();
+		themeBgSelector.classList.add('active');
+		const lightness = themeBgSelector.dataset.lightness?.split(',');
+
+		if (lightness) {
+			style?.setProperty('--light-color-lightness', lightness[0]);
+			style?.setProperty('--dark-color-lightness', lightness[1]);
+			style?.setProperty('--white-color-lightness', lightness[2]);
+		}
+	});
+});
