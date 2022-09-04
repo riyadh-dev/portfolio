@@ -22,8 +22,9 @@
 	}
 
 	&-inner {
-		background-color: white;
+		background-color: var(--color-white);
 		max-width: 800px;
+		width: 95%;
 		border-radius: 0.5rem;
 		padding: 2.5rem;
 		position: relative;
@@ -37,6 +38,7 @@
 
 		img {
 			max-width: 400px;
+			width: 95%;
 			border-radius: 0.5rem;
 		}
 	}
@@ -45,6 +47,7 @@
 		position: absolute;
 		top: 1.5rem;
 		right: 1.5rem;
+		font-size: 1.5rem;
 		cursor: pointer;
 		&:hover {
 			color: red;
