@@ -21,7 +21,8 @@ tabs.forEach((tab) => {
 	});
 });
 
-const projectsContainer = document.querySelector<HTMLDivElement>(
+//#region Tags & Project Popup
+/* const projectsContainer = document.querySelector<HTMLDivElement>(
 	'.projects-container'
 );
 
@@ -88,7 +89,8 @@ projectPopupOpenButtons.forEach((btn) => {
 
 projectPopupCloseButtons.forEach((btn) => {
 	btn.addEventListener('click', () => toggleProjectPopup());
-});
+}); */
+//#endregion
 
 const navMenu = document.querySelector<HTMLDivElement>('.nav-menu');
 const navToggle = document.querySelector<HTMLDivElement>('.nav-toggle');
