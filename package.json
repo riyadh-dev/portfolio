@@ -7,7 +7,7 @@
 		"build": "parcel build"
 	},
 	"devDependencies": {
-		"@parcel/transformer-sass": "^2.7.0",
-		"parcel": "^2.7.0"
+		"@parcel/transformer-sass": "^2.8.1",
+		"parcel": "^2.8.1"
 	}
 }
