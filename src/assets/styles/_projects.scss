@@ -1,7 +1,13 @@
+#projects .container {
+	max-width: 1200px;
+}
+
 .projects {
 	&-container {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
 	}
-
 	&-tags {
 		margin-bottom: 2.5rem;
 
@@ -75,18 +81,52 @@
 
 .project {
 	&-card {
-		width: 305px;
+		position: relative;
+		width: 360px;
 		background-color: var(--color-white);
 		border-radius: var(--card-border-radius);
 		overflow: hidden;
 		text-align: center;
-		padding-bottom: 1.25rem;
 		margin: 0.5rem;
+
+		&::before {
+			content: '';
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			transition: all ease-in-out 0.3s;
+			z-index: 1;
+		}
+
+		&:hover::before {
+			background: rgba(0, 0, 0, 0.5);
+		}
+
+		&-hover {
+			z-index: 2;
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			gap: 1.25rem;
+			opacity: 0;
+			transition: opacity 0.3s ease-in-out;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
 	}
 
 	&-title {
 		margin-top: 0.75rem;
 		margin-bottom: 0.75rem;
+		color: #fff;
 	}
 
 	&-details {
@@ -95,9 +135,10 @@
 
 	&-actions {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-evenly;
+		width: 100%;
 
-		div {
+		a {
 			width: 50px;
 			height: 50px;
 			background-color: var(--color-primary);
@@ -108,8 +149,8 @@
 			cursor: pointer;
 		}
 
-		div:hover {
-			animation: btn-hover 1.25s;
+		a:hover {
+			animation: btn-hover 0.75s;
 		}
 
 		i {
