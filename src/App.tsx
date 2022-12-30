@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Navbar from './components/Navbar';
+import ThemePanel from './components/ThemePanel';
+import useTheme from './hooks/useTheme';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [openThemePanel, setOpenThemePanel] = useState(false);
+	const handleOpenThemePanel = () => setOpenThemePanel(true);
+	const handleCloseThemePanel = () => setOpenThemePanel(false);
+
+	useTheme();
+
+	return (
+		<div className='App'>
+			<Navbar handleOpenThemePanel={handleOpenThemePanel} />
+			{openThemePanel && (
+				<ThemePanel handleCloseThemePanel={handleCloseThemePanel} />
+			)}
+		</div>
+	);
 }
 
 export default App;
