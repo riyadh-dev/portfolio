@@ -1,0 +1,89 @@
+#projects .container {
+	max-width: 1200px;
+}
+
+.projects-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.project-card {
+	position: relative;
+	width: 360px;
+	height: 202.5px;
+	background-color: var(--color-white);
+	border-radius: var(--card-border-radius);
+	overflow: hidden;
+	text-align: center;
+	margin: 0.5rem;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px,
+		rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+}
+.project-card::before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	transition: all ease-in-out 0.3s;
+	z-index: 1;
+}
+.project-card:hover::before {
+	background: rgba(0, 0, 0, 0.5);
+}
+.project-card-hover {
+	z-index: 2;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1.25rem;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+.project-card-hover:hover {
+	opacity: 1;
+}
+
+.project-title {
+	margin-top: 0.75rem;
+	margin-bottom: 0.75rem;
+	color: #fff;
+}
+
+.project-actions {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.circular-Button,
+.project-actions a {
+	width: 50px;
+	height: 50px;
+	background-color: var(--color-primary);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.project-actions div:hover,
+.project-actions a:hover {
+	filter: brightness(150%);
+	transition: filter ease-in-out 0.3s;
+}
+
+.project-actions i {
+	color: white;
+	font-size: 1.25rem;
+	border-radius: 50%;
+	margin: auto;
+}
