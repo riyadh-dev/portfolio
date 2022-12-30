@@ -3,6 +3,7 @@ import './App.css';
 import About from './components/About';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
+import Skills from './components/Skills';
 import ThemePanel from './components/ThemePanel';
 import useTheme from './hooks/useTheme';
 
@@ -20,6 +21,7 @@ function App() {
 				<main className='main-content'>
 					<Home />
 					<About />
+					<Skills />
 				</main>
 			</main>
 			{openThemePanel && (
