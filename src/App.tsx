@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import About from './components/About';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import ThemePanel from './components/ThemePanel';
@@ -16,7 +17,10 @@ function App() {
 		<div className='App'>
 			<Navbar handleOpenThemePanel={handleOpenThemePanel} />
 			<main className='main-content'>
-				<Home />
+				<main className='main-content'>
+					<Home />
+					<About />
+				</main>
 			</main>
 			{openThemePanel && (
 				<ThemePanel handleCloseThemePanel={handleCloseThemePanel} />

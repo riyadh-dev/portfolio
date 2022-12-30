@@ -1,0 +1,32 @@
+.about-content {
+	background-color: var(--color-white);
+	display: flex;
+	flex-direction: column;
+	align-items: var(--color-white);
+	padding: var(--card-padding);
+	border-radius: var(--card-border-radius);
+}
+
+.about-content p {
+	text-align: center;
+	font-size: larger;
+	margin-bottom: var(--m-1);
+}
+
+.stats-items {
+	margin-top: var(--m-2-5);
+	justify-content: space-around;
+	row-gap: 2rem;
+}
+
+.stats-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.stats-item i {
+	font-size: var(--h2-font-size);
+	color: var(--color-gray);
+}
