@@ -1,7 +1,6 @@
 {
 	"name": "portfolio-website-react",
 	"version": "0.1.0",
-	"homepage": "https://riyadh-dev.github.io/portfolio-website-react/",
 	"private": true,
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.14.1",
@@ -20,7 +19,9 @@
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
+		"build:gh-pages": "PUBLIC_URL=https://riyadh-dev.github.io/portfolio-website-react/ react-scripts build",
 		"deploy": "gh-pages -d build",
+		"build:deploy": "yarn build:gh-pages && yarn deploy",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
 	},
