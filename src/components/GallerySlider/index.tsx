@@ -13,11 +13,13 @@ const GallerySlider = ({
 	const handleForward = () => {
 		if (images.length - 1 <= imageIndex) return;
 		setImageIndex(imageIndex + 1);
+		setImageLoaded(false);
 	};
 
 	const handleBack = () => {
 		if (imageIndex === 0) return;
 		setImageIndex(imageIndex - 1);
+		setImageLoaded(false);
 	};
 
 	const handleChangeIndex = (index: number) => () => setImageIndex(index);
@@ -29,6 +31,13 @@ const GallerySlider = ({
 			document.body.style.position = '';
 		};
 	}, []);
+
+	const [imageLoaded, setImageLoaded] = useState(false);
+	const handleLoading = () => {
+		setImageLoaded(true);
+	};
+
+	console.log(imageLoaded);
 
 	return (
 		<div className='gallery-slider-container'>
@@ -48,23 +57,25 @@ const GallerySlider = ({
 			</div>
 
 			<div className='gallery-slider-middle-section'>
+				<div className={`loader ${imageLoaded ? 'hide' : 'show'}`} />
 				<img
 					src={images[imageIndex]}
 					alt={'image ' + imageIndex}
 					loading='lazy'
+					onLoad={handleLoading}
+					className={imageLoaded ? 'show' : 'hide'}
 				/>
-
-				<div className='gallery-slider-circles'>
-					{images.map((_, index) => (
-						<span
-							className={
-								index === imageIndex ? 'gallery-slider-circle-active' : ''
-							}
-							key={index}
-							onClick={handleChangeIndex(index)}
-						/>
-					))}
-				</div>
+			</div>
+			<div className='gallery-slider-circles bottom-section'>
+				{images.map((_, index) => (
+					<span
+						className={
+							index === imageIndex ? 'gallery-slider-circle-active' : ''
+						}
+						key={index}
+						onClick={handleChangeIndex(index)}
+					/>
+				))}
 			</div>
 		</div>
 	);
