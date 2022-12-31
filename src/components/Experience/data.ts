@@ -5,9 +5,8 @@ const EXPERIENCE = [
 		company: 'Sirius Services - Abb Partner Algeria',
 		jobTitle: 'Software Developer',
 		description: [
-			'Develop various scripts to automate a variety of repetitive task to increase productivity and efficiency.',
-			'Design and develop internal software applications for addressing company problems and needs.',
-			'Use a variety of software development technologies including desktop and web.',
+			'Developed various scripts to automate a variety of repetitive task to increase productivity and efficiency.',
+			'Designed and develop internal software applications for addressing company problems and needs.',
 		],
 	},
 	{
@@ -16,9 +15,7 @@ const EXPERIENCE = [
 		company: 'Freelancing',
 		jobTitle: 'Software Developer',
 		description: [
-			'Develop various scripts to automate a variety of repetitive task to increase productivity and efficiency.',
-			'Design and develop internal software applications for addressing company problems and needs.',
-			'Use a variety of software development technologies including desktop and web.',
+			'Designed and developed some simple applications for local small business',
 		],
 	},
 	{
@@ -27,9 +24,8 @@ const EXPERIENCE = [
 		company: 'Electricity And Gas Distribution Administration Algeria',
 		jobTitle: 'Internship',
 		description: [
-			'Develop various scripts to automate a variety of repetitive task to increase productivity and efficiency.',
-			'Design and develop internal software applications for addressing company problems and needs.',
-			'Use a variety of software development technologies including desktop and web.',
+			'Was responsible for daily backing up customers database.',
+			'Was giving a basic walk-through on the IT department daily operations.',
 		],
 	},
 
@@ -39,7 +35,10 @@ const EXPERIENCE = [
 		company:
 			'Institute Of Electrical And Electronics Engineering (Ex-INELEC) Algeria',
 		jobTitle: 'Degree',
-		description: ['Master’s in Computer Engineering.'],
+		description: [
+			'Master’s in Computer Engineering.',
+			'Developed a Fullstack Web Application to facilitate the management of the Scientific Council of the institute.',
+		],
 	},
 	{
 		fontAwesomeIcon: 'fa-solid fa-user-graduate timeline-icon',
