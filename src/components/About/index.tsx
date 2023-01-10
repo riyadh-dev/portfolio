@@ -7,7 +7,12 @@ const About = () => (
 			<div className='about-content'>
 				<p className='about-text'>{ABOUT.introduction}</p>
 				<div className='btn btn-default'>
-					<a href='#'>DOWNLOAD CV</a>
+					<a
+						href='./documents/baatchia-resume.pdf'
+						download='baatchia-resume.pdf'
+					>
+						DOWNLOAD RESUME
+					</a>
 				</div>
 			</div>
 
