@@ -57,14 +57,15 @@
 	color: #fff;
 }
 
-.project-actions {
+.project-buttons {
 	display: flex;
 	justify-content: space-around;
 	width: 100%;
 }
 
+.circular-Button-no-hover,
 .circular-Button,
-.project-actions a {
+.project-buttons a {
 	width: 50px;
 	height: 50px;
 	background-color: var(--color-primary);
@@ -73,17 +74,51 @@
 	align-items: center;
 	border-radius: 50%;
 	cursor: pointer;
+	color: white;
 }
 
-.project-actions div:hover,
-.project-actions a:hover {
+.circular-Button:hover,
+.project-buttons a:hover {
 	filter: brightness(150%);
 	transition: filter ease-in-out 0.3s;
 }
 
-.project-actions i {
+.project-buttons i {
 	color: white;
 	font-size: 1.25rem;
 	border-radius: 50%;
 	margin: auto;
+}
+
+.project-buttons-group {
+	display: flex;
+	gap: 0.5rem;
+	position: relative;
+}
+
+.project-buttons-group span:first-of-type {
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+
+.project-buttons-group:hover span:first-of-type {
+	opacity: 0;
+}
+
+.project-buttons-group-links {
+	position: absolute;
+	bottom: 50%;
+	translate: 0 50%;
+	visibility: none;
+	display: flex;
+	visibility: hidden;
+	flex-direction: column;
+	gap: 0.5rem;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+}
+
+.project-buttons-group:hover .project-buttons-group-links {
+	visibility: visible;
+	opacity: 1;
 }

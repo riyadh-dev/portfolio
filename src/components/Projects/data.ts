@@ -1,21 +1,10 @@
 const PROJECTS = [
 	{
-		name: 'Instant Messaging App',
-		link: 'https://messaging-app.up.railway.app',
-		repo: 'https://github.com/riyadh-dev/messaging-app',
-		thumbnail: './images/messaging-app/4.png',
-		images: [
-			'./images/messaging-app/1.png',
-			'./images/messaging-app/2.png',
-			'./images/messaging-app/3.png',
-			'./images/messaging-app/4.png',
-			'./images/messaging-app/5.png',
-			'./images/messaging-app/6.png',
-		],
-	},
-	{
 		name: 'Social Media App',
-		link: 'https://social-media-app-production.up.railway.app',
+		links: [
+			'https://social-media-app-production.up.railway.app',
+			'https://social-media-app-eoga.onrender.com/',
+		],
 		repo: 'https://github.com/riyadh-dev/social-media-app',
 		thumbnail: './images/social-media-app/3.png',
 		images: [
@@ -32,8 +21,43 @@ const PROJECTS = [
 		],
 	},
 	{
+		name: 'Online Store (Frontend Only)',
+		links: ['https://e-commerce-app-self.vercel.app/'],
+		repo: 'https://github.com/riyadh-dev/e-commerce-app',
+		thumbnail: './images/e-commerce-app/1.png',
+		images: [
+			'./images/e-commerce-app/1.png',
+			'./images/e-commerce-app/2.png',
+			'./images/e-commerce-app/3.png',
+			'./images/e-commerce-app/4.png',
+			'./images/e-commerce-app/5.png',
+			'./images/e-commerce-app/6.png',
+			'./images/e-commerce-app/7.png',
+			'./images/e-commerce-app/8.png',
+			'./images/e-commerce-app/9.png',
+		],
+	},
+	{
+		name: 'Instant Messaging App',
+		links: [
+			'https://messaging-app.up.railway.app',
+			'https://messaging-app-2b7q.onrender.com',
+		],
+		repo: 'https://github.com/riyadh-dev/messaging-app',
+		thumbnail: './images/messaging-app/4.png',
+		images: [
+			'./images/messaging-app/1.png',
+			'./images/messaging-app/2.png',
+			'./images/messaging-app/3.png',
+			'./images/messaging-app/4.png',
+			'./images/messaging-app/5.png',
+			'./images/messaging-app/6.png',
+		],
+	},
+
+	{
 		name: 'Scientific Consul Management System',
-		link: 'https://scms-client.netlify.app/',
+		links: ['https://scms-client.netlify.app/'],
 		repo: 'https://github.com/riyadh-dev/scms-client',
 		thumbnail: './images/scms/5.png',
 		images: [
@@ -54,14 +78,17 @@ const PROJECTS = [
 	},
 	{
 		name: 'Card Matching Game',
-		link: 'https://riyadh-dev-memory-matching-game.netlify.app/',
+		links: ['https://riyadh-dev-memory-matching-game.netlify.app/'],
 		repo: 'https://github.com/riyadh-dev/memory-matching-game',
 		thumbnail: './images/memory-matching-game/1.png',
 		images: ['./images/memory-matching-game/1.png'],
 	},
 	{
 		name: 'Authentication Demo',
-		link: 'https://authentication-demo.up.railway.app/',
+		links: [
+			'https://authentication-demo.up.railway.app/',
+			'https://authentication-demo-jqhr.onrender.com/',
+		],
 		repo: 'https://github.com/riyadh-dev/authentication-demo',
 		thumbnail: './images/authentication-demo/2.png',
 		images: [
@@ -74,7 +101,9 @@ const PROJECTS = [
 	},
 	{
 		name: 'IEC101 Master Sim',
-		link: 'https://github.com/riyadh-dev/iec101-master-sim/releases/download/v1.0.0/IEC101MasterSim.exe',
+		links: [
+			'https://github.com/riyadh-dev/iec101-master-sim/releases/download/v1.0.0/IEC101MasterSim.exe',
+		],
 		repo: 'https://github.com/riyadh-dev/iec101-master-sim',
 		thumbnail: './images/iec101-master-sim/2.png',
 		images: [
@@ -84,8 +113,8 @@ const PROJECTS = [
 	},
 	{
 		name: 'Portfolio Website (React JS)',
-		link: '',
-		repo: '',
+		links: ['https://riyadh-dev.github.io/portfolio-website-react'],
+		repo: 'https://github.com/riyadh-dev/portfolio-website-react',
 		thumbnail: './images/portfolio-website-image/1.png',
 		images: [
 			'./images/portfolio-website-image/1.png',
@@ -98,7 +127,7 @@ const PROJECTS = [
 	},
 	{
 		name: 'Portfolio Website (No Framework)',
-		link: 'https://riyadh-dev.github.io/portfolio-website',
+		links: ['https://riyadh-dev.github.io/portfolio-website'],
 		repo: 'https://github.com/riyadh-dev/portfolio-website',
 		thumbnail: './images/portfolio-website-image/3.png',
 		images: [

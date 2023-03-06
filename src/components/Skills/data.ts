@@ -4,28 +4,32 @@ const SKILLS = [
 		fontAwesomeClasses: 'fa-brands fa-firefox-browser skills-icon',
 		skills: [
 			{
-				name: 'HTML',
-				image: 'https://cdn-icons-png.flaticon.com/128/174/174854.png',
+				name: 'React',
+				image:
+					'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png',
+			},
+
+			{
+				name: 'Tailwind',
+				image:
+					'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg',
 			},
 			{
-				name: 'JS',
-				image: 'https://cdn-icons-png.flaticon.com/128/5968/5968292.png',
+				name: 'NextJS',
+				image: 'https://img.icons8.com/color/512/nextjs.png',
+			},
+			{
+				name: 'RecoilJS',
+				image: 'https://external-content.duckduckgo.com/ip3/recoiljs.org.ico',
 			},
 			{
 				name: 'TS',
 				image: 'https://cdn-icons-png.flaticon.com/128/5968/5968381.png',
 			},
-			{
-				name: 'CSS',
-				image: 'https://cdn-icons-png.flaticon.com/128/732/732190.png',
-			},
+
 			{
 				name: 'SASS',
 				image: 'https://cdn-icons-png.flaticon.com/128/5968/5968358.png',
-			},
-			{
-				name: 'React',
-				image: 'https://cdn-icons-png.flaticon.com/512/753/753244.png',
 			},
 			{
 				name: 'Bootstrap',
@@ -40,6 +44,19 @@ const SKILLS = [
 				name: 'Chakra UI',
 				image:
 					'https://images.opencollective.com/chakra-ui/eb43264/logo/256.png',
+			},
+
+			{
+				name: 'HTML',
+				image: 'https://cdn-icons-png.flaticon.com/128/174/174854.png',
+			},
+			{
+				name: 'CSS',
+				image: 'https://cdn-icons-png.flaticon.com/128/732/732190.png',
+			},
+			{
+				name: 'JS',
+				image: 'https://cdn-icons-png.flaticon.com/128/5968/5968292.png',
 			},
 		],
 	},
@@ -82,11 +99,6 @@ const SKILLS = [
 		fontAwesomeClasses: 'fa-solid fa-display skills-icon',
 		skills: [
 			{
-				name: 'Rust',
-				image:
-					'https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg',
-			},
-			{
 				name: 'C#',
 				image: 'https://cdn-icons-png.flaticon.com/512/6132/6132221.png',
 			},
@@ -117,21 +129,6 @@ const SKILLS = [
 		categoryName: 'Other Skills',
 		fontAwesomeClasses: 'fa-solid fa-laptop-code skills-icon',
 		skills: [
-			{
-				name: 'Excel',
-				image:
-					'https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg',
-			},
-			{
-				name: 'Word',
-				image:
-					'https://upload.wikimedia.org/wikipedia/commons/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg',
-			},
-			{
-				name: 'PowerPoint',
-				image:
-					'https://upload.wikimedia.org/wikipedia/commons/0/0d/Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg',
-			},
 			{
 				name: 'ParcelJS',
 				image: 'https://parceljs.org/avatar.66e613b2.avif',
