@@ -21,7 +21,7 @@ const PROJECTS = [
 		],
 	},
 	{
-		name: 'Online Store (Frontend Only)',
+		name: 'Online Store',
 		links: ['https://e-commerce-app-self.vercel.app/'],
 		repo: 'https://github.com/riyadh-dev/e-commerce-app',
 		thumbnail: './images/e-commerce-app/1.png',
