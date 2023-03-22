@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'preact/hooks';
+import { JSXInternal } from 'preact/src/jsx';
 import './styles.css';
 
 const NAV_ITEMS = [
@@ -36,9 +37,9 @@ const Navbar = ({
 	const navMenu = useRef<HTMLDivElement>(null);
 	const handleOpenNavMenu = () => navMenu.current?.classList.add('show');
 	const handleCloseNavMenu = () => navMenu.current?.classList.remove('show');
-	const handleCloseNavMenuFromLi: React.MouseEventHandler<HTMLUListElement> = (
-		e
-	) => {
+	const handleCloseNavMenuFromLi: JSXInternal.MouseEventHandler<
+		HTMLUListElement
+	> = (e) => {
 		if ((e.target as HTMLLIElement).classList.contains('nav-link'))
 			handleCloseNavMenu();
 	};

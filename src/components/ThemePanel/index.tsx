@@ -1,4 +1,5 @@
-import { useEffect } from 'react';
+import { useEffect } from 'preact/hooks';
+import { JSXInternal } from 'preact/src/jsx';
 import useTheme from '../../hooks/useTheme';
 import THEME from './data';
 import './styles.css';
@@ -8,7 +9,7 @@ const ThemePanel = ({
 }: {
 	handleCloseThemePanel: () => void;
 }) => {
-	const handleCloseThemePanel: React.MouseEventHandler<HTMLDivElement> = (
+	const handleCloseThemePanel: JSXInternal.MouseEventHandler<HTMLDivElement> = (
 		e
 	) => {
 		if ((e.target as HTMLDivElement).id === 'theme-panel-container')

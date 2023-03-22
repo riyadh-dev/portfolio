@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'preact/hooks';
 import THEME from '../components/ThemePanel/data';
 
 const useTheme = () => {

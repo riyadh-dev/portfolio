@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from 'preact/hooks';
 import SKILLS from './data';
 import './styles.css';
 const Skills = () => {

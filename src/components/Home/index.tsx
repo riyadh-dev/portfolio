@@ -4,7 +4,7 @@ import './styles.css';
 const Home = () => (
 	<section className='home section' id='home'>
 		<div className='intro'>
-			<img src='./logo512.png' alt='' />
+			<img src='./logo.png' alt='' />
 			<h1>RIYADH BAATCHIA</h1>
 			<span>FULL STACK WEB DEVELOPER</span>
 			<ul className='social-icons'>

@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import './App.css';
+import { useState } from 'preact/hooks';
+import './app.css';
 import About from './components/About';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
@@ -12,7 +12,7 @@ import Skills from './components/Skills';
 import ThemePanel from './components/ThemePanel';
 import useTheme from './hooks/useTheme';
 
-function App() {
+export default function App() {
 	const [openThemePanel, setOpenThemePanel] = useState(false);
 	const handleOpenThemePanel = () => setOpenThemePanel(true);
 	const handleCloseThemePanel = () => setOpenThemePanel(false);
@@ -50,5 +50,3 @@ function App() {
 		</div>
 	);
 }
-
-export default App;
