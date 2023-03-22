@@ -105,11 +105,14 @@ const PROJECTS = [
 
 	{
 		name: 'Card Matching Game',
-		links: ['https://riyadh-dev-memory-matching-game.netlify.app/'],
+		links: [
+			'https://riyadh-dev.github.io/memory-matching-game/',
+			'https://riyadh-dev-memory-matching-game.netlify.app/',
+		],
 		repo: 'https://github.com/riyadh-dev/memory-matching-game',
 		thumbnail: './images/memory-matching-game/1.png',
 		images: ['./images/memory-matching-game/1.png'],
-		tags: ['ReactJS', 'Typescript', 'ExpressJS'],
+		tags: ['ReactJS', 'PreactJS', 'Typescript', 'ViteJS', 'CSS'],
 	},
 
 	{
@@ -165,7 +168,7 @@ const PROJECTS = [
 			'./images/portfolio-website-image/5.png',
 			'./images/portfolio-website-image/6.png',
 		],
-		tags: ['ReactJS', 'Typescript', 'CSS'],
+		tags: ['ReactJS', 'Typescript', 'PreactJS', 'ViteJS', 'CSS'],
 	},
 
 	{
