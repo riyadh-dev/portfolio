@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useCallback, useEffect, useRef, useState } from 'preact/hooks';
 import { JSXInternal } from 'preact/src/jsx';
 import './styles.css';
 
@@ -48,27 +48,24 @@ const Navbar = ({
 		window.location.hash ?? '#home'
 	);
 
-	useEffect(() => {
+	const setObservers = useCallback(() => {
 		const sections = document.querySelectorAll<HTMLElement>('section[id]');
-		const navHighlighter = () => {
-			//get the current scroll position
-			const scrollY = window.pageYOffset;
+		for (const section of sections) {
+			const observer = new IntersectionObserver(
+				(entries) => {
+					if (entries[0].isIntersecting) setCurrentSection(`#${section.id}`);
+				},
+				{ threshold: 0.5 }
+			);
+			observer.observe(section);
+		}
+	}, []);
 
-			//loop through all the sections and get the height, top and id of each section
-			sections.forEach((section) => {
-				const sectionHeight = section.offsetHeight;
-				const sectionTop = section.offsetTop - 76;
-				const sectionId = section.getAttribute('id');
-
-				//if the scroll position is greater than the section top and less than the section height + top
-				if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-					//add the active class to the section
-					setCurrentSection(`#${sectionId}`);
-				}
-			});
+	useEffect(() => {
+		window.addEventListener('load', setObservers);
+		return () => {
+			window.removeEventListener('load', setObservers);
 		};
-
-		window.addEventListener('scroll', navHighlighter);
 	});
 
 	return (
@@ -105,7 +102,7 @@ const Navbar = ({
 						onClick={handleOpenThemePanel}
 					/>
 					<div className='nav-btn nav-toggle' id='nav-toggle'>
-						<i className='fa-solid fa-gear' onClick={handleOpenNavMenu} />
+						<i className='fa-solid fa-bars' onClick={handleOpenNavMenu} />
 					</div>
 				</div>
 			</nav>
