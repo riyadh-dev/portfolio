@@ -19,7 +19,19 @@ const PROJECTS = [
 			'./images/social-media-app/9.png',
 			'./images/social-media-app/10.png',
 		],
+		tags: [
+			'ReactJS',
+			'ExpressJS',
+			'MongoDB',
+			'MUI',
+			'WebSockets',
+			'Typescript',
+			'RecoilJS',
+			'React Router',
+			'React Query',
+		],
 	},
+
 	{
 		name: 'Online Store',
 		links: ['https://e-commerce-app-self.vercel.app/'],
@@ -36,7 +48,9 @@ const PROJECTS = [
 			'./images/e-commerce-app/8.png',
 			'./images/e-commerce-app/9.png',
 		],
+		tags: ['NextJS', 'TailwindCSS', 'Typescript', 'Stripe', 'RecoilJS'],
 	},
+
 	{
 		name: 'Instant Messaging App',
 		links: [
@@ -52,6 +66,17 @@ const PROJECTS = [
 			'./images/messaging-app/4.png',
 			'./images/messaging-app/5.png',
 			'./images/messaging-app/6.png',
+		],
+		tags: [
+			'ReactJS',
+			'ExpressJS',
+			'MongoDB',
+			'MUI',
+			'WebSockets',
+			'Typescript',
+			'RecoilJS',
+			'React Router',
+			'React Query',
 		],
 	},
 
@@ -75,14 +100,18 @@ const PROJECTS = [
 			'./images/scms/12.png',
 			'./images/scms/13.png',
 		],
+		tags: ['ReactJS', 'ExpressJS', 'MongoDB', 'MUI', 'GraphQL'],
 	},
+
 	{
 		name: 'Card Matching Game',
 		links: ['https://riyadh-dev-memory-matching-game.netlify.app/'],
 		repo: 'https://github.com/riyadh-dev/memory-matching-game',
 		thumbnail: './images/memory-matching-game/1.png',
 		images: ['./images/memory-matching-game/1.png'],
+		tags: ['ReactJS', 'Typescript', 'ExpressJS'],
 	},
+
 	{
 		name: 'Authentication Demo',
 		links: [
@@ -98,7 +127,17 @@ const PROJECTS = [
 			'./images/authentication-demo/4.png',
 			'./images/authentication-demo/5.png',
 		],
+		tags: [
+			'ReactJS',
+			'Chakra UI',
+			'Typescript',
+			'ExpressJS',
+			'MongoDB',
+			'CSURF',
+			'HTTPOnly cookies',
+		],
 	},
+
 	{
 		name: 'IEC101 Master Sim',
 		links: [
@@ -110,7 +149,9 @@ const PROJECTS = [
 			'./images/iec101-master-sim/1.png',
 			'./images/iec101-master-sim/2.png',
 		],
+		tags: ['.NET', 'WPF', 'C#', 'XAML', 'IEC 60870-5-101'],
 	},
+
 	{
 		name: 'Portfolio Website (React JS)',
 		links: ['https://riyadh-dev.github.io/portfolio-website-react'],
@@ -124,7 +165,9 @@ const PROJECTS = [
 			'./images/portfolio-website-image/5.png',
 			'./images/portfolio-website-image/6.png',
 		],
+		tags: ['ReactJS', 'Typescript', 'CSS'],
 	},
+
 	{
 		name: 'Portfolio Website (No Framework)',
 		links: ['https://riyadh-dev.github.io/portfolio-website'],
@@ -138,6 +181,7 @@ const PROJECTS = [
 			'./images/portfolio-website-image/5.png',
 			'./images/portfolio-website-image/6.png',
 		],
+		tags: ['HTML', 'Typescript', 'SASS', 'ParcelJS'],
 	},
 ];
 
