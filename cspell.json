@@ -1,0 +1,14 @@
+{
+	"$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-types/cspell.schema.json",
+	"words": [
+		"Baatchia",
+		"Chakra",
+		"INELEC",
+		"Preact",
+		"scms",
+		"vite",
+		"webp",
+		"xmark"
+	],
+	"ignorePaths": ["pnpm-lock.yaml", "dist"]
+}

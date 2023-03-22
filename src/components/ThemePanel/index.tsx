@@ -97,7 +97,7 @@ const ThemePanel = ({
 									index === activeBackgroundColorIndex ? 'active' : ''
 								}`}
 							>
-								<span></span>
+								<span />
 								<h5>{text}</h5>
 							</li>
 						))}

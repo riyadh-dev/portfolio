@@ -37,8 +37,6 @@ const GallerySlider = ({
 		setImageLoaded(true);
 	};
 
-	console.log(imageLoaded);
-
 	return (
 		<div className='gallery-slider-container'>
 			<div
@@ -60,7 +58,7 @@ const GallerySlider = ({
 				<div className={`loader ${imageLoaded ? 'hide' : 'show'}`} />
 				<img
 					src={images[imageIndex]}
-					alt={'image ' + imageIndex}
+					alt={`image ${imageIndex}`}
 					loading='lazy'
 					onLoad={handleLoading}
 					className={imageLoaded ? 'show' : 'hide'}

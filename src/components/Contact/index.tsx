@@ -41,13 +41,13 @@ const Contact = () => {
 							<div className='contact-content'>
 								<input type='email' name='email' className='contact-input' />
 								<label className='contact-label'>Email</label>
-								<span></span>
+								<span />
 							</div>
 
 							<div className='contact-content'>
 								<input type='text' name='subject' className='contact-input' />
 								<label className='contact-label'>Subject</label>
-								<span></span>
+								<span />
 							</div>
 
 							<div className='contact-content contact-area'>
@@ -56,9 +56,9 @@ const Contact = () => {
 									cols={30}
 									rows={10}
 									className='contact-input'
-								></textarea>
+								/>
 								<label className='contact-label'>Message</label>
-								<span></span>
+								<span />
 							</div>
 						</div>
 						<button type='submit' className='btn btn-default'>

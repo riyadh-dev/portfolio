@@ -52,7 +52,7 @@ const Navbar = ({
 		const sections = document.querySelectorAll<HTMLElement>('section[id]');
 		const navHighlighter = () => {
 			//get the current scroll position
-			let scrollY = window.pageYOffset;
+			const scrollY = window.pageYOffset;
 
 			//loop through all the sections and get the height, top and id of each section
 			sections.forEach((section) => {
@@ -63,7 +63,7 @@ const Navbar = ({
 				//if the scroll position is greater than the section top and less than the section height + top
 				if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
 					//add the active class to the section
-					setCurrentSection('#' + sectionId);
+					setCurrentSection(`#${sectionId}`);
 				}
 			});
 		};
@@ -80,8 +80,8 @@ const Navbar = ({
 
 				<div ref={navMenu} className='nav-menu'>
 					<ul className='nav-list' onClick={handleCloseNavMenuFromLi}>
-						{NAV_ITEMS.map((item) => (
-							<li className='nav-item'>
+						{NAV_ITEMS.map((item, index) => (
+							<li key={index} className='nav-item'>
 								<a
 									href={item.href}
 									className={`nav-link ${

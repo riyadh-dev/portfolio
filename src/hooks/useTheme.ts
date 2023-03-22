@@ -3,13 +3,13 @@ import THEME from '../components/ThemePanel/data';
 
 const useTheme = () => {
 	const [activeFontSizeIndex, setActiveFontSizeIndex] = useState(
-		parseInt(localStorage.getItem('activeFontSizeIndex') ?? '2')
+		parseInt(localStorage.getItem('activeFontSizeIndex') ?? '2', 10)
 	);
 	const [activeColorHueIndex, setActiveColorHueIndex] = useState(
-		parseInt(localStorage.getItem('activeColorHueIndex') ?? '2')
+		parseInt(localStorage.getItem('activeColorHueIndex') ?? '2', 10)
 	);
 	const [activeBackgroundColorIndex, setActiveBackgroundColorIndex] = useState(
-		parseInt(localStorage.getItem('activeBackgroundColorIndex') ?? '0')
+		parseInt(localStorage.getItem('activeBackgroundColorIndex') ?? '0', 10)
 	);
 
 	const docStyle = document.querySelector('html')?.style;
