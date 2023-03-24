@@ -116,6 +116,38 @@ const PROJECTS = [
 	},
 
 	{
+		name: 'Dashboard (frontend only)',
+		links: ['https://dashboard-nextjs-weld.vercel.app/'],
+		repo: 'https://github.com/riyadh-dev/dashboard-nextjs',
+		thumbnail: './images/dashboard-nextjs/1.png',
+		images: [
+			'./images/dashboard-nextjs/1.png',
+			'./images/dashboard-nextjs/2.png',
+			'./images/dashboard-nextjs/3.png',
+			'./images/dashboard-nextjs/4.png',
+			'./images/dashboard-nextjs/5.png',
+			'./images/dashboard-nextjs/6.png',
+		],
+		tags: ['NextJS', 'Typescript', 'RecoilJS', 'TailwindCSS', 'Tremor'],
+	},
+
+	{
+		name: 'Portfolio Website (React JS)',
+		links: ['https://riyadh-dev.github.io/portfolio-website-react'],
+		repo: 'https://github.com/riyadh-dev/portfolio-website-react',
+		thumbnail: './images/portfolio-website-image/1.png',
+		images: [
+			'./images/portfolio-website-image/1.png',
+			'./images/portfolio-website-image/2.png',
+			'./images/portfolio-website-image/3.png',
+			'./images/portfolio-website-image/4.png',
+			'./images/portfolio-website-image/5.png',
+			'./images/portfolio-website-image/6.png',
+		],
+		tags: ['ReactJS', 'Typescript', 'PreactJS', 'ViteJS', 'CSS'],
+	},
+
+	{
 		name: 'Authentication Demo',
 		links: [
 			'https://authentication-demo.up.railway.app/',
@@ -142,36 +174,6 @@ const PROJECTS = [
 	},
 
 	{
-		name: 'IEC101 Master Sim',
-		links: [
-			'https://github.com/riyadh-dev/iec101-master-sim/releases/download/v1.0.0/IEC101MasterSim.exe',
-		],
-		repo: 'https://github.com/riyadh-dev/iec101-master-sim',
-		thumbnail: './images/iec101-master-sim/2.png',
-		images: [
-			'./images/iec101-master-sim/1.png',
-			'./images/iec101-master-sim/2.png',
-		],
-		tags: ['.NET', 'WPF', 'C#', 'XAML', 'IEC 60870-5-101'],
-	},
-
-	{
-		name: 'Portfolio Website (React JS)',
-		links: ['https://riyadh-dev.github.io/portfolio-website-react'],
-		repo: 'https://github.com/riyadh-dev/portfolio-website-react',
-		thumbnail: './images/portfolio-website-image/1.png',
-		images: [
-			'./images/portfolio-website-image/1.png',
-			'./images/portfolio-website-image/2.png',
-			'./images/portfolio-website-image/3.png',
-			'./images/portfolio-website-image/4.png',
-			'./images/portfolio-website-image/5.png',
-			'./images/portfolio-website-image/6.png',
-		],
-		tags: ['ReactJS', 'Typescript', 'PreactJS', 'ViteJS', 'CSS'],
-	},
-
-	{
 		name: 'Portfolio Website (No Framework)',
 		links: ['https://riyadh-dev.github.io/portfolio-website'],
 		repo: 'https://github.com/riyadh-dev/portfolio-website',
@@ -185,6 +187,20 @@ const PROJECTS = [
 			'./images/portfolio-website-image/6.png',
 		],
 		tags: ['HTML', 'Typescript', 'SASS', 'ParcelJS'],
+	},
+
+	{
+		name: 'IEC101 Master Sim',
+		links: [
+			'https://github.com/riyadh-dev/iec101-master-sim/releases/download/v1.0.0/IEC101MasterSim.exe',
+		],
+		repo: 'https://github.com/riyadh-dev/iec101-master-sim',
+		thumbnail: './images/iec101-master-sim/2.png',
+		images: [
+			'./images/iec101-master-sim/1.png',
+			'./images/iec101-master-sim/2.png',
+		],
+		tags: ['.NET', 'WPF', 'C#', 'XAML', 'IEC 60870-5-101'],
 	},
 ];
 

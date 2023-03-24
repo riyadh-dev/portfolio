@@ -59,7 +59,7 @@ const GallerySlider = ({
 				<img
 					src={images[imageIndex]}
 					alt={`image ${imageIndex}`}
-					loading='lazy'
+					loading='eager'
 					onLoad={handleLoading}
 					className={imageLoaded ? 'show' : 'hide'}
 				/>
