@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Main Css -->
+	<link rel="stylesheet" href="assets/styles/style.scss" />
+
+	<!-- Line Icons -->
+	<link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css">
+
+	<title>Portfolio</title>
+</head>
+
+<body>
+	<!-- Headers -->
+	<header id="header" class="header">
+		<nav class="nav container px-15">
+			<a href="#" class="nav-logo">
+				<h2>Riyadh</h2>
+			</a>
+
+			<div class="nav-menu">
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="#home" class="nav-link active-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="#about" class="nav-link">About</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#skills" class="nav-link">Skills</a>
+					</li>
+					<li class="nav-item">
+						<a href="#experience" class="nav-link">Experience</a>
+					</li>
+					<li class="nav-item">
+						<a href="#projects" class="nav-link">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a href="#contact" class="nav-link">Contact</a>
+					</li>
+				</ul>
+				<div class="nav-close" id="nav-close">
+					<i class="fa-solid fa-xmark"></i>
+				</div>
+			</div>
+
+			<!-- Nav Buttons -->
+			<div class="nav-btn-group">
+				<i class="fa-solid fa-palette" id="nav-theme-btn"></i>
+				<div class="nav-btn nav-toggle" id="nav-toggle">
+					<i class="fa-solid fa-gear"></i>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Main -->
+	<main class="main-content">
+		<section class="home" id="home">
+			<div class="intro">
+				<img src="https://avatars.githubusercontent.com/u/50684407?v=4" alt="" />
+				<h1>RIYADH BAATCHIA</h1>
+				<span>FULL STACK WEB DEVELOPER</span>
+				<ul class="social-icons">
+					<li>
+						<a href="#"><i class="fa-brands fa-github"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa-brands fa-twitter"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+					</li>
+				</ul>
+
+				<div class="btn btn-default"><a href="#">Contact me</a></div>
+
+				<div class="scroll-down">
+					<h3>Scroll For More</h3>
+					<i class="fa-solid fa-angles-down"></i>
+				</div>
+			</div>
+		</section>
+
+		<!-- About -->
+		<section class="about section" id="about">
+			<div class="container">
+				<h2 class="section-title px-15">About Me</h2>
+				<div class="about-content">
+					<p class="about-text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Temporibus, quae eum blanditiis magnam nulla quas est, molestias
+						non optio nam at, illum corporis explicabo? Tempore natus
+						recusandae consectetur ut quisquam.
+					</p>
+					<div class="btn btn-default"><a href="#">DOWNLOAD CV</a></div>
+				</div>
+
+				<div class="row stats-items">
+					<div class="stats-item px-15">
+						<i class="fa-solid fa-circle-check"></i>
+						<div class="details">
+							<h3>5</h3>
+							<p>Projects Done</p>
+						</div>
+					</div>
+					<div class="stats-item px-15">
+						<i class="fa-solid fa-code-commit"></i>
+						<div class="details">
+							<h3>25</h3>
+							<p>GitHub Commits</p>
+						</div>
+					</div>
+					<div class="stats-item px-15">
+						<i class="fa-solid fa-briefcase"></i>
+						<div class="details">
+							<h3>2</h3>
+							<p>Years of Experience</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Skills -->
+		<section class="skills section" id="skills">
+			<div class="container">
+				<h2 class="section-title px-15">Skills</h2>
+
+				<div class="skills-container">
+					<div class="skills-tabs">
+						<div class="skills-tab skills-active" data-target="#frontend">
+							<i class="fa-brands fa-firefox-browser skills-icon"></i>
+
+							<div>
+								<h1 class="skills-title">Web Frontend</h1>
+								<span class="skills-subtitle">subtitle placeholder</span>
+							</div>
+							<i class="fa-solid fa-chevron-down skills-arrow"></i>
+						</div>
+
+						<div class="skills-tab" data-target="#backend">
+							<i class="fa-solid fa-server skills-icon"></i>
+
+							<div>
+								<h1 class="skills-title">Web Backend</h1>
+								<span class="skills-subtitle">subtitle placeholder</span>
+							</div>
+							<i class="fa-solid fa-chevron-down skills-arrow"></i>
+						</div>
+
+						<div class="skills-tab" data-target="#desktop">
+							<i class="fa-solid fa-display skills-icon"></i>
+
+							<div>
+								<h1 class="skills-title">Desktop</h1>
+								<span class="skills-subtitle">subtitle placeholder</span>
+							</div>
+							<i class="fa-solid fa-chevron-down skills-arrow"></i>
+						</div>
+						<div class="skills-tab" data-target="#other">
+							<i class="fa-solid fa-laptop-code skills-icon"></i>
+
+							<div>
+								<h1 class="skills-title">Other Skills</h1>
+								<span class="skills-subtitle">subtitle placeholder</span>
+							</div>
+							<i class="fa-solid fa-chevron-down skills-arrow"></i>
+						</div>
+					</div>
+
+					<div class="skills-content">
+						<div class="skills-group skills-active" data-content id="frontend">
+							<div class="skill-container">
+								<img src="https://cdn-icons-png.flaticon.com/128/174/174854.png" alt="TypeScript" />
+								<h3>HTML</h3>
+							</div>
+							<div class="skill-container">
+								<img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt="TypeScript" />
+								<h3>JavaScript</h3>
+							</div>
+							<div class="skill-container">
+								<img src="https://cdn-icons-png.flaticon.com/128/5968/5968381.png" alt="TypeScript" />
+								<h3>TypeScript</h3>
+							</div>
+							<div class="skill-container">
+								<img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt="TypeScript" />
+								<h3>CSS</h3>
+							</div>
+							<div class="skill-container">
+								<img src="https://cdn-icons-png.flaticon.com/128/5968/5968358.png" alt="TypeScript" />
+								<h3>SASS</h3>
+							</div>
+							<div class="skill-container">
+								<img src="https://cdn-icons-png.flaticon.com/512/753/753244.png" alt="TypeScript" />
+								<h3>React</h3>
+							</div>
+							<div class="skill-container">
+								<img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="TypeScript" />
+								<h3>Bootstrap</h3>
+							</div>
+							<div class="skill-container">
+								<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 36 32"
+									fill="none">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M30.343 21.976a1 1 0 00.502-.864l.018-5.787a1 1 0 01.502-.864l3.137-1.802a1 1 0 011.498.867v10.521a1 1 0 01-.502.867l-11.839 6.8a1 1 0 01-.994.001l-9.291-5.314a1 1 0 01-.504-.868v-5.305c0-.006.007-.01.013-.007.005.003.012 0 .012-.007v-.006c0-.004.002-.008.006-.01l7.652-4.396c.007-.004.004-.015-.004-.015a.008.008 0 01-.008-.008l.015-5.201a1 1 0 00-1.5-.87l-5.687 3.277a1 1 0 01-.998 0L6.666 9.7a1 1 0 00-1.499.866v9.4a1 1 0 01-1.496.869l-3.166-1.81a1 1 0 01-.504-.87l.028-16.43A1 1 0 011.527.86l10.845 6.229a1 1 0 00.996 0L24.21.86a1 1 0 011.498.868v16.434a1 1 0 01-.501.867l-5.678 3.27a1 1 0 00.004 1.735l3.132 1.783a1 1 0 00.993-.002l6.685-3.839zM31 7.234a1 1 0 001.514.857l3-1.8A1 1 0 0036 5.434V1.766A1 1 0 0034.486.91l-3 1.8a1 1 0 00-.486.857v3.668z"
+										fill="#007FFF"></path>
+								</svg>
+								<h3>MUI</h3>
+							</div>
+							<div class="skill-container">
+								<img src="https://images.opencollective.com/chakra-ui/eb43264/logo/256.png"
+									alt="Chakra UI" />
+								<h3>Chakra UI</h3>
+							</div>
+						</div>
+
+						<div class="skills-group" data-content id="backend">
+							<div class="skill-container">
+								<img src="https://cdn-icons-png.flaticon.com/128/174/174854.png" alt="TypeScript" />
+								<h3>HTML</h3>
+							</div>
+							<div class="skill-container">
+								<img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt="TypeScript" />
+								<h3>JavaScript</h3>
+							</div>
+							<div class="skill-container">
+								<img src="https://cdn-icons-png.flaticon.com/128/5968/5968381.png" alt="TypeScript" />
+								<h3>TypeScript</h3>
+							</div>
+							<div class="skill-container">
+								<img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt="TypeScript" />
+								<h3>CSS</h3>
+							</div>
+						</div>
+
+						<div class="skills-group" data-content id="desktop">
+							<div class="skill-container">
+								<img src="https://cdn-icons-png.flaticon.com/128/174/174854.png" alt="TypeScript" />
+								<h3>HTML</h3>
+							</div>
+							<div class="skill-container">
+								<img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt="TypeScript" />
+								<h3>JavaScript</h3>
+							</div>
+							<div class="skill-container">
+								<img src="https://cdn-icons-png.flaticon.com/128/5968/5968381.png" alt="TypeScript" />
+								<h3>TypeScript</h3>
+							</div>
+							<div class="skill-container">
+								<img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt="TypeScript" />
+								<h3>CSS</h3>
+							</div>
+						</div>
+
+						<div class="skills-group" data-content id="other">
+							<div class="skill-container">
+								<img src="https://cdn-icons-png.flaticon.com/128/174/174854.png" alt="TypeScript" />
+								<h3>HTML</h3>
+							</div>
+							<div class="skill-container">
+								<img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt="TypeScript" />
+								<h3>JavaScript</h3>
+							</div>
+							<div class="skill-container">
+								<img src="https://cdn-icons-png.flaticon.com/128/5968/5968381.png" alt="TypeScript" />
+								<h3>TypeScript</h3>
+							</div>
+							<div class="skill-container">
+								<img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt="TypeScript" />
+								<h3>CSS</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Experience -->
+		<section class="experience section" id="experience">
+			<div class="container">
+				<h2 class="section-title px-15">Experience</h2>
+				<div class="experience-container">
+					<div class="experience-card">
+						<div class="timeline-item">
+							<i class="fa-solid fa-briefcase timeline-icon"></i>
+							<h3 class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2014 - something</h3>
+							<h3 class="timeline-title">Academic degree</h3>
+							<p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+								consequatur a voluptates dicta obcaecati, amet corporis optio eius veniam cupiditate.
+								Earum asperiores optio, eligendi sint aliquam non quas magnam molestias?</p>
+						</div>
+						<div class="timeline-item">
+							<i class="fa-solid fa-briefcase timeline-icon"></i>
+							<h3 class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2014 - something</h3>
+							<h3 class="timeline-title">Academic degree</h3>
+							<p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+								consequatur a voluptates dicta obcaecati, amet corporis optio eius veniam cupiditate.
+								Earum asperiores optio, eligendi sint aliquam non quas magnam molestias?</p>
+						</div>
+						<div class="timeline-item">
+							<i class="fa-solid fa-user-graduate timeline-icon"></i>
+							<h3 class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2014 - something</h3>
+							<h3 class="timeline-title">Academic degree</h3>
+							<p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+								consequatur a voluptates dicta obcaecati, amet corporis optio eius veniam cupiditate.
+								Earum asperiores optio, eligendi sint aliquam non quas magnam molestias?</p>
+						</div>
+					</div>
+
+					<div class="experience-card">
+						<div class="timeline-item">
+							<i class="fa-solid fa-user-graduate timeline-icon"></i>
+							<h3 class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2014 - something</h3>
+							<h3 class="timeline-title">Academic degree</h3>
+							<p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+								consequatur a voluptates dicta obcaecati, amet corporis optio eius veniam cupiditate.
+								Earum asperiores optio, eligendi sint aliquam non quas magnam molestias?</p>
+						</div>
+						<div class="timeline-item">
+							<i class="fa-solid fa-user-graduate timeline-icon"></i>
+							<h3 class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2014 - something</h3>
+							<h3 class="timeline-title">Academic degree</h3>
+							<p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+								consequatur a voluptates dicta obcaecati, amet corporis optio eius veniam cupiditate.
+								Earum asperiores optio, eligendi sint aliquam non quas magnam molestias?</p>
+						</div>
+						<div class="timeline-item">
+							<i class="fa-solid fa-user-graduate timeline-icon"></i>
+							<h3 class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2014 - something</h3>
+							<h3 class="timeline-title">Academic degree</h3>
+							<p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+								consequatur a voluptates dicta obcaecati, amet corporis optio eius veniam cupiditate.
+								Earum asperiores optio, eligendi sint aliquam non quas magnam molestias?</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects -->
+		<section class="projects section" id="projects">
+			<div class="container">
+				<h2 class="section-title px-15">Projects</h2>
+
+				<!-- <div class="projects-tags">
+					<ul class="projects-tags-items">
+						<li data-filter="js">#JS</li>
+						<li data-filter="ts">#TS</li>
+						<li data-filter="node-js">#NodeJS</li>
+						<li data-filter="sass">#SASS</li>
+						<li data-filter="mui">#MUI</li>
+						<li data-filter="chrakra-ui">#Chakra UI</li>
+					</ul>
+
+					<div class="projects-clear-filter">
+						RESET <i class="fa-solid fa-filter-circle-xmark"></i>
+					</div>
+
+				</div> -->
+
+				<div class="projects-container">
+
+					<div class="project-card">
+						<img src="assets/images/messaging-app.jpg" alt="" class="project-img">
+						<div class="project-card-hover">
+							<h3 class="project-title">Instant Messaging App</h3>
+							<div class="project-actions">
+								<a href="https://github.com/riyadh-dev/messaging-app">
+									<i class="fa-solid fa-link"></i>
+								</a>
+								<a><i class="fa-brands fa-github"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<img src="assets/images/social-media-app.jpg" alt="" class="project-img">
+						<div class="project-card-hover">
+							<h3 class="project-title">Social Media App</h3>
+							<div class="project-actions">
+								<a><i class="fa-solid fa-link"></i></a>
+								<a><i class="fa-brands fa-github"></i></a>
+							</div>
+						</div>
+						<div class="project-details">
+							<h3 class="project-details-title">
+								<p class="project-details-description">Lorem ipsum dolor sit amet consectetur
+									adipisicing
+									elit. Tempore temporibus iusto autem provident molestias modi non, vel blanditiis?
+									Esse
+									quam maxime eos ducimus aspernatur adipisci quas obcaecati, asperiores totam nulla.
+								</p>
+								<ul class="project-details-info">
+									<li>Created</li>
+									<li>Technologies</li>
+									<li>Role</li>
+									<li>View</li>
+								</ul>
+							</h3>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<img src="assets/images/memory-matching-game.jpg" alt="" class="project-img">
+						<div class="project-card-hover">
+							<h3 class="project-title">Card Matching Game</h3>
+							<div class="project-actions">
+								<a><i class="fa-solid fa-link"></i></a>
+								<a><i class="fa-brands fa-github"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<img src="assets/images/protfolio-website.jpg" alt="" class="project-img">
+						<div class="project-card-hover">
+							<h3 class="project-title">Portfolio Website</h3>
+							<div class="project-actions">
+								<a><i class="fa-solid fa-link"></i></a>
+								<a><i class="fa-brands fa-github"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<img src="assets/images/authentication-demo.jpg" alt="" class="project-img">
+						<div class="project-card-hover">
+							<h3 class="project-title">Authentication Demo</h3>
+							<div class="project-actions">
+								<a><i class="fa-solid fa-link"></i></a>
+								<a><i class="fa-brands fa-github"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<img src="assets/images/protfolio-website.jpg" alt="" class="project-img">
+						<div class="project-card-hover">
+							<h3 class="project-title">Demo App</h3>
+							<div class="project-actions">
+								<a><i class="fa-solid fa-link"></i></a>
+								<a><i class="fa-brands fa-github"></i></a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Projects Popup -->
+			<div class="project-popup-container" id="demo-app">
+				<div class="project-popup-inner">
+					<span class="project-popup-close"><i class="fa-solid fa-xmark"></i></span>
+					<div class="project-popup-image"><img src="assets/images/protfolio-website.jpg" alt="" thumbnail>
+					</div>
+					<div class="project-popup-body">
+						<h3 class="project-popup-title">A placeholder for a title</h3>
+						<p class="project-popup-description">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatem, quis ullam
+							perferendis fugiat recusandae! Voluptatum molestiae eos omnis, sint placeat nulla explicabo,
+							ducimus perspiciatis velit quibusdam necessitatibus labore atque.
+						</p>
+						<ul class="project-popup-details">
+							<li>Created - 4 Dec 2020</li>
+							<li>Role - something</li>
+							<li>Placeholder</li>
+							<li>Placeholder</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section class="section contact" id="contact">
+			<div class="container">
+
+				<h2 class="section-title px-15">Contact Me</h2>
+				<div class="contact-container">
+
+					<div class="contact-box px-15">
+						<div class="contact-data">
+							<div class="contact-info">
+								<h3 class="contact-subtitle">Text Me</h3>
+								<span class="contact-description">
+									<i class="fa-solid fa-phone"></i>+212 657 73 50 82
+								</span>
+							</div>
+
+							<div class="contact-info">
+								<h3 class="contact-subtitle">Email Me</h3>
+								<span class="contact-description">
+									<i class="fa-solid fa-envelope"></i>
+									Placeholder@mail.com
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<form action="" method="POST" class="contact-form px-15">
+						<div class="contact-inputs">
+
+							<div class="contact-content">
+								<input type="text" name="email" class="contact-input" />
+								<label class="contact-label">Email</label>
+								<span></span>
+							</div>
+
+							<div class="contact-content">
+								<input type="text" name="subject" class="contact-input" />
+								<label class="contact-label">Subject</label>
+								<span></span>
+							</div>
+
+							<div class="contact-content contact-area">
+								<textarea name="message" cols="30" rows="10" class="contact-input"></textarea>
+								<label class="contact-label">Message</label>
+								<span></span>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-default">Sent</button>
+					</form>
+				</div>
+
+			</div>
+		</section>
+
+		<div class="footer">
+			<div class="container">
+				<div class="footer-text px-15">
+					<p>&copy;2022 Baatchia Riyadh.</p>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- Theming -->
+	<div class="theme">
+		<div class="theme-card">
+			<h2>Customize The Theme</h2>
+			<p>Manage the font size, color and theme mode.</p>
+			<!-- font size -->
+			<div class="theme-font-size">
+				<h3>Font Size</h3>
+				<div class="theme-font-size-slider">
+					<h6>Aa</h6>
+					<ul>
+						<li class="font-size-1" data-size="12px"></li>
+						<li class="font-size-2" data-size="14px"></li>
+						<li class="font-size-3 active" data-size="16px"></li>
+						<li class="font-size-4" data-size="18px"></li>
+					</ul>
+					<h3>Aa</h3>
+				</div>
+			</div>
+			<!-- color -->
+			<div class="theme-color">
+				<h3>Color</h3>
+				<ul>
+					<li class="color-1" data-hue="252"></li>
+					<li class="color-2" data-hue="127"></li>
+					<li class="color-3 active" data-hue="352"></li>
+					<li class="color-4" data-hue="49"></li>
+					<li class="color-5" data-hue="229"></li>
+				</ul>
+			</div>
+			<!-- background -->
+			<div class="theme-background">
+				<h3>Theme Mode</h3>
+				<ul>
+					<li class="bg-1 active" data-lightness="92%, 17%, 100%">
+						<span></span>
+						<h5 for="bg-1">Light</h5>
+					</li>
+					<li class="bg-2" data-lightness="15%, 95%, 20%">
+						<span></span>
+						<h5 for="bg-2">Dim</h5>
+					</li>
+					<li class="bg-3" data-lightness="10%, 95%, 0%">
+						<span></span>
+						<h5 for="bg-3">Dark</h5>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Shuffle -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/shufflejs@6.0.0/dist/shuffle.min.js"></script> -->
+
+	<!-- Main Script -->
+	<script type="module" src="assets/scripts/main.ts"></script>
+</body>
+
+</html>

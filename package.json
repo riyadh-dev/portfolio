@@ -1,4 +1,16 @@
 {
 	"name": "portfolio",
-	"author": "Baatchia Riyadh"
+	"author": "Baatchia Riyadh",
+	"source": "src/index.html",
+	"browserslist": "> 0.5%, last 2 versions, not dead",
+	"scripts": {
+		"start": "parcel -p 3000",
+		"build": "parcel build --public-url ./",
+		"deploy": "gh-pages -d dist"
+	},
+	"devDependencies": {
+		"@parcel/transformer-sass": "^2.8.1",
+		"gh-pages": "^4.0.0",
+		"parcel": "^2.8.1"
+	}
 }
