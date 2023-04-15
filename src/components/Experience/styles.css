@@ -1,0 +1,71 @@
+.experience-container {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 2%;
+	row-gap: 15px;
+	justify-content: center;
+}
+
+.experience-card {
+	width: 49%;
+	min-width: 380px;
+	background-color: var(--color-white);
+	padding: 2rem 1rem;
+	border-radius: var(--card-border-radius);
+}
+
+.timeline-item {
+	padding-left: 2.5rem;
+	padding-bottom: 2rem;
+	position: relative;
+}
+
+.timeline-item:last-of-type {
+	padding-bottom: 0rem;
+}
+
+.timeline-item::before {
+	content: '';
+	width: 2px;
+	position: absolute;
+	height: 100%;
+	background-color: var(--color-primary);
+	top: 0;
+	left: var(--m-0-5);
+}
+
+.timeline-icon {
+	font-size: 1.5rem;
+	position: absolute;
+	top: 0;
+	left: -0.15rem;
+	color: var(--color-primary);
+	background-color: var(--color-white);
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+}
+
+.timeline-date {
+	font-size: var(--small-font-size);
+	color: var(--color-gray);
+}
+.timeline-date i {
+	margin-right: 0.3rem;
+}
+
+.timeline-title {
+	margin-top: var(--m-0-75);
+}
+
+.timeline-subtitle {
+	color: var(--color-gray);
+	margin-bottom: var(--m-0-75);
+}
+
+.timeline-text {
+	list-style: disc;
+}
+
+.timeline-text li:not(:last-of-type) {
+	margin-bottom: 0.75rem;
+}

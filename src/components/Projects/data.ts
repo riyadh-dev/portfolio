@@ -1,0 +1,207 @@
+const PROJECTS = [
+	{
+		name: 'Social Media App',
+		links: [
+			'https://social-media-app-production.up.railway.app',
+			'https://social-media-app-eoga.onrender.com/',
+		],
+		repo: 'https://github.com/riyadh-dev/social-media-app',
+		thumbnail: '/src/assets/images/social-media-app/3.png',
+		images: [
+			'/src/assets/images/social-media-app/1.png',
+			'/src/assets/images/social-media-app/2.png',
+			'/src/assets/images/social-media-app/3.png',
+			'/src/assets/images/social-media-app/4.png',
+			'/src/assets/images/social-media-app/5.png',
+			'/src/assets/images/social-media-app/6.png',
+			'/src/assets/images/social-media-app/7.png',
+			'/src/assets/images/social-media-app/8.png',
+			'/src/assets/images/social-media-app/9.png',
+			'/src/assets/images/social-media-app/10.png',
+		],
+		tags: [
+			'ReactJS',
+			'ExpressJS',
+			'MongoDB',
+			'MUI',
+			'WebSockets',
+			'Typescript',
+			'RecoilJS',
+			'React Router',
+			'React Query',
+		],
+	},
+
+	{
+		name: 'Online Store',
+		links: ['https://e-commerce-app-self.vercel.app/'],
+		repo: 'https://github.com/riyadh-dev/e-commerce-app',
+		thumbnail: '/src/assets/images/e-commerce-app/1.png',
+		images: [
+			'/src/assets/images/e-commerce-app/1.png',
+			'/src/assets/images/e-commerce-app/2.png',
+			'/src/assets/images/e-commerce-app/3.png',
+			'/src/assets/images/e-commerce-app/4.png',
+			'/src/assets/images/e-commerce-app/5.png',
+			'/src/assets/images/e-commerce-app/6.png',
+			'/src/assets/images/e-commerce-app/7.png',
+			'/src/assets/images/e-commerce-app/8.png',
+			'/src/assets/images/e-commerce-app/9.png',
+		],
+		tags: ['NextJS', 'TailwindCSS', 'Typescript', 'Stripe', 'RecoilJS'],
+	},
+
+	{
+		name: 'Instant Messaging App',
+		links: [
+			'https://messaging-app.up.railway.app',
+			'https://messaging-app-2b7q.onrender.com',
+		],
+		repo: 'https://github.com/riyadh-dev/messaging-app',
+		thumbnail: '/src/assets/images/messaging-app/4.png',
+		images: [
+			'/src/assets/images/messaging-app/1.png',
+			'/src/assets/images/messaging-app/2.png',
+			'/src/assets/images/messaging-app/3.png',
+			'/src/assets/images/messaging-app/4.png',
+			'/src/assets/images/messaging-app/5.png',
+			'/src/assets/images/messaging-app/6.png',
+		],
+		tags: [
+			'ReactJS',
+			'ExpressJS',
+			'MongoDB',
+			'MUI',
+			'WebSockets',
+			'Typescript',
+			'RecoilJS',
+			'React Router',
+			'React Query',
+		],
+	},
+
+	{
+		name: 'Scientific Consul Management System',
+		links: ['https://scms-client.netlify.app/'],
+		repo: 'https://github.com/riyadh-dev/scms-client',
+		thumbnail: '/src/assets/images/scms/5.png',
+		images: [
+			'/src/assets/images/scms/1.png',
+			'/src/assets/images/scms/2.png',
+			'/src/assets/images/scms/3.png',
+			'/src/assets/images/scms/4.png',
+			'/src/assets/images/scms/5.png',
+			'/src/assets/images/scms/6.png',
+			'/src/assets/images/scms/7.png',
+			'/src/assets/images/scms/8.png',
+			'/src/assets/images/scms/9.png',
+			'/src/assets/images/scms/10.png',
+			'/src/assets/images/scms/11.png',
+			'/src/assets/images/scms/12.png',
+			'/src/assets/images/scms/13.png',
+		],
+		tags: ['ReactJS', 'ExpressJS', 'MongoDB', 'MUI', 'GraphQL'],
+	},
+
+	{
+		name: 'Card Matching Game',
+		links: [
+			'https://riyadh-dev.github.io/memory-matching-game/',
+			'https://riyadh-dev-memory-matching-game.netlify.app/',
+		],
+		repo: 'https://github.com/riyadh-dev/memory-matching-game',
+		thumbnail: '/src/assets/images/memory-matching-game/1.png',
+		images: ['/src/assets/images/memory-matching-game/1.png'],
+		tags: ['ReactJS', 'PreactJS', 'Typescript', 'ViteJS', 'CSS'],
+	},
+
+	{
+		name: 'Dashboard (frontend only)',
+		links: ['https://dashboard-nextjs-weld.vercel.app/'],
+		repo: 'https://github.com/riyadh-dev/dashboard-nextjs',
+		thumbnail: '/src/assets/images/dashboard-nextjs/1.png',
+		images: [
+			'/src/assets/images/dashboard-nextjs/1.png',
+			'/src/assets/images/dashboard-nextjs/2.png',
+			'/src/assets/images/dashboard-nextjs/3.png',
+			'/src/assets/images/dashboard-nextjs/4.png',
+			'/src/assets/images/dashboard-nextjs/5.png',
+			'/src/assets/images/dashboard-nextjs/6.png',
+		],
+		tags: ['NextJS', 'Typescript', 'RecoilJS', 'TailwindCSS', 'Tremor'],
+	},
+
+	{
+		name: 'Portfolio Website (React JS)',
+		links: ['https://riyadh-dev.github.io/portfolio-website-react'],
+		repo: 'https://github.com/riyadh-dev/portfolio-website-react',
+		thumbnail: '/src/assets/images/portfolio-website-image/1.png',
+		images: [
+			'/src/assets/images/portfolio-website-image/1.png',
+			'/src/assets/images/portfolio-website-image/2.png',
+			'/src/assets/images/portfolio-website-image/3.png',
+			'/src/assets/images/portfolio-website-image/4.png',
+			'/src/assets/images/portfolio-website-image/5.png',
+			'/src/assets/images/portfolio-website-image/6.png',
+		],
+		tags: ['ReactJS', 'Typescript', 'PreactJS', 'ViteJS', 'CSS'],
+	},
+
+	{
+		name: 'Authentication Demo',
+		links: [
+			'https://authentication-demo.up.railway.app/',
+			'https://authentication-demo-jqhr.onrender.com/',
+		],
+		repo: 'https://github.com/riyadh-dev/authentication-demo',
+		thumbnail: '/src/assets/images/authentication-demo/2.png',
+		images: [
+			'/src/assets/images/authentication-demo/1.png',
+			'/src/assets/images/authentication-demo/2.png',
+			'/src/assets/images/authentication-demo/3.png',
+			'/src/assets/images/authentication-demo/4.png',
+			'/src/assets/images/authentication-demo/5.png',
+		],
+		tags: [
+			'ReactJS',
+			'Chakra UI',
+			'Typescript',
+			'ExpressJS',
+			'MongoDB',
+			'CSURF',
+			'HTTPOnly cookies',
+		],
+	},
+
+	{
+		name: 'Portfolio Website (No Framework)',
+		links: ['https://riyadh-dev.github.io/portfolio-website'],
+		repo: 'https://github.com/riyadh-dev/portfolio-website',
+		thumbnail: '/src/assets/images/portfolio-website-image/3.png',
+		images: [
+			'/src/assets/images/portfolio-website-image/1.png',
+			'/src/assets/images/portfolio-website-image/2.png',
+			'/src/assets/images/portfolio-website-image/3.png',
+			'/src/assets/images/portfolio-website-image/4.png',
+			'/src/assets/images/portfolio-website-image/5.png',
+			'/src/assets/images/portfolio-website-image/6.png',
+		],
+		tags: ['HTML', 'Typescript', 'SASS', 'ParcelJS'],
+	},
+
+	{
+		name: 'IEC101 Master Sim',
+		links: [
+			'https://github.com/riyadh-dev/iec101-master-sim/releases/download/v1.0.0/IEC101MasterSim.exe',
+		],
+		repo: 'https://github.com/riyadh-dev/iec101-master-sim',
+		thumbnail: '/src/assets/images/iec101-master-sim/2.png',
+		images: [
+			'/src/assets/images/iec101-master-sim/1.png',
+			'/src/assets/images/iec101-master-sim/2.png',
+		],
+		tags: ['.NET', 'WPF', 'C#', 'XAML', 'IEC 60870-5-101'],
+	},
+];
+
+export default PROJECTS;

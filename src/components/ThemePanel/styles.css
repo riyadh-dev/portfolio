@@ -1,0 +1,149 @@
+.theme-panel-container {
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background: rgba(0, 0, 0, 0.5);
+	font-size: var(--small-font-size);
+	display: flex;
+}
+
+.theme-panel {
+	background: var(--color-white);
+	padding: 3rem;
+	border-radius: var(--card-border-radius);
+	width: 95%;
+	max-width: 600px;
+}
+
+.theme-font-size {
+	margin-top: var(--m-2-5);
+}
+
+.theme-font-size-slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--color-light);
+	border-radius: var(--card-border-radius);
+	padding: 0.6rem 1rem;
+}
+
+.theme-font-size-slider ul {
+	background: #d6ccff;
+	height: 0.35rem;
+	width: 100%;
+	margin: 0 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.theme-font-size-slider ul li {
+	width: 1rem;
+	height: 1rem;
+	background-color: #d6ccff;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.theme-font-size-slider ul li.active {
+	background: var(--color-primary);
+}
+
+.theme-color {
+	margin-top: var(--m-2);
+}
+
+.theme-color ul {
+	background: var(--color-light);
+	border-radius: var(--card-border-radius);
+	padding: 0.6rem 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.theme-color ul .color-1 {
+	background: #6b4de6;
+}
+
+.theme-color ul .color-2 {
+	background: #4de65e;
+}
+
+.theme-color ul .color-3 {
+	background: #e64d61;
+}
+
+.theme-color ul .color-4 {
+	background: #e6c94d;
+}
+
+.theme-color ul .color-5 {
+	background: #4d69e6;
+}
+
+.theme-color ul li {
+	width: 1.8rem;
+	height: 1.8rem;
+	background: var(--color-primary);
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.theme-color ul li.active {
+	border: 3px solid #fff;
+}
+
+.theme-background {
+	margin-top: var(--m-2);
+}
+
+.theme-background ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.6rem;
+}
+
+.theme-background ul li {
+	padding: 0.8rem 0.2rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+.theme-background ul li.active {
+	border: 2px solid var(--color-primary);
+}
+
+.theme-background ul li span {
+	width: 1.4rem;
+	height: 1.4rem;
+	border: 2px solid var(--color-gray);
+	border-radius: 50%;
+}
+
+.theme-background ul .bg-1 {
+	background: #e7e4f1;
+	color: #241e38;
+}
+
+.theme-background ul .bg-2 {
+	background: #241e38;
+	color: #fff;
+}
+
+.theme-background ul .bg-3 {
+	background: #151221;
+	color: #fff;
+}
