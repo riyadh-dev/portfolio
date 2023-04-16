@@ -81,6 +81,47 @@ const PROJECTS = [
 	},
 
 	{
+		name: 'Dashboard (frontend only)',
+		links: ['https://dashboard-nextjs-weld.vercel.app/'],
+		repo: 'https://github.com/riyadh-dev/dashboard-nextjs',
+		thumbnail: './images/dashboard-nextjs/1.png',
+		images: [
+			'./images/dashboard-nextjs/1.png',
+			'./images/dashboard-nextjs/2.png',
+			'./images/dashboard-nextjs/3.png',
+			'./images/dashboard-nextjs/4.png',
+			'./images/dashboard-nextjs/5.png',
+			'./images/dashboard-nextjs/6.png',
+		],
+		tags: ['NextJS', 'Typescript', 'RecoilJS', 'TailwindCSS', 'Tremor'],
+	},
+
+	{
+		name: 'Airbnb Clone (work in progress...)',
+		links: ['https://airbnb-clone-rust-omega.vercel.app/'],
+		repo: 'https://github.com/riyadh-dev/airbnb-clone',
+		thumbnail: './images/airbnb-clone/7.png',
+		images: [
+			'./images/airbnb-clone/1.png',
+			'./images/airbnb-clone/2.png',
+			'./images/airbnb-clone/3.png',
+			'./images/airbnb-clone/4.png',
+			'./images/airbnb-clone/5.png',
+			'./images/airbnb-clone/6.png',
+			'./images/airbnb-clone/7.png',
+		],
+		tags: [
+			'NextJS',
+			'Typescript',
+			'TailwindCSS',
+			'Next-auth',
+			'Jotai',
+			'Drizzle',
+			'Prisma',
+		],
+	},
+
+	{
 		name: 'Scientific Consul Management System',
 		links: ['https://scms-client.netlify.app/'],
 		repo: 'https://github.com/riyadh-dev/scms-client',
@@ -113,22 +154,6 @@ const PROJECTS = [
 		thumbnail: './images/memory-matching-game/1.png',
 		images: ['./images/memory-matching-game/1.png'],
 		tags: ['ReactJS', 'PreactJS', 'Typescript', 'ViteJS', 'CSS'],
-	},
-
-	{
-		name: 'Dashboard (frontend only)',
-		links: ['https://dashboard-nextjs-weld.vercel.app/'],
-		repo: 'https://github.com/riyadh-dev/dashboard-nextjs',
-		thumbnail: './images/dashboard-nextjs/1.png',
-		images: [
-			'./images/dashboard-nextjs/1.png',
-			'./images/dashboard-nextjs/2.png',
-			'./images/dashboard-nextjs/3.png',
-			'./images/dashboard-nextjs/4.png',
-			'./images/dashboard-nextjs/5.png',
-			'./images/dashboard-nextjs/6.png',
-		],
-		tags: ['NextJS', 'Typescript', 'RecoilJS', 'TailwindCSS', 'Tremor'],
 	},
 
 	{
