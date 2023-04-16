@@ -23,7 +23,6 @@ const Skills = () => {
 									<div>
 										<h1 class='skills-title'>{skill.categoryName}</h1>
 									</div>
-									<i class='fa-solid fa-chevron-down skills-arrow' />
 								</div>
 							)}
 						</For>
@@ -34,7 +33,11 @@ const Skills = () => {
 							<For each={SKILLS[selectedTab()].skills}>
 								{(skill) => (
 									<div class='skill-container'>
-										<img src={skill.image} alt={skill.name} />
+										<img
+											classList={{ 'skill-image-lighten': skill.dark }}
+											src={skill.image}
+											alt={skill.name}
+										/>
 										<h3>{skill.name}</h3>
 									</div>
 								)}

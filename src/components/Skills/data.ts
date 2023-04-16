@@ -5,58 +5,64 @@ const SKILLS = [
 		skills: [
 			{
 				name: 'React',
-				image:
-					'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png',
-			},
-
-			{
-				name: 'Tailwind',
-				image:
-					'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg',
+				image: '/images/logos/react.png',
 			},
 			{
 				name: 'NextJS',
-				image: 'https://img.icons8.com/color/512/nextjs.png',
+				image: '/images/logos/next.png',
+			},
+			{
+				name: 'SolidJS',
+				image: '/images/logos/solid.svg',
+			},
+			{
+				name: 'React-Query',
+				image: '/images/logos/react-query.svg',
 			},
 			{
 				name: 'RecoilJS',
-				image: 'https://external-content.duckduckgo.com/ip3/recoiljs.org.ico',
+				image: '/images/logos/recoil.ico',
 			},
 			{
-				name: 'TS',
-				image: 'https://cdn-icons-png.flaticon.com/128/5968/5968381.png',
-			},
-
-			{
-				name: 'SASS',
-				image: 'https://cdn-icons-png.flaticon.com/128/5968/5968358.png',
+				name: 'Jotai',
+				image: '/images/logos/jotai.png',
 			},
 			{
-				name: 'Bootstrap',
-				image: 'https://cdn-icons-png.flaticon.com/512/5968/5968672.png',
+				name: 'Tailwind',
+				image: '/images/logos/tailwind.svg',
 			},
 			{
 				name: 'MUI',
-				image:
-					'https://raw.githubusercontent.com/mui/material-ui/master/docs/public/static/logo.svg',
+				image: '/images/logos/mui.svg',
 			},
 			{
-				name: 'Chakra UI',
-				image:
-					'https://images.opencollective.com/chakra-ui/eb43264/logo/256.png',
+				name: 'Bootstrap',
+				image: '/images/logos/bootstrap.png',
 			},
 
 			{
-				name: 'HTML',
-				image: 'https://cdn-icons-png.flaticon.com/128/174/174854.png',
+				name: 'Chakra UI',
+				image: '/images/logos/chakra-ui.png',
+			},
+			{
+				name: 'Typescript',
+				image: '/images/logos/ts.png',
+			},
+			{
+				name: 'Javascript',
+				image: '/images/logos/js.png',
 			},
 			{
 				name: 'CSS',
-				image: 'https://cdn-icons-png.flaticon.com/128/732/732190.png',
+				image: '/images/logos/css.png',
 			},
 			{
-				name: 'JS',
-				image: 'https://cdn-icons-png.flaticon.com/128/5968/5968292.png',
+				name: 'SASS',
+				image: '/images/logos/sass.png',
+			},
+			{
+				name: 'HTML',
+				image: '/images/logos/html.png',
 			},
 		],
 	},
@@ -66,31 +72,29 @@ const SKILLS = [
 		skills: [
 			{
 				name: 'NodeJS',
-				image:
-					'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png',
+				image: '/images/logos/node.png',
 			},
 			{
 				name: 'MongoDB',
-				image: 'https://www.svgrepo.com/show/331488/mongodb.svg',
+				image: '/images/logos/mongodb.svg',
 			},
 			{
-				name: 'PostgreSQL',
-				image: 'https://cdn-icons-png.flaticon.com/512/5968/5968342.png',
+				name: 'Postgres',
+				image: '/images/logos/postgres.png',
 			},
 			{
 				name: 'ExpressJS',
-				image:
-					'https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png',
+				image: '/images/logos/express.png',
+				dark: true,
 			},
 			{
 				name: 'GraphQL',
-				image:
-					'https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/1200px-GraphQL_Logo.svg.png',
+				image: '/images/logos/graphql.png',
 			},
 			{
 				name: 'WebSockets',
-				image:
-					'https://seeklogo.com/images/W/websocket-logo-91B815D333-seeklogo.com.png',
+				image: '/images/logos/ws.png',
+				dark: true,
 			},
 		],
 	},
@@ -100,28 +104,23 @@ const SKILLS = [
 		skills: [
 			{
 				name: 'C#',
-				image: 'https://cdn-icons-png.flaticon.com/512/6132/6132221.png',
+				image: '/images/logos/csharp.png',
 			},
 			{
 				name: 'XAML',
-				image:
-					'https://user-images.githubusercontent.com/16964652/66596008-f4e3ed80-eb50-11e9-9a8a-3e9a5adf4d7c.png',
+				image: '/images/logos/xaml.png',
 			},
 			{
 				name: '.NET',
-				image:
-					'https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg',
+				image: '/images/logos/dotnet.svg',
 			},
 			{
 				name: 'WPF',
-				image:
-					'https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg',
+				image: '/images/logos/dotnet.svg',
 			},
-
 			{
 				name: 'WinForms',
-				image:
-					'https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg',
+				image: '/images/logos/dotnet.svg',
 			},
 		],
 	},
@@ -131,7 +130,15 @@ const SKILLS = [
 		skills: [
 			{
 				name: 'ParcelJS',
-				image: 'https://parceljs.org/avatar.66e613b2.avif',
+				image: '/images/logos/parcel.png',
+			},
+			{
+				name: 'ViteJS',
+				image: '/images/logos/vite.png',
+			},
+			{
+				name: 'Turborepo',
+				image: '/images/logos/turborepo.svg',
 			},
 		],
 	},

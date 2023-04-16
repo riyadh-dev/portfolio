@@ -13,7 +13,8 @@
 		"webp",
 		"Parens",
 		"eslintcache",
+		"turborepo",
 		"xmark"
 	],
-	"ignorePaths": ["pnpm-lock.yaml", "dist"]
+	"ignorePaths": ["pnpm-lock.yaml", "dist", "public"]
 }
