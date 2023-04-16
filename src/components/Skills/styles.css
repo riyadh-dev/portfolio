@@ -2,8 +2,6 @@
 	border-radius: var(--card-border-radius);
 	background-color: var(--color-white);
 	padding: 28px;
-	margin-left: var(--m-0-75);
-	margin-right: var(--m-0-75);
 }
 
 .skills-tabs {
@@ -48,6 +46,7 @@
 	flex-direction: column;
 	align-items: center;
 	row-gap: var(--m-0-5);
+	text-align: center;
 }
 
 .skill-container img {

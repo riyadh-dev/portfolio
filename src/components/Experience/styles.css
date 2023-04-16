@@ -7,8 +7,7 @@
 }
 
 .experience-card {
-	width: 49%;
-	min-width: 380px;
+	width: 460px;
 	background-color: var(--color-white);
 	padding: 2rem 1rem;
 	border-radius: var(--card-border-radius);
