@@ -14,6 +14,7 @@
 		"Parens",
 		"eslintcache",
 		"turborepo",
+		"pwa",
 		"xmark"
 	],
 	"ignorePaths": ["pnpm-lock.yaml", "dist", "public"]
