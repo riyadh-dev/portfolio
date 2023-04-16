@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('https://riyadh-dev.github.io/portfolio/sw.js', { scope: 'https://riyadh-dev.github.io/portfolio/' })})}
