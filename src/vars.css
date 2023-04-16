@@ -1,11 +1,11 @@
 :root {
 	--header-height: 4.5rem;
-
+	/*{ text: 'Dim', values: ['15%', '95%', '20%'] },*/
 	/*============ Colors ============*/
 	--primary-color-hue: 352;
-	--dark-color-lightness: 17%;
-	--light-color-lightness: 92%;
-	--white-color-lightness: 100%;
+	--dark-color-lightness: 15%;
+	--light-color-lightness: 95%;
+	--white-color-lightness: 20%;
 
 	--color-white: hsl(252, 30%, var(--white-color-lightness));
 	--color-light: hsl(252, 30%, var(--light-color-lightness));
