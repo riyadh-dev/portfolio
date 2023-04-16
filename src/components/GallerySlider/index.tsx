@@ -1,4 +1,13 @@
-import { For, createSignal, onCleanup, onMount } from 'solid-js';
+import {
+	Accessor,
+	For,
+	Show,
+	batch,
+	createSignal,
+	onCleanup,
+	onMount,
+} from 'solid-js';
+import LoadingSpinner from './loading-spinner';
 import './styles.css';
 
 const GallerySlider = (props: {
@@ -10,17 +19,21 @@ const GallerySlider = (props: {
 
 	const handleForward = () => {
 		if (props.images.length - 1 <= imageIndex()) return;
-		setImageIndex(imageIndex() + 1);
-		setImageLoaded(false);
+		batch(() => {
+			setImageIndex(imageIndex() + 1);
+			setImageLoaded(false);
+		});
 	};
 
 	const handleBack = () => {
 		if (imageIndex() === 0) return;
-		setImageIndex(imageIndex() - 1);
-		setImageLoaded(false);
+		batch(() => {
+			setImageIndex(imageIndex() - 1);
+			setImageLoaded(false);
+		});
 	};
 
-	const handleChangeIndex = (index: number) => setImageIndex(index);
+	const handleChangeIndex = (index: Accessor<number>) => setImageIndex(index());
 
 	onMount(() => {
 		document.body.style.overflow = 'hidden';
@@ -49,10 +62,9 @@ const GallerySlider = (props: {
 			</div>
 
 			<div class='gallery-slider-middle-section'>
-				<div
-					class='loader'
-					classList={{ show: !imageLoaded(), hide: imageLoaded() }}
-				/>
+				<Show when={!imageLoaded()}>
+					<LoadingSpinner />
+				</Show>
 				<img
 					src={props.images[imageIndex()]}
 					alt={`image ${imageIndex()}`}
@@ -68,7 +80,7 @@ const GallerySlider = (props: {
 							classList={{
 								'gallery-slider-circle-active': index() === imageIndex(),
 							}}
-							onClick={() => handleChangeIndex(index())}
+							onClick={[handleChangeIndex, index]}
 						/>
 					)}
 				</For>
