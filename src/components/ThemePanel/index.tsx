@@ -1,19 +1,18 @@
-import { For, JSX, onCleanup, onMount } from 'solid-js';
-import {
-	activeBackgroundColorIndexSignal,
-	activeColorHueIndexSignal,
-	activeFontSizeIndexSignal,
-} from '~/theme';
+import { Accessor, For, onCleanup, onMount } from 'solid-js';
+import directive from '~/click-outside';
+import { useTheme } from '~/theme';
 import THEME from './data';
 import './styles.css';
 
 const ThemePanel = (props: { closeThemePanel: () => void }) => {
-	const [activeFontSizeIndex, setActiveFontSizeIndex] =
-		activeFontSizeIndexSignal;
-	const [activeColorHueIndex, setActiveColorHueIndex] =
-		activeColorHueIndexSignal;
-	const [activeBackgroundColorIndex, setActiveBackgroundColorIndex] =
-		activeBackgroundColorIndexSignal;
+	const {
+		bgColorIdx,
+		colorHueIdx,
+		fontSizeIdx,
+		setBgColorIdx,
+		setColorHueIdx,
+		setFontSizeIdx,
+	} = useTheme();
 
 	onMount(() => (document.body.style.overflow = 'hidden'));
 
@@ -22,20 +21,25 @@ const ThemePanel = (props: { closeThemePanel: () => void }) => {
 		document.body.style.overflow = 'auto';
 	});
 
-	const handleCloseThemePanel: JSX.EventHandlerUnion<
-		HTMLDivElement,
-		MouseEvent
-	> = (e) => {
-		if (e.target.id === 'theme-panel-container') props.closeThemePanel();
+	const handleColorHueIndxChange = (index: Accessor<number>) => {
+		setColorHueIdx(index());
+		localStorage.setItem('colorHueIdx', colorHueIdx().toString());
 	};
 
+	const handleFontSizeIndxChange = (index: Accessor<number>) => {
+		setFontSizeIdx(index());
+		localStorage.setItem('fontSizeIdx', fontSizeIdx().toString());
+	};
+
+	const handleBgColorIndxChange = (index: Accessor<number>) => {
+		setBgColorIdx(index());
+		localStorage.setItem('bgColorIdx', bgColorIdx().toString());
+	};
+
+	const clickOutside = directive;
 	return (
-		<div
-			class='theme-panel-container'
-			id='theme-panel-container'
-			onClick={handleCloseThemePanel}
-		>
-			<div class='theme-panel'>
+		<div class='theme-panel-container' id='theme-panel-container'>
+			<div use:clickOutside={props.closeThemePanel} class='theme-panel'>
 				<h2>Customize The Theme</h2>
 				<p>Manage the font size, color and theme mode.</p>
 
@@ -47,9 +51,9 @@ const ThemePanel = (props: { closeThemePanel: () => void }) => {
 							<For each={THEME.fontSizes}>
 								{(_, index) => (
 									<li
-										onClick={() => setActiveFontSizeIndex(index())}
+										onClick={[handleFontSizeIndxChange, index]}
 										class={`font-size-${index() + 1}`}
-										classList={{ active: index() === activeFontSizeIndex() }}
+										classList={{ active: index() === fontSizeIdx() }}
 									/>
 								)}
 							</For>
@@ -64,9 +68,9 @@ const ThemePanel = (props: { closeThemePanel: () => void }) => {
 						<For each={THEME.colorHues}>
 							{(_, index) => (
 								<li
-									onClick={() => setActiveColorHueIndex(index())}
+									onClick={[handleColorHueIndxChange, index]}
 									class={`color-${index() + 1}`}
-									classList={{ active: index() === activeColorHueIndex() }}
+									classList={{ active: index() === colorHueIdx() }}
 								/>
 							)}
 						</For>
@@ -79,10 +83,10 @@ const ThemePanel = (props: { closeThemePanel: () => void }) => {
 						<For each={THEME.backgrounds}>
 							{({ text }, index) => (
 								<li
-									onClick={() => setActiveBackgroundColorIndex(index())}
+									onClick={[handleBgColorIndxChange, index]}
 									class={`bg-${index() + 1}`}
 									classList={{
-										active: index() === activeBackgroundColorIndex(),
+										active: index() === bgColorIdx(),
 									}}
 								>
 									<h4>{text}</h4>

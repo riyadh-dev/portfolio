@@ -1,6 +1,5 @@
 import { For, Show, createSignal, onMount } from 'solid-js';
 import { Portal } from 'solid-js/web';
-import { themeEffect, themeInit } from '~/theme';
 import ThemePanel from '../ThemePanel';
 import './styles.css';
 
@@ -39,7 +38,7 @@ const Navbar = () => {
 	const closeNavbar = () => setShowNavbar(false);
 	const closeThemePanel = () => setShowThemePanel(false);
 
-	const setObservers = () => {
+	const observersInit = () => {
 		const sections = document.querySelectorAll<HTMLElement>('section[id]');
 		for (const section of sections) {
 			const observer = new IntersectionObserver(
@@ -53,12 +52,9 @@ const Navbar = () => {
 	};
 
 	onMount(() => {
-		themeInit();
-		setObservers();
+		observersInit();
 		setCurrentSection(window.location.hash);
 	});
-
-	themeEffect();
 
 	return (
 		<header id='header' class='header'>

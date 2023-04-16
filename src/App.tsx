@@ -7,11 +7,14 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import { ThemeProvider } from './theme';
 
 const App: Component = () => {
 	return (
 		<>
-			<Navbar />
+			<ThemeProvider>
+				<Navbar />
+			</ThemeProvider>
 			<main class='main-content'>
 				<Home />
 				<About />
