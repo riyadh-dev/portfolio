@@ -73,6 +73,7 @@ const imageSources = {
 			`${ROOT_URL}/memory-matching-game/g8oedvqis0gorhvpzw0o.png`,
 		],
 		'portfolio-website-image': [
+			`${ROOT_URL}/portfolio-website-image/yvtwxepnf71mfmvlskpd.png`,
 			`${ROOT_URL}/portfolio-website-image/xjpf3rx1bmhczek4mtos.png`,
 			`${ROOT_URL}/portfolio-website-image/hslqvsoh6uot95fbqtfm.png`,
 			`${ROOT_URL}/portfolio-website-image/sqsxejx52ddxl8oryaqs.png`,

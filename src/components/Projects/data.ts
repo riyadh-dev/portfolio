@@ -102,12 +102,12 @@ const PROJECTS = [
 	},
 
 	{
-		name: 'Portfolio Website (React JS)',
-		links: ['https://riyadh-dev.github.io/portfolio-website-react'],
-		repo: 'https://github.com/riyadh-dev/portfolio-website-react',
+		name: 'Portfolio (Solid / Preact / Vanilla)',
+		links: ['https://riyadh-dev.github.io/portfolio'],
+		repo: 'https://github.com/riyadh-dev/portfolio',
 		thumbnail: imageSources.projects['portfolio-website-image'][0],
 		images: imageSources.projects['portfolio-website-image'],
-		tags: ['ReactJS', 'Typescript', 'PreactJS', 'ViteJS', 'CSS'],
+		tags: ['SolidJS', 'PreactJS', 'Typescript', 'ViteJS', 'VitePWA', 'CSS'],
 	},
 
 	{
@@ -131,7 +131,7 @@ const PROJECTS = [
 	},
 
 	{
-		name: 'Portfolio Website (No Framework)',
+		name: 'Portfolio (Vanilla JS)',
 		links: ['https://riyadh-dev.github.io/portfolio-website'],
 		repo: 'https://github.com/riyadh-dev/portfolio-website',
 		thumbnail: imageSources.projects['portfolio-website-image'][3],
