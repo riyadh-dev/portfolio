@@ -1,10 +1,11 @@
+import imageSources from '~/image-sources';
 import CONTACTS from '../Contact/data';
 import './styles.css';
 
 const Home = () => (
 	<section class='home section' id='home'>
 		<div class='intro'>
-			<img src='./logo.png' alt='logo' />
+			<img src={imageSources.logo} alt='logo' />
 			<h1>RIYADH BAATCHIA</h1>
 			<span>FULL STACK WEB DEVELOPER</span>
 			<ul class='social-icons'>

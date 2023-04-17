@@ -16,6 +16,7 @@
 		"turborepo",
 		"pwa",
 		"msedge",
+		"cloudinary",
 		"xmark"
 	],
 	"ignorePaths": ["pnpm-lock.yaml", "dist", "public"]
