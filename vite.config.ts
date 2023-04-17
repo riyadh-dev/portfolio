@@ -13,6 +13,23 @@ export default defineConfig({
 		VitePWA({
 			registerType: 'autoUpdate',
 			workbox: {
+				runtimeCaching: [
+					{
+						urlPattern:
+							/^https:\/\/res\.cloudinary\.com\/riyadh-demo-cloud\/image\/upload\/f_webp\/q_auto:best\/portfolio\/.*/i,
+						handler: 'CacheFirst',
+						options: {
+							cacheName: 'cloudinary-images',
+							expiration: {
+								maxEntries: 55,
+								maxAgeSeconds: 60 * 60 * 24 * 30, // <== 30 days
+							},
+							cacheableResponse: {
+								statuses: [0, 200],
+							},
+						},
+					},
+				],
 				globPatterns: ['**/*.{js,css,html,ico,png,svg,pdf}'],
 			},
 		}),

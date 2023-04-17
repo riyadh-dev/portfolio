@@ -27,6 +27,8 @@ const Projects = () => {
 										src={project.thumbnail}
 										alt={project.name}
 										class='project-img'
+										loading='lazy'
+										crossorigin='anonymous'
 									/>
 									<div class='project-card-hover'>
 										<h3 class='project-title'>{project.name}</h3>

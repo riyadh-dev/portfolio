@@ -5,7 +5,7 @@ import './styles.css';
 const Home = () => (
 	<section class='home section' id='home'>
 		<div class='intro'>
-			<img src={imageSources.logo} alt='logo' />
+			<img src={imageSources.logo} alt='logo' crossorigin='anonymous' />
 			<h1>RIYADH BAATCHIA</h1>
 			<span>FULL STACK WEB DEVELOPER</span>
 			<ul class='social-icons'>

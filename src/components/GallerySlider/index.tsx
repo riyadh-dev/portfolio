@@ -71,6 +71,7 @@ const GallerySlider = (props: {
 					loading='eager'
 					onLoad={() => setImageLoaded(true)}
 					classList={{ show: imageLoaded(), hide: !imageLoaded() }}
+					crossorigin='anonymous'
 				/>
 			</div>
 			<div class='gallery-slider-circles bottom-section'>
