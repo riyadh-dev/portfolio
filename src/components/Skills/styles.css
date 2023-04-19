@@ -58,15 +58,20 @@
 }
 
 @media (width < 760px) {
-	.skills-title {
-		display: none;
-	}
 	.skills-icon {
 		margin: 0;
 		font-size: 40px;
 	}
 
+	.skills-title {
+		display: none;
+	}
+
 	.skills-group {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.skill-name {
+		font-size: medium;
 	}
 }
