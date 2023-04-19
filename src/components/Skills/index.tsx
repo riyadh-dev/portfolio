@@ -39,7 +39,7 @@ const Skills = () => {
 											alt={skill.name}
 											crossorigin='anonymous'
 										/>
-										<h3>{skill.name}</h3>
+										<h3 class='skill-name'>{skill.name}</h3>
 									</div>
 								)}
 							</For>
