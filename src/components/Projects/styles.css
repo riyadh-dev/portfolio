@@ -14,6 +14,7 @@
 	position: relative;
 	width: 360px;
 	height: auto;
+	aspect-ratio: 16 / 9;
 	background-color: var(--color-white);
 	border-radius: 0.25rem;
 	overflow: hidden;

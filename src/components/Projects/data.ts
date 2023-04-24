@@ -33,6 +33,23 @@ const PROJECTS = [
 	},
 
 	{
+		name: 'Airbnb Clone (work in progress...)',
+		links: ['https://airbnb-clone-rust-omega.vercel.app/'],
+		repo: 'https://github.com/riyadh-dev/airbnb-clone',
+		thumbnail: imageSources.projects['airbnb-clone'][1],
+		images: imageSources.projects['airbnb-clone'],
+		tags: [
+			'NextJS',
+			'Typescript',
+			'TailwindCSS',
+			'Next-auth',
+			'Jotai',
+			'Drizzle',
+			'Prisma',
+		],
+	},
+
+	{
 		name: 'Instant Messaging App',
 		links: [
 			'https://messaging-app.up.railway.app',
@@ -61,23 +78,6 @@ const PROJECTS = [
 		thumbnail: imageSources.projects['dashboard-nextjs'][0],
 		images: imageSources.projects['dashboard-nextjs'],
 		tags: ['NextJS', 'Typescript', 'RecoilJS', 'TailwindCSS', 'Tremor'],
-	},
-
-	{
-		name: 'Airbnb Clone (work in progress...)',
-		links: ['https://airbnb-clone-rust-omega.vercel.app/'],
-		repo: 'https://github.com/riyadh-dev/airbnb-clone',
-		thumbnail: imageSources.projects['airbnb-clone'][1],
-		images: imageSources.projects['airbnb-clone'],
-		tags: [
-			'NextJS',
-			'Typescript',
-			'TailwindCSS',
-			'Next-auth',
-			'Jotai',
-			'Drizzle',
-			'Prisma',
-		],
 	},
 
 	{
