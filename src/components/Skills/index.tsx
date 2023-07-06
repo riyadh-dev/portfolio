@@ -37,6 +37,7 @@ const Skills = () => {
 											classList={{ 'skill-image-lighten': skill.dark }}
 											src={skill.image}
 											alt={skill.name}
+											loading='lazy'
 											crossorigin='anonymous'
 										/>
 										<h3 class='skill-name'>{skill.name}</h3>

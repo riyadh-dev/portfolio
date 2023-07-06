@@ -83,6 +83,10 @@ const SKILLS = [
 				image: './images/logos/postgres.png',
 			},
 			{
+				name: 'Drizzle ORM',
+				image: './images/logos/drizzle.png',
+			},
+			{
 				name: 'ExpressJS',
 				image: './images/logos/express.png',
 				dark: true,
@@ -92,10 +96,10 @@ const SKILLS = [
 				image: './images/logos/graphql.png',
 			},
 			{
-				name: 'WebSockets',
-				image: './images/logos/ws.png',
-				dark: true,
+				name: 'tRPC',
+				image: './images/logos/trpc.png',
 			},
+			{ name: 'WebSockets', image: './images/logos/ws.png', dark: true },
 		],
 	},
 	{

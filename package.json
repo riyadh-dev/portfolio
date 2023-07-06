@@ -10,7 +10,7 @@
 		"deploy:gh-pages": "gh-pages -d dist",
 		"deploy": "pnpm build:gh-pages && pnpm deploy:gh-pages",
 		"serve": "vite preview",
-		"lint": "eslint --fix --max-warnings 0 --cache *.{ts,tsx}",
+		"lint": "eslint --fix --max-warnings 0 --cache ./src/**/*.{ts,tsx}",
 		"format": "prettier --write --ignore-unknown --cache --cache-location=.prettier-cache .",
 		"spell-check": "cspell --show-suggestions --relative --no-must-find-files --cache .",
 		"prepare": "husky install"
