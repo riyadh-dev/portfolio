@@ -1,34 +1,51 @@
-## Usage
+<p align="center">
+  <img src="./public/images/logos/astro.png" alt="astro" height="64"/>
+</p>
+<p align="center"> 
+            <img src="./public/images/logos/js.png" alt="vanilla" height="64"/>
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <img src="./public/images/logos/solid.svg" alt="solid" height="64"/>       
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <img src="https://preactjs.com/assets/app-icon.png" alt="preact" height="64"/>
+</p>
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+<p align="center"><h1 align="center">Portfolio</h1></p>
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+A portfolio website implemented in various frameworks:
+
+- [Astro](https://github.com/riyadh-dev/portfolio/tree/astro)
+- [Vanilla](https://github.com/riyadh-dev/portfolio/tree/no-framework)
+- [SolidJS](https://github.com/riyadh-dev/portfolio/tree/solid)
+- [PreactJS](https://github.com/riyadh-dev/portfolio/tree/preact)
+
+<p align="center">
+    <img src="https://res.cloudinary.com/riyadh-demo-cloud/image/upload/v1681769940/portfolio/portfolio-website-image/yvtwxepnf71mfmvlskpd.png" width="90%"/>
+<p>
+
+[Live preview](https://riyadh-dev.github.io/portfolio/)
+
+## Installation
+
+Use the package manager [pnpm](https://pnpm.io/installation) project dependencies.
 
 ```bash
-$ npm install # or pnpm install or yarn install
+pnpm install
 ```
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+## Usage
 
-## Available Scripts
+```bash
+# start dev server
+pnpm run dev
 
-In the project directory, you can run:
+# build for production
+pnpm run build
 
-### `npm dev` or `npm start`
+# test the prod build
+pnpm run serve
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# deploy to github pages
+pnpm run deploy
+```
 
-The page will reload if you make edits.<br>
-
-### `npm run build`
-
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-## Deployment
-
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+You can check other scripts in `package.json` of the root repo and each package

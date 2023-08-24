@@ -1,0 +1,64 @@
+---
+import CONTACTS from '@/static/contact';
+import '@/styles/contact.css';
+---
+
+<section class='section contact' id='contact'>
+	<div class='container'>
+		<h2 class='section-title px-15'>Contact Me</h2>
+		<div class='contact-container'>
+			<div class='contact-box px-15'>
+				<div class='contact-data'>
+					<div class='contact-info'>
+						<h3 class='contact-subtitle'>Text Me</h3>
+						<a href={`tel:${CONTACTS.phoneNumber}`} class='contact-description'>
+							<i class='fa-solid fa-phone'></i>
+							{CONTACTS.phoneNumber}
+						</a>
+					</div>
+
+					<div class='contact-info'>
+						<h3 class='contact-subtitle'>Email Me</h3>
+						<a href={`mailto:${CONTACTS.email}`} class='contact-description'>
+							<i class='fa-solid fa-envelope'></i>
+							{CONTACTS.email}
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<form action={`mailto:${CONTACTS.email}`} class='contact-form px-15'>
+				<div class='contact-inputs'>
+					<div class='contact-content'>
+						<input id='email' type='email' name='email' class='contact-input' />
+						<label for='email' class='contact-label'>Email</label>
+						<span></span>
+					</div>
+
+					<div class='contact-content'>
+						<input
+							id='subject'
+							type='text'
+							name='subject'
+							class='contact-input'
+						/>
+						<label for='subject' class='contact-label'>Subject</label>
+						<span></span>
+					</div>
+
+					<div class='contact-content contact-area'>
+						<textarea
+							id='body'
+							name='body'
+							cols={30}
+							rows={10}
+							class='contact-input'></textarea>
+						<label for='body' class='contact-label'>Message</label>
+						<span></span>
+					</div>
+				</div>
+				<button type='submit' class='btn btn-default'> Sent</button>
+			</form>
+		</div>
+	</div>
+</section>

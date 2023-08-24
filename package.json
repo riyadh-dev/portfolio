@@ -1,47 +1,43 @@
 {
 	"name": "portfolio",
-	"author": "Baatchia Riyadh",
-	"version": "0.1.0",
+	"type": "module",
+	"version": "0.0.1",
 	"scripts": {
-		"start": "vite",
-		"dev": "vite",
-		"build": "vite build",
-		"build:gh-pages": "vite build --base=https://riyadh-dev.github.io/portfolio/",
-		"deploy:gh-pages": "gh-pages -d dist",
-		"deploy": "pnpm build:gh-pages && pnpm deploy:gh-pages",
-		"serve": "vite preview",
-		"lint": "eslint --fix --max-warnings 0 --cache ./src/**/*.{ts,tsx}",
-		"format": "prettier --write --ignore-unknown --cache --cache-location=.prettier-cache .",
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"lint": "eslint --fix --max-warnings 0 --cache ./src/**/*.{ts,tsx,astro}",
+		"format": "prettier --write --ignore-unknown --cache --cache-location=.prettiercache . --plugin=prettier-plugin-astro",
 		"spell-check": "cspell --show-suggestions --relative --no-must-find-files --cache .",
 		"prepare": "husky install"
 	},
-	"license": "MIT",
-	"devDependencies": {
-		"@types/node": "^18.15.11",
-		"@typescript-eslint/eslint-plugin": "^5.58.0",
-		"@typescript-eslint/parser": "^5.58.0",
-		"cspell": "^6.31.1",
-		"eslint": "^8.38.0",
-		"eslint-config-prettier": "^8.8.0",
-		"eslint-plugin-solid": "^0.12.1",
-		"gh-pages": "^5.0.0",
-		"husky": "^8.0.3",
-		"lint-staged": "^13.2.1",
-		"prettier": "^2.8.7",
-		"typescript": "^5.0.4",
-		"vite": "^4.2.1",
-		"vite-plugin-solid": "^2.7.0"
-	},
 	"dependencies": {
-		"solid-js": "^1.7.3",
-		"vite-plugin-pwa": "^0.14.7"
+		"@astrojs/solid-js": "^2.2.1",
+		"astro": "^2.10.12",
+		"solid-js": "^1.4.3"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^6.4.1",
+		"@typescript-eslint/parser": "^6.4.1",
+		"cspell": "^7.0.1",
+		"eslint": "^8.47.0",
+		"eslint-config-prettier": "^9.0.0",
+		"eslint-plugin-astro": "^0.29.0",
+		"eslint-plugin-jsx-a11y": "^6.7.1",
+		"eslint-plugin-solid": "^0.13.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^14.0.1",
+		"prettier": "^3.0.2",
+		"prettier-plugin-astro": "^0.12.0"
 	},
 	"lint-staged": {
 		"*": [
-			"prettier --write --ignore-unknown --cache --cache-location=.prettier-cache",
+			"prettier --write --ignore-unknown --cache --cache-location=.prettiercache",
 			"cspell --show-suggestions --relative --no-must-find-files --cache"
 		],
-		"*.{ts,tsx}": [
+		"*.{ts,tsx,astro}": [
 			"eslint --fix --max-warnings 0 --cache"
 		]
 	}
