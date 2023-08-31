@@ -16,6 +16,10 @@
 	color: var(--color-gray);
 }
 
+.skills-tab svg {
+	height: var(--h1-font-size);
+}
+
 .skills-icon {
 	font-size: var(--h1-font-size);
 	margin-right: var(--m-0-75);
@@ -39,6 +43,11 @@
 
 .skills-tabs-radio:checked + .skills-tab {
 	color: var(--color-primary);
+	transition: color 0.5s ease;
+}
+
+.skills-tabs-radio:checked + .skills-tab svg {
+	fill: var(--color-primary);
 	transition: color 0.5s ease;
 }
 

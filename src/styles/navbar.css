@@ -45,9 +45,13 @@
 }
 .nav-btn-group {
 	display: flex;
-	align-items: center;
+	align-items: stretch;
 	column-gap: 1rem;
-	font-size: 1.25rem;
+}
+.nav-btn-group svg {
+	fill: var(--color-dark);
+	width: 1.5rem;
+	display: block;
 }
 .nav-btn {
 	cursor: pointer;
@@ -56,7 +60,8 @@
 .nav-toggle {
 	display: none;
 }
-@media screen and (max-width: 992px) {
+
+@media (width < 992px) {
 	.nav {
 		height: var(--header-height);
 	}
@@ -71,7 +76,7 @@
 		height: 100%;
 		top: 0;
 		right: -100%;
-		padding: 4rem 0 0 3rem;
+		padding: 2rem;
 		border-radius: 1rem 0 0 1rem;
 		z-index: 100;
 		transition: right 0.3s;
@@ -80,15 +85,16 @@
 		right: 0;
 	}
 	.nav-close {
-		font-size: 1.5rem;
-		position: absolute;
-		top: 1rem;
-		right: 1.25rem;
-		cursor: pointer;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 1.5rem;
+	}
+	.nav-close svg {
+		height: 1.75rem;
 	}
 	.nav-close,
 	.nav-toggle {
-		display: inline-flex;
+		display: block;
 	}
 }
 

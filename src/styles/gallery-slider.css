@@ -36,8 +36,9 @@
 	right: 1rem;
 }
 
-.gallery-slider-container i {
-	font-size: 1.25rem;
+.gallery-slider-container svg {
+	height: 1.25rem;
+	fill: white;
 }
 
 .gallery-slider-middle-section {
@@ -68,7 +69,7 @@
 	z-index: -1;
 }
 
-@media screen and (min-width: 992px) {
+@media (width < 992px) {
 	.gallery-slider-middle-section img {
 		position: absolute;
 		top: 0;

@@ -32,8 +32,13 @@
 	margin-right: var(--m-1-5);
 }
 
-.home .intro .social-icons li i:hover {
-	color: var(--color-primary);
+.home svg {
+	fill: var(--color-dark);
+	width: 1.25rem;
+}
+
+.home .intro .social-icons li svg:hover {
+	fill: var(--color-primary);
 }
 
 .scroll-down {

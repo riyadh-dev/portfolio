@@ -31,10 +31,15 @@ import parcelJS from '@/assets/images/logos/parcel.png';
 import turborepo from '@/assets/images/logos/turborepo.svg';
 import vitejs from '@/assets/images/logos/vite.png';
 
+import BackendSVG from '@/components/SVG/Backend.astro';
+import DesktopSVG from '@/components/SVG/Desktop.astro';
+import FrontendSVG from '@/components/SVG/Frontend.astro';
+import OtherSVG from '@/components/SVG/Other.astro';
+
 const SKILLS = [
 	{
 		categoryName: 'Web Frontend',
-		fontAwesomeClasses: 'fa-brands fa-firefox-browser skills-icon',
+		SVG: FrontendSVG,
 		skills: [
 			{
 				name: 'React',
@@ -101,7 +106,7 @@ const SKILLS = [
 	},
 	{
 		categoryName: 'Web Backend',
-		fontAwesomeClasses: 'fa-solid fa-server skills-icon',
+		SVG: BackendSVG,
 		skills: [
 			{
 				name: 'NodeJS',
@@ -137,7 +142,7 @@ const SKILLS = [
 	},
 	{
 		categoryName: 'Desktop',
-		fontAwesomeClasses: 'fa-solid fa-display skills-icon',
+		SVG: DesktopSVG,
 		skills: [
 			{
 				name: 'C#',
@@ -163,7 +168,7 @@ const SKILLS = [
 	},
 	{
 		categoryName: 'Other Skills',
-		fontAwesomeClasses: 'fa-solid fa-laptop-code skills-icon',
+		SVG: OtherSVG,
 		skills: [
 			{
 				name: 'ParcelJS',

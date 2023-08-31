@@ -21,7 +21,7 @@
 	--normal-font-size: 1rem;
 	--small-font-size: 0.875rem;
 
-	@media screen and (max-width: 992px) {
+	@media (width < 992px) {
 		--h1-font-size: 1.75rem;
 		--h2-font-size: 1.5rem;
 		--h3-font-size: 1rem;

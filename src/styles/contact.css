@@ -42,8 +42,8 @@
 	align-items: center;
 	column-gap: 0.5rem;
 }
-.contact-description i {
-	font-size: 1.25rem;
+.contact-description svg {
+	height: 1.25rem;
 }
 
 .contact-inputs {

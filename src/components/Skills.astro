@@ -8,26 +8,27 @@ import '@/styles/skills.css';
 <section class='skills section' id='skills'>
 	<div class='container'>
 		<h2 class='section-title px-15'>Skills</h2>
+
 		<div class='skills-container'>
 			{
-				SKILLS.map((cat) => (
+				SKILLS.map(({ categoryName, skills, SVG }) => (
 					<>
 						<input
 							type='radio'
 							class='skills-tabs-radio'
 							name='tabs-example'
-							id={cat.categoryName}
+							id={categoryName}
 							checked
 						/>
-						<label for={cat.categoryName} class='skills-tab'>
-							<i class={cat.fontAwesomeClasses} />
+						<label for={categoryName} class='skills-tab'>
+							<SVG />
 
 							<div>
-								<h1 class='skills-title'>{cat.categoryName}</h1>
+								<h1 class='skills-title'>{categoryName}</h1>
 							</div>
 						</label>
 						<div class='skills-group'>
-							{cat.skills.map((skill) => (
+							{skills.map((skill) => (
 								<div class='skill-container'>
 									<Image
 										class={skill.dark ? 'skill-image-lighten' : ''}

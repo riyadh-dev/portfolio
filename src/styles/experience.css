@@ -34,22 +34,23 @@
 }
 
 .timeline-icon {
-	font-size: 1.5rem;
+	width: 1.5rem;
 	position: absolute;
 	top: 0;
 	left: -0.15rem;
-	color: var(--color-primary);
+	fill: var(--color-primary);
 	background-color: var(--color-white);
-	padding-top: 0.25rem;
-	padding-bottom: 0.25rem;
+	padding-top: 0.35rem;
+	padding-bottom: 0.35rem;
 }
 
 .timeline-date {
 	font-size: var(--small-font-size);
 	color: var(--color-gray);
 }
-.timeline-date i {
-	margin-right: 0.3rem;
+.timeline-date svg {
+	height: 1rem;
+	margin-right: 0.5rem;
 }
 
 .timeline-title {

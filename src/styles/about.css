@@ -26,7 +26,7 @@
 	text-align: center;
 }
 
-.stats-item i {
-	font-size: var(--h2-font-size);
-	color: var(--color-gray);
+.stats-item svg {
+	height: var(--h2-font-size);
+	fill: var(--color-gray);
 }

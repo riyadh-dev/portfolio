@@ -87,10 +87,9 @@
 	transition: filter ease-in-out 0.3s;
 }
 
-.project-buttons i {
-	color: white;
-	font-size: 1.25rem;
-	border-radius: 50%;
+.project-buttons svg {
+	fill: white;
+	height: 1.25rem;
 	margin: auto;
 }
 
