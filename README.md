@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="./public/images/logos/astro.png" alt="astro" height="64"/>
+  <img src="./src/assets/images/logos/astro.png" alt="astro" height="64"/>
 </p>
 <p align="center"> 
-            <img src="./public/images/logos/js.png" alt="vanilla" height="64"/>
+            <img src="./src/assets//images/logos/js.png" alt="vanilla" height="64"/>
             &nbsp; &nbsp; &nbsp; &nbsp;
-            <img src="./public/images/logos/solid.svg" alt="solid" height="64"/>       
+            <img src="./src/assets/images/logos/solid.svg" alt="solid" height="64"/>       
             &nbsp; &nbsp; &nbsp; &nbsp;
             <img src="https://preactjs.com/assets/app-icon.png" alt="preact" height="64"/>
 </p>
