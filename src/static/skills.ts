@@ -1,3 +1,36 @@
+import bootstrap from '@/assets/images/logos/bootstrap.png';
+import chakraUI from '@/assets/images/logos/chakra-ui.png';
+import css from '@/assets/images/logos/css.png';
+import html from '@/assets/images/logos/html.png';
+import jotai from '@/assets/images/logos/jotai.png';
+import javascript from '@/assets/images/logos/js.png';
+import mui from '@/assets/images/logos/mui.svg';
+import nextjs from '@/assets/images/logos/next.png';
+import reactQuery from '@/assets/images/logos/react-query.svg';
+import react from '@/assets/images/logos/react.png';
+import recoilJS from '@/assets/images/logos/recoil.png';
+import sass from '@/assets/images/logos/sass.png';
+import solidjs from '@/assets/images/logos/solid.svg';
+import tailwind from '@/assets/images/logos/tailwind.svg';
+import typescript from '@/assets/images/logos/ts.png';
+
+import drizzle from '@/assets/images/logos/drizzle.png';
+import express from '@/assets/images/logos/express.png';
+import graphQL from '@/assets/images/logos/graphql.png';
+import mongodb from '@/assets/images/logos/mongodb.svg';
+import node from '@/assets/images/logos/node.png';
+import postgresql from '@/assets/images/logos/postgres.png';
+import trpc from '@/assets/images/logos/trpc.png';
+import webSocket from '@/assets/images/logos/ws.png';
+
+import csharp from '@/assets/images/logos/csharp.png';
+import dotnet from '@/assets/images/logos/dotnet.svg';
+import xaml from '@/assets/images/logos/xaml.png';
+
+import parcelJS from '@/assets/images/logos/parcel.png';
+import turborepo from '@/assets/images/logos/turborepo.svg';
+import vitejs from '@/assets/images/logos/vite.png';
+
 const SKILLS = [
 	{
 		categoryName: 'Web Frontend',
@@ -5,64 +38,64 @@ const SKILLS = [
 		skills: [
 			{
 				name: 'React',
-				image: './images/logos/react.png',
+				image: react,
 			},
 			{
 				name: 'NextJS',
-				image: './images/logos/next.png',
+				image: nextjs,
 			},
 			{
 				name: 'SolidJS',
-				image: './images/logos/solid.svg',
+				image: solidjs,
 			},
 			{
 				name: 'React-Query',
-				image: './images/logos/react-query.svg',
+				image: reactQuery,
 			},
 			{
 				name: 'RecoilJS',
-				image: './images/logos/recoil.ico',
+				image: recoilJS,
 			},
 			{
 				name: 'Jotai',
-				image: './images/logos/jotai.png',
+				image: jotai,
 			},
 			{
 				name: 'Tailwind',
-				image: './images/logos/tailwind.svg',
+				image: tailwind,
 			},
 			{
 				name: 'MUI',
-				image: './images/logos/mui.svg',
+				image: mui,
 			},
 			{
 				name: 'Bootstrap',
-				image: './images/logos/bootstrap.png',
+				image: bootstrap,
 			},
 
 			{
 				name: 'Chakra UI',
-				image: './images/logos/chakra-ui.png',
+				image: chakraUI,
 			},
 			{
 				name: 'Typescript',
-				image: './images/logos/ts.png',
+				image: typescript,
 			},
 			{
 				name: 'Javascript',
-				image: './images/logos/js.png',
+				image: javascript,
 			},
 			{
 				name: 'CSS',
-				image: './images/logos/css.png',
+				image: css,
 			},
 			{
 				name: 'SASS',
-				image: './images/logos/sass.png',
+				image: sass,
 			},
 			{
 				name: 'HTML',
-				image: './images/logos/html.png',
+				image: html,
 			},
 		],
 	},
@@ -72,34 +105,34 @@ const SKILLS = [
 		skills: [
 			{
 				name: 'NodeJS',
-				image: './images/logos/node.png',
+				image: node,
 			},
 			{
 				name: 'MongoDB',
-				image: './images/logos/mongodb.svg',
+				image: mongodb,
 			},
 			{
 				name: 'Postgres',
-				image: './images/logos/postgres.png',
+				image: postgresql,
 			},
 			{
 				name: 'Drizzle ORM',
-				image: './images/logos/drizzle.png',
+				image: drizzle,
 			},
 			{
 				name: 'ExpressJS',
-				image: './images/logos/express.png',
+				image: express,
 				dark: true,
 			},
 			{
 				name: 'GraphQL',
-				image: './images/logos/graphql.png',
+				image: graphQL,
 			},
 			{
 				name: 'tRPC',
-				image: './images/logos/trpc.png',
+				image: trpc,
 			},
-			{ name: 'WebSockets', image: './images/logos/ws.png', dark: true },
+			{ name: 'WebSockets', image: webSocket, dark: true },
 		],
 	},
 	{
@@ -108,23 +141,23 @@ const SKILLS = [
 		skills: [
 			{
 				name: 'C#',
-				image: './images/logos/csharp.png',
+				image: csharp,
 			},
 			{
 				name: 'XAML',
-				image: './images/logos/xaml.png',
+				image: xaml,
 			},
 			{
 				name: '.NET',
-				image: './images/logos/dotnet.svg',
+				image: dotnet,
 			},
 			{
 				name: 'WPF',
-				image: './images/logos/dotnet.svg',
+				image: xaml,
 			},
 			{
 				name: 'WinForms',
-				image: './images/logos/dotnet.svg',
+				image: xaml,
 			},
 		],
 	},
@@ -134,15 +167,15 @@ const SKILLS = [
 		skills: [
 			{
 				name: 'ParcelJS',
-				image: './images/logos/parcel.png',
+				image: parcelJS,
 			},
 			{
 				name: 'ViteJS',
-				image: './images/logos/vite.png',
+				image: vitejs,
 			},
 			{
 				name: 'Turborepo',
-				image: './images/logos/turborepo.svg',
+				image: turborepo,
 			},
 		],
 	},

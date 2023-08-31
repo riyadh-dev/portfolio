@@ -1,12 +1,12 @@
 import directive from '@/helpers/click-outside';
 import THEME from '@/static/theme';
 import {
-	Accessor,
 	For,
 	batch,
 	createSignal,
 	onCleanup,
 	onMount,
+	type Accessor,
 } from 'solid-js';
 
 import '@/styles/theme-panel.css';

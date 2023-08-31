@@ -14,22 +14,23 @@
 		"prepare": "husky install"
 	},
 	"dependencies": {
-		"@astrojs/solid-js": "^2.2.1",
-		"astro": "^2.10.12",
-		"solid-js": "^1.4.3"
+		"@astrojs/solid-js": "^3.0.0",
+		"astro": "^3.0.3",
+		"solid-js": "^1.7.11"
 	},
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^6.4.1",
-		"@typescript-eslint/parser": "^6.4.1",
-		"cspell": "^7.0.1",
-		"eslint": "^8.47.0",
+		"@typescript-eslint/eslint-plugin": "^6.5.0",
+		"@typescript-eslint/parser": "^6.5.0",
+		"cspell": "^7.2.0",
+		"eslint": "^8.48.0",
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-plugin-astro": "^0.29.0",
 		"eslint-plugin-jsx-a11y": "^6.7.1",
 		"eslint-plugin-solid": "^0.13.0",
 		"husky": "^8.0.3",
+		"sharp": "^0.32.5",
 		"lint-staged": "^14.0.1",
-		"prettier": "^3.0.2",
+		"prettier": "^3.0.3",
 		"prettier-plugin-astro": "^0.12.0"
 	},
 	"lint-staged": {

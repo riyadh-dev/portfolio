@@ -97,7 +97,7 @@
 	padding: 0.5rem 2rem;
 	border-radius: var(--btn-border-radius);
 	background-color: var(--color-primary);
-	color: var(--color-white);
+	color: white;
 	transition: background-color 0.3s;
 }
 

@@ -1,11 +1,11 @@
 import {
-	Accessor,
 	For,
 	Show,
 	batch,
 	createSignal,
 	onCleanup,
 	onMount,
+	type Accessor,
 } from 'solid-js';
 import LoadingSpinner from './LoadingSpinner';
 

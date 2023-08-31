@@ -29,5 +29,5 @@
 		"withastro",
 		"xmark"
 	],
-	"ignorePaths": ["pnpm-lock.yaml", "dist", "public"]
+	"ignorePaths": ["pnpm-lock.yaml", "dist", "public", "*.svg"]
 }

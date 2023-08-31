@@ -6,7 +6,7 @@ import Footer from '@/components/Footer.astro';
 import Home from '@/components/Home.astro';
 import Navbar from '@/components/Navbar';
 import Projects from '@/components/Projects';
-import Skills from '@/components/Skills';
+import Skills from '@/components/Skills.astro';
 
 import '@/styles/global.css';
 import '@/styles/vars.css';
@@ -18,7 +18,7 @@ import '@/styles/vars.css';
 		<meta charset='UTF-8' />
 		<meta name='description' content='Astro description' />
 		<meta name='viewport' content='width=device-width' />
-		<link rel='icon' type='image/svg+xml' href='favicon.ico' />
+		<link rel='icon' type='image/svg+xml' href='/portfolio/favicon.ico' />
 		<meta name='generator' content={Astro.generator} />
 		<title>Baatchia Riyadh</title>
 	</head>
@@ -27,8 +27,8 @@ import '@/styles/vars.css';
 			<Navbar client:idle />
 			<Home />
 			<About />
-			<Projects client:visible />
-			<Skills client:visible />
+			<Projects client:idle />
+			<Skills />
 			<Experience />
 			<Contact />
 			<Footer />
