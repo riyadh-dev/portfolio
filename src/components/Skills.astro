@@ -11,14 +11,14 @@ import '@/styles/skills.css';
 
 		<div class='skills-container'>
 			{
-				SKILLS.map(({ categoryName, skills, SVG }) => (
+				SKILLS.map(({ categoryName, skills, SVG }, index) => (
 					<>
 						<input
 							type='radio'
 							class='skills-tabs-radio'
 							name='tabs-example'
 							id={categoryName}
-							checked
+							checked={index === 0}
 						/>
 						<label for={categoryName} class='skills-tab'>
 							<SVG />

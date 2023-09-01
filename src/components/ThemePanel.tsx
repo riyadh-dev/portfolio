@@ -76,59 +76,56 @@ export default function ThemePanel(props: { closeThemePanel: () => void }) {
 					<h3>Font Size</h3>
 					<div class='theme-font-size-slider'>
 						<h6>Aa</h6>
-						<ul>
+						<div>
 							<For each={THEME.fontSizes}>
 								{(_, index) => (
-									<button onClick={[handleFontSizeIndxChange, index]}>
-										<li
-											class={`font-size-${index() + 1}`}
-											classList={{ active: index() === fontSizeIdx() }}
-										/>
-									</button>
+									<button
+										aria-label={`font-size-${index()}`}
+										onClick={[handleFontSizeIndxChange, index]}
+										class={`font-size-${index() + 1}`}
+										classList={{ active: index() === fontSizeIdx() }}
+									/>
 								)}
 							</For>
-						</ul>
+						</div>
 						<h3>Aa</h3>
 					</div>
 				</div>
 
 				<div class='theme-color'>
 					<h3>Color</h3>
-					<ul>
+					<div>
 						<For each={THEME.colorHues}>
 							{(_, index) => (
-								<button onClick={[handleColorHueIndxChange, index]}>
-									<li
-										class={`color-${index() + 1}`}
-										classList={{ active: index() === colorHueIdx() }}
-									/>
-								</button>
+								<button
+									aria-label={`color-${index()}`}
+									onClick={[handleColorHueIndxChange, index]}
+									class={`color-${index() + 1}`}
+									classList={{ active: index() === colorHueIdx() }}
+								/>
 							)}
 						</For>
-					</ul>
+					</div>
 				</div>
 
 				<div class='theme-background'>
 					<h3>Theme Mode</h3>
-					<ul>
+					<div>
 						<For each={THEME.backgrounds}>
 							{({ text }, index) => (
 								<button
 									style={{ width: '100%' }}
 									onClick={[handleBgColorIndxChange, index]}
+									class={`bg-${index() + 1}`}
+									classList={{
+										active: index() === bgColorIdx(),
+									}}
 								>
-									<li
-										class={`bg-${index() + 1}`}
-										classList={{
-											active: index() === bgColorIdx(),
-										}}
-									>
-										<h4>{text}</h4>
-									</li>
+									{text}
 								</button>
 							)}
 						</For>
-					</ul>
+					</div>
 				</div>
 			</div>
 		</div>

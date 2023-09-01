@@ -34,7 +34,7 @@
 	padding: 0.6rem 1rem;
 }
 
-.theme-font-size-slider ul {
+.theme-font-size-slider div {
 	background: #d6ccff;
 	height: 0.35rem;
 	width: 100%;
@@ -44,15 +44,14 @@
 	align-items: center;
 }
 
-.theme-font-size-slider ul li {
+.theme-font-size-slider div button {
 	width: 1rem;
 	height: 1rem;
 	background-color: #d6ccff;
 	border-radius: 50%;
-	cursor: pointer;
 }
 
-.theme-font-size-slider ul li.active {
+.theme-font-size-slider div button.active {
 	background: var(--color-primary);
 }
 
@@ -60,7 +59,7 @@
 	margin-top: var(--m-2);
 }
 
-.theme-color ul {
+.theme-color div {
 	background: var(--color-light);
 	border-radius: var(--card-border-radius);
 	padding: 0.6rem 1rem;
@@ -69,81 +68,80 @@
 	align-items: center;
 }
 
-.theme-color ul .color-1 {
+.theme-color .color-1 {
 	background: #6b4de6;
 }
 
-.theme-color ul .color-2 {
+.theme-color .color-2 {
 	background: #4de65e;
 }
 
-.theme-color ul .color-3 {
+.theme-color .color-3 {
 	background: #e64d61;
 }
 
-.theme-color ul .color-4 {
+.theme-color .color-4 {
 	background: #e6c94d;
 }
 
-.theme-color ul .color-5 {
+.theme-color .color-5 {
 	background: #4d69e6;
 }
 
-.theme-color ul li {
+.theme-color div button {
 	width: 1.8rem;
 	height: 1.8rem;
 	background: var(--color-primary);
 	border-radius: 50%;
-	cursor: pointer;
 }
 
-.theme-color ul li.active {
-	border: 3px solid #fff;
+.theme-color div button.active {
+	border: 0.25em solid #fff;
 }
 
 .theme-background {
 	margin-top: var(--m-2);
 }
 
-.theme-background ul {
+.theme-background div {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	gap: 0.6rem;
 }
 
-.theme-background ul li {
+.theme-background div button {
 	padding: 0.8rem 0.2rem;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
 	border-radius: 0.5rem;
-	cursor: pointer;
+	font-weight: 600;
 }
 
-.theme-background ul li.active {
+.theme-background div button.active {
 	border: 2px solid var(--color-primary);
 }
 
-.theme-background ul li span {
+.theme-background div button span {
 	width: 1.4rem;
 	height: 1.4rem;
 	border: 2px solid var(--color-gray);
 	border-radius: 50%;
 }
 
-.theme-background ul .bg-1 {
+.theme-background div .bg-1 {
 	background: #e7e4f1;
 	color: #241e38;
 }
 
-.theme-background ul .bg-2 {
+.theme-background div .bg-2 {
 	background: #241e38;
 	color: #fff;
 }
 
-.theme-background ul .bg-3 {
+.theme-background div .bg-3 {
 	background: #151221;
 	color: #fff;
 }

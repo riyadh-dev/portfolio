@@ -54,7 +54,12 @@ export default function Projects() {
 												</div>
 											</div>
 
-											<a href={project.repo} rel='noreferrer' target='_blank'>
+											<a
+												aria-label='project repo'
+												href={project.repo}
+												rel='noreferrer'
+												target='_blank'
+											>
 												<svg
 													xmlns='http://www.w3.org/2000/svg'
 													viewBox='0 0 496 512'
@@ -63,6 +68,7 @@ export default function Projects() {
 												</svg>
 											</a>
 											<button
+												aria-label='open gallery slider'
 												class='circular-Button'
 												onClick={openGallerySlider(project.images)}
 											>
