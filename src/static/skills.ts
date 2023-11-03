@@ -39,6 +39,7 @@ import OtherSVG from '@/components/SVG/Other.astro';
 const SKILLS = [
 	{
 		categoryName: 'Web Frontend',
+		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 		SVG: FrontendSVG,
 		skills: [
 			{
@@ -106,6 +107,7 @@ const SKILLS = [
 	},
 	{
 		categoryName: 'Web Backend',
+		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 		SVG: BackendSVG,
 		skills: [
 			{
@@ -142,6 +144,7 @@ const SKILLS = [
 	},
 	{
 		categoryName: 'Desktop',
+		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 		SVG: DesktopSVG,
 		skills: [
 			{
@@ -168,6 +171,7 @@ const SKILLS = [
 	},
 	{
 		categoryName: 'Other Skills',
+		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 		SVG: OtherSVG,
 		skills: [
 			{

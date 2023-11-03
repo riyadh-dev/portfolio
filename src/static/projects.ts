@@ -145,8 +145,8 @@ const PROJECTS = [
 		name: 'Scientific Consul Management System',
 		links: ['https://scms-client.netlify.app/'],
 		repo: 'https://github.com/riyadh-dev/scms-client',
-		thumbnail: imageSources.projects['scms'][1],
-		images: imageSources.projects['scms'],
+		thumbnail: imageSources.projects.scms[1],
+		images: imageSources.projects.scms,
 		tags: ['ReactJS', 'ExpressJS', 'MongoDB', 'MUI', 'GraphQL'],
 	},
 ];

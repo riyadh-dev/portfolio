@@ -7,11 +7,15 @@ module.exports = {
 	parserOptions: {
 		ecmaVersion: 'latest',
 		sourceType: 'module',
+		project: 'tsconfig.json',
+		tsconfigRootDir: __dirname,
 	},
 	plugins: ['@typescript-eslint', 'solid', 'jsx-a11y'],
+	ignorePatterns: ['dist', '.eslintrc.cjs', 'deprecated', 'astro.config.mjs'],
 	extends: [
 		'eslint:recommended',
-		'plugin:@typescript-eslint/recommended',
+		'plugin:@typescript-eslint/recommended-type-checked',
+		'plugin:@typescript-eslint/stylistic-type-checked',
 		'plugin:astro/recommended',
 		'prettier',
 	],
