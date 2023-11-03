@@ -26,7 +26,7 @@ A portfolio website implemented in various frameworks:
 
 ## Installation
 
-Use the package manager [pnpm](https://pnpm.io/installation) project dependencies.
+Use the package manager [pnpm](https://pnpm.io/installation) for project dependencies.
 
 ```bash
 pnpm install
@@ -36,16 +36,13 @@ pnpm install
 
 ```bash
 # start dev server
-pnpm run dev
+pnpm dev
 
 # build for production
-pnpm run build
+pnpm build
 
 # test the prod build
-pnpm run serve
-
-# deploy to github pages
-pnpm run deploy
+pnpm preview
 ```
 
 You can check other scripts in `package.json` of the root repo and each package
