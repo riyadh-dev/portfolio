@@ -5,5 +5,5 @@ const CONTACTS = {
 	linkedin: 'https://linkedin.com/in/baatchia-riyadh',
 	twitter: '',
 	whatsapp: '',
-};
-export default CONTACTS;
+}
+export default CONTACTS

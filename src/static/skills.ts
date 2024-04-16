@@ -1,46 +1,45 @@
-import bootstrap from '@/assets/images/logos/bootstrap.png';
-import chakraUI from '@/assets/images/logos/chakra-ui.png';
-import css from '@/assets/images/logos/css.png';
-import html from '@/assets/images/logos/html.png';
-import jotai from '@/assets/images/logos/jotai.png';
-import javascript from '@/assets/images/logos/js.png';
-import mui from '@/assets/images/logos/mui.svg';
-import nextjs from '@/assets/images/logos/next.png';
-import reactQuery from '@/assets/images/logos/react-query.svg';
-import react from '@/assets/images/logos/react.png';
-import recoilJS from '@/assets/images/logos/recoil.png';
-import sass from '@/assets/images/logos/sass.png';
-import solidjs from '@/assets/images/logos/solid.svg';
-import tailwind from '@/assets/images/logos/tailwind.svg';
-import typescript from '@/assets/images/logos/ts.png';
+import bootstrap from '~/assets/images/logos/bootstrap.png'
+import chakraUI from '~/assets/images/logos/chakra-ui.png'
+import css from '~/assets/images/logos/css.png'
+import html from '~/assets/images/logos/html.png'
+import jotai from '~/assets/images/logos/jotai.png'
+import javascript from '~/assets/images/logos/js.png'
+import mui from '~/assets/images/logos/mui.svg'
+import nextjs from '~/assets/images/logos/next.png'
+import reactQuery from '~/assets/images/logos/react-query.svg'
+import react from '~/assets/images/logos/react.svg'
+import recoilJS from '~/assets/images/logos/recoil.png'
+import sass from '~/assets/images/logos/sass.png'
+import solidjs from '~/assets/images/logos/solid.svg'
+import tailwind from '~/assets/images/logos/tailwind.svg'
+import typescript from '~/assets/images/logos/ts.png'
 
-import drizzle from '@/assets/images/logos/drizzle.png';
-import express from '@/assets/images/logos/express.png';
-import graphQL from '@/assets/images/logos/graphql.png';
-import mongodb from '@/assets/images/logos/mongodb.svg';
-import node from '@/assets/images/logos/node.png';
-import postgresql from '@/assets/images/logos/postgres.png';
-import trpc from '@/assets/images/logos/trpc.png';
-import webSocket from '@/assets/images/logos/ws.png';
+import drizzle from '~/assets/images/logos/drizzle.png'
+import express from '~/assets/images/logos/express.png'
+import graphQL from '~/assets/images/logos/graphql.png'
+import mongodb from '~/assets/images/logos/mongodb.svg'
+import node from '~/assets/images/logos/node.png'
+import postgresql from '~/assets/images/logos/postgres.png'
+import trpc from '~/assets/images/logos/trpc.png'
+import webSocket from '~/assets/images/logos/ws.png'
 
-import csharp from '@/assets/images/logos/csharp.png';
-import dotnet from '@/assets/images/logos/dotnet.svg';
-import xaml from '@/assets/images/logos/xaml.png';
+import csharp from '~/assets/images/logos/csharp.png'
+import dotnet from '~/assets/images/logos/dotnet.svg'
+import xaml from '~/assets/images/logos/xaml.png'
 
-import parcelJS from '@/assets/images/logos/parcel.png';
-import turborepo from '@/assets/images/logos/turborepo.svg';
-import vitejs from '@/assets/images/logos/vite.png';
+import parcelJS from '~/assets/images/logos/parcel.png'
+import turborepo from '~/assets/images/logos/turborepo.svg'
+import vitejs from '~/assets/images/logos/vite.png'
 
-import BackendSVG from '@/components/SVG/Backend.astro';
-import DesktopSVG from '@/components/SVG/Desktop.astro';
-import FrontendSVG from '@/components/SVG/Frontend.astro';
-import OtherSVG from '@/components/SVG/Other.astro';
+import backend from '~/assets/images/logos/backend.svg'
+import desktop from '~/assets/images/logos/desktop.svg'
+import frontend from '~/assets/images/logos/frontend.svg'
+import other from '~/assets/images/logos/other.svg'
 
 const SKILLS = [
 	{
-		categoryName: 'Web Frontend',
-		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-		SVG: FrontendSVG,
+		catName: 'Web Frontend',
+		catImage: frontend,
 		skills: [
 			{
 				name: 'React',
@@ -106,9 +105,8 @@ const SKILLS = [
 		],
 	},
 	{
-		categoryName: 'Web Backend',
-		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-		SVG: BackendSVG,
+		catName: 'Web Backend',
+		catImage: backend,
 		skills: [
 			{
 				name: 'NodeJS',
@@ -143,9 +141,8 @@ const SKILLS = [
 		],
 	},
 	{
-		categoryName: 'Desktop',
-		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-		SVG: DesktopSVG,
+		catName: 'Desktop',
+		catImage: desktop,
 		skills: [
 			{
 				name: 'C#',
@@ -170,9 +167,8 @@ const SKILLS = [
 		],
 	},
 	{
-		categoryName: 'Other Skills',
-		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-		SVG: OtherSVG,
+		catName: 'Other Skills',
+		catImage: other,
 		skills: [
 			{
 				name: 'ParcelJS',
@@ -188,6 +184,6 @@ const SKILLS = [
 			},
 		],
 	},
-];
+]
 
-export default SKILLS;
+export default SKILLS

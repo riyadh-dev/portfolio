@@ -6,44 +6,45 @@ import {
 	onCleanup,
 	onMount,
 	type Accessor,
-} from 'solid-js';
-import LoadingSpinner from './LoadingSpinner';
+} from 'solid-js'
+import LoadingSpinner from './spinner'
 
-import '@/styles/gallery-slider.css';
+import '~/styles/gallery-slider.css'
 
 export default function GallerySlider(props: {
-	closeGallerySlider: () => void;
-	images: string[];
+	closeGallerySlider: () => void
+	images: string[]
 }) {
-	const [imageIndex, setImageIndex] = createSignal(0);
-	const [imageLoaded, setImageLoaded] = createSignal(false);
+	const [imageIndex, setImageIndex] = createSignal(0)
+	const [imageLoaded, setImageLoaded] = createSignal(false)
 
 	const handleForward = () => {
-		if (props.images.length - 1 <= imageIndex()) return;
+		if (props.images.length - 1 <= imageIndex()) return
 		batch(() => {
-			setImageIndex(imageIndex() + 1);
-			setImageLoaded(false);
-		});
-	};
+			setImageIndex(imageIndex() + 1)
+			setImageLoaded(false)
+		})
+	}
 
 	const handleBack = () => {
-		if (imageIndex() === 0) return;
+		if (imageIndex() === 0) return
 		batch(() => {
-			setImageIndex(imageIndex() - 1);
-			setImageLoaded(false);
-		});
-	};
+			setImageIndex(imageIndex() - 1)
+			setImageLoaded(false)
+		})
+	}
 
-	const handleChangeIndex = (index: Accessor<number>) => setImageIndex(index());
+	const handleChangeIndex = (index: Accessor<number>) =>
+		setImageIndex(index())
 
 	onMount(() => {
-		document.body.style.overflow = 'hidden';
-	});
+		document.body.style.overflow = 'hidden'
+	})
 
 	onCleanup(() => {
-		document.body.style.overflow = 'auto';
-		document.body.style.position = '';
-	});
+		document.body.style.overflow = 'auto'
+		document.body.style.position = ''
+	})
 
 	return (
 		<div class='gallery-slider-container'>
@@ -81,13 +82,14 @@ export default function GallerySlider(props: {
 				<Show when={!imageLoaded()}>
 					<LoadingSpinner />
 				</Show>
+
 				<img
-					src={props.images[imageIndex()]}
-					alt={imageIndex().toString()}
 					loading='eager'
-					onLoad={() => setImageLoaded(true)}
-					classList={{ show: imageLoaded(), hide: !imageLoaded() }}
 					crossorigin='anonymous'
+					alt={imageIndex().toString()}
+					src={props.images[imageIndex()]}
+					onLoad={() => setImageLoaded(true)}
+					classList={{ hide: !imageLoaded() }}
 				/>
 			</div>
 			<div class='gallery-slider-circles bottom-section'>
@@ -96,7 +98,8 @@ export default function GallerySlider(props: {
 						<button
 							aria-label={`image ${index()}`}
 							classList={{
-								'gallery-slider-circle-active': index() === imageIndex(),
+								'gallery-slider-circle-active':
+									index() === imageIndex(),
 							}}
 							onClick={[handleChangeIndex, index]}
 						/>
@@ -104,5 +107,5 @@ export default function GallerySlider(props: {
 				</For>
 			</div>
 		</div>
-	);
+	)
 }

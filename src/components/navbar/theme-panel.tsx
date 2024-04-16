@@ -1,5 +1,3 @@
-import directive from '@/helpers/click-outside';
-import THEME from '@/static/theme';
 import {
 	For,
 	batch,
@@ -7,64 +5,71 @@ import {
 	onCleanup,
 	onMount,
 	type Accessor,
-} from 'solid-js';
+} from 'solid-js'
+import THEME from '~/static/theme'
+import clickOutside from '~/utils/click-outside'
 
-import '@/styles/theme-panel.css';
+import '~/styles/theme-panel.css'
 
 export default function ThemePanel(props: { closeThemePanel: () => void }) {
-	onMount(() => (document.body.style.overflow = 'hidden'));
+	onMount(() => (document.body.style.overflow = 'hidden'))
 
 	onCleanup(() => {
-		document.body.style.position = '';
-		document.body.style.overflow = 'auto';
-	});
+		document.body.style.position = ''
+		document.body.style.overflow = 'auto'
+	})
 
-	const [fontSizeIdx, setFontSizeIdx] = createSignal(0);
-	const [colorHueIdx, setColorHueIdx] = createSignal(0);
-	const [bgColorIdx, setBgColorIdx] = createSignal(0);
+	const [fontSizeIdx, setFontSizeIdx] = createSignal(0)
+	const [colorHueIdx, setColorHueIdx] = createSignal(0)
+	const [bgColorIdx, setBgColorIdx] = createSignal(0)
 
 	onMount(() =>
 		batch(() => {
-			setFontSizeIdx(parseInt(localStorage.getItem('fontSizeIdx') ?? '2', 10));
-			setColorHueIdx(parseInt(localStorage.getItem('colorHueIdx') ?? '2', 10));
-			setBgColorIdx(parseInt(localStorage.getItem('bgColorIdx') ?? '1', 10));
-		}),
-	);
+			setFontSizeIdx(
+				parseInt(localStorage.getItem('fontSizeIdx') ?? '2', 10)
+			)
+			setColorHueIdx(
+				parseInt(localStorage.getItem('colorHueIdx') ?? '2', 10)
+			)
+			setBgColorIdx(
+				parseInt(localStorage.getItem('bgColorIdx') ?? '1', 10)
+			)
+		})
+	)
 
-	const style = document.documentElement.style;
+	const style = document.documentElement.style
 	const handleColorHueIndxChange = (index: Accessor<number>) => {
-		setColorHueIdx(index());
-		style.setProperty('--primary-color-hue', THEME.colorHues[colorHueIdx()]);
-		localStorage.setItem('colorHueIdx', index().toString());
-	};
+		setColorHueIdx(index())
+		style.setProperty('--primary-color-hue', THEME.colorHues[colorHueIdx()])
+		localStorage.setItem('colorHueIdx', index().toString())
+	}
 
 	const handleFontSizeIndxChange = (index: Accessor<number>) => {
-		setFontSizeIdx(index());
-		style.fontSize = THEME.fontSizes[index()];
-		localStorage.setItem('fontSizeIdx', index().toString());
-	};
+		setFontSizeIdx(index())
+		style.fontSize = THEME.fontSizes[index()]
+		localStorage.setItem('fontSizeIdx', index().toString())
+	}
 
 	const handleBgColorIndxChange = (index: Accessor<number>) => {
-		setBgColorIdx(index());
+		setBgColorIdx(index())
 
 		style.setProperty(
 			'--light-color-lightness',
-			THEME.backgrounds[bgColorIdx()].values[0],
-		);
+			THEME.backgrounds[bgColorIdx()].values[0]
+		)
 		style.setProperty(
 			'--dark-color-lightness',
-			THEME.backgrounds[bgColorIdx()].values[1],
-		);
+			THEME.backgrounds[bgColorIdx()].values[1]
+		)
 		style.setProperty(
 			'--white-color-lightness',
-			THEME.backgrounds[bgColorIdx()].values[2],
-		);
+			THEME.backgrounds[bgColorIdx()].values[2]
+		)
 
-		localStorage.setItem('bgColorIdx', index().toString());
-	};
+		localStorage.setItem('bgColorIdx', index().toString())
+	}
 
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
-	const clickOutside = directive;
+	clickOutside //preserve import
 
 	return (
 		<div class='theme-panel-container' id='theme-panel-container'>
@@ -81,9 +86,14 @@ export default function ThemePanel(props: { closeThemePanel: () => void }) {
 								{(_, index) => (
 									<button
 										aria-label={`font-size-${index()}`}
-										onClick={[handleFontSizeIndxChange, index]}
+										onClick={[
+											handleFontSizeIndxChange,
+											index,
+										]}
 										class={`font-size-${index() + 1}`}
-										classList={{ active: index() === fontSizeIdx() }}
+										classList={{
+											active: index() === fontSizeIdx(),
+										}}
 									/>
 								)}
 							</For>
@@ -101,7 +111,9 @@ export default function ThemePanel(props: { closeThemePanel: () => void }) {
 									aria-label={`color-${index()}`}
 									onClick={[handleColorHueIndxChange, index]}
 									class={`color-${index() + 1}`}
-									classList={{ active: index() === colorHueIdx() }}
+									classList={{
+										active: index() === colorHueIdx(),
+									}}
 								/>
 							)}
 						</For>
@@ -129,14 +141,5 @@ export default function ThemePanel(props: { closeThemePanel: () => void }) {
 				</div>
 			</div>
 		</div>
-	);
-}
-
-declare module 'solid-js' {
-	// eslint-disable-next-line @typescript-eslint/no-namespace
-	namespace JSX {
-		interface Directives {
-			clickOutside: () => void;
-		}
-	}
+	)
 }

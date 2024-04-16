@@ -1,79 +1,67 @@
 ---
-import About from '@/components/About.astro';
-import Contact from '@/components/Contact.astro';
-import Experience from '@/components/Experience.astro';
-import Footer from '@/components/Footer.astro';
-import Home from '@/components/Home.astro';
-import Navbar from '@/components/Navbar';
-import Projects from '@/components/Projects';
-import Skills from '@/components/Skills.astro';
-
-import '@/styles/global.css';
-import '@/styles/vars.css';
+import About from '~/components/about.astro'
+import Contact from '~/components/contact.astro'
+import Experience from '~/components/experience.astro'
+import Footer from '~/components/footer.astro'
+import Home from '~/components/home.astro'
+import Navbar from '~/components/navbar'
+import Projects from '~/components/projects/index.astro'
+import Skills from '~/components/skills.astro'
+import Layout from '../layouts/layout.astro'
 ---
 
-<!doctype html>
-<html lang='en'>
-	<head>
-		<meta charset='UTF-8' />
-		<meta name='description' content='Astro description' />
-		<meta name='viewport' content='width=device-width' />
-		<link rel='icon' type='image/svg+xml' href='/portfolio/favicon.ico' />
-		<meta name='generator' content={Astro.generator} /><title>
-			Baatchia Riyadh
-		</title>
-	</head>
-
+<Layout title='Riyadh Baatchia'>
 	<body>
-		<main>
+		<>
 			<Navbar client:idle />
 			<Home />
 			<About />
-			<Projects client:idle />
+			<Projects />
 			<Skills />
 			<Experience />
 			<Contact />
 			<Footer />
-		</main>
+		</>
 	</body>
+</Layout>
 
-	<script is:inline>
-		const THEME = {
-			fontSizes: ['12px', '14px', '16px', '18px'],
-			colorHues: ['252', '127', '352', '49', '229'],
-			backgrounds: [
-				['92%', '17%', '100%'],
-				['15%', '95%', '20%'],
-				['10%', '95%', '0%'],
-			],
-		};
+<script>
+	const THEME = {
+		fontSizes: ['12px', '14px', '16px', '18px'],
+		colorHues: ['252', '127', '352', '49', '229'],
+		backgrounds: [
+			['92%', '17%', '100%'],
+			['15%', '95%', '20%'],
+			['10%', '95%', '0%'],
+		],
+	}
 
-		const getThemeItems = (key, val) => {
-			if (typeof localStorage !== 'undefined' && localStorage.getItem(key)) {
-				return parseInt(localStorage.getItem(key), 10);
-			}
-			localStorage.setItem(key, val.toString());
-			return val;
-		};
+	const getThemeItems = (key: string, val: number) => {
+		const storedItems = localStorage.getItem(key)
+		if (storedItems) return parseInt(storedItems, 10)
 
-		const fontSizeIdx = getThemeItems('fontSizeIdx', 2);
-		const colorHueIdx = getThemeItems('colorHueIdx', 2);
-		const bgColorIdx = getThemeItems('bgColorIdx', 1);
+		localStorage.setItem(key, val.toString())
+		return val
+	}
 
-		const style = document.documentElement.style;
-		style.fontSize = THEME.fontSizes[fontSizeIdx];
-		style.setProperty('--primary-color-hue', THEME.colorHues[colorHueIdx]);
-		style.setProperty(
-			'--light-color-lightness',
-			THEME.backgrounds[bgColorIdx][0],
-		);
-		style.setProperty(
-			'--dark-color-lightness',
-			THEME.backgrounds[bgColorIdx][1],
-		);
-		style.setProperty(
-			'--white-color-lightness',
-			THEME.backgrounds[bgColorIdx][2],
-		);
-	</script>
-</html>
+	const fontSizeIdx = getThemeItems('fontSizeIdx', 2)
+	const colorHueIdx = getThemeItems('colorHueIdx', 2)
+	const bgColorIdx = getThemeItems('bgColorIdx', 1)
+
+	const style = document.documentElement.style
+	style.fontSize = THEME.fontSizes[fontSizeIdx]
+	style.setProperty('--primary-color-hue', THEME.colorHues[colorHueIdx])
+	style.setProperty(
+		'--light-color-lightness',
+		THEME.backgrounds[bgColorIdx][0]
+	)
+	style.setProperty(
+		'--dark-color-lightness',
+		THEME.backgrounds[bgColorIdx][1]
+	)
+	style.setProperty(
+		'--white-color-lightness',
+		THEME.backgrounds[bgColorIdx][2]
+	)
+</script>
+~/components/navbar ~/components/projects/index.astro

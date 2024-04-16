@@ -66,8 +66,7 @@ h3 {
 .container {
 	max-width: 970px;
 	margin: auto;
-	padding-left: var(--m-0-75);
-	padding-right: var(--m-0-75);
+	padding-inline: var(--m-0-75);
 }
 
 .px-15 {
@@ -137,4 +136,13 @@ button {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+}
+
+.fade-enter-active,
+.fade-exit-active {
+	transition: opacity 0.3s;
+}
+.fade-enter,
+.fade-exit-to {
+	opacity: 0;
 }

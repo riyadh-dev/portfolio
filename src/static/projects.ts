@@ -1,4 +1,4 @@
-import imageSources from './img-links';
+import imageSources from './img-links'
 
 const PROJECTS = [
 	{
@@ -37,47 +37,6 @@ const PROJECTS = [
 	},
 
 	{
-		name: 'Portfolio (Solid / Preact / Vanilla)',
-		links: ['https://riyadh-dev.github.io/portfolio'],
-		repo: 'https://github.com/riyadh-dev/portfolio',
-		thumbnail: imageSources.projects['portfolio-website-image'][0],
-		images: imageSources.projects['portfolio-website-image'],
-		tags: ['SolidJS', 'PreactJS', 'Typescript', 'ViteJS', 'VitePWA', 'CSS'],
-	},
-
-	{
-		name: 'IEC101 Master Sim',
-		links: [
-			'https://github.com/riyadh-dev/iec101-master-sim/releases/download/v1.0.0/IEC101MasterSim.exe',
-		],
-		repo: 'https://github.com/riyadh-dev/iec101-master-sim',
-		thumbnail: imageSources.projects['iec101-master-sim'][1],
-		images: imageSources.projects['iec101-master-sim'],
-		tags: ['.NET', 'WPF', 'C#', 'XAML', 'IEC 60870-5-101'],
-	},
-
-	{
-		name: 'Portfolio (Vanilla JS)',
-		links: ['https://riyadh-dev.github.io/portfolio-website'],
-		repo: 'https://github.com/riyadh-dev/portfolio-website',
-		thumbnail: imageSources.projects['portfolio-website-image'][4],
-		images: imageSources.projects['portfolio-website-image'],
-		tags: ['HTML', 'Typescript', 'SASS', 'ParcelJS'],
-	},
-
-	{
-		name: 'Card Matching Game',
-		links: [
-			'https://riyadh-dev.github.io/memory-matching-game/',
-			'https://riyadh-dev-memory-matching-game.netlify.app/',
-		],
-		repo: 'https://github.com/riyadh-dev/memory-matching-game',
-		thumbnail: imageSources.projects['memory-matching-game'][0],
-		images: imageSources.projects['memory-matching-game'],
-		tags: ['ReactJS', 'PreactJS', 'Typescript', 'ViteJS', 'CSS'],
-	},
-
-	{
 		name: 'Social Media App',
 		links: [
 			//'https://social-media-app-production.up.railway.app',
@@ -97,6 +56,15 @@ const PROJECTS = [
 			'React Router',
 			'React Query',
 		],
+	},
+
+	{
+		name: 'Portfolio (UI Frameworks)',
+		links: ['https://riyadh-dev.github.io/portfolio'],
+		repo: 'https://github.com/riyadh-dev/portfolio',
+		thumbnail: imageSources.projects['portfolio-website-image'][0],
+		images: imageSources.projects['portfolio-website-image'],
+		tags: ['SolidJS', 'PreactJS', 'Typescript', 'VitePWA', 'CSS'],
 	},
 
 	{
@@ -122,6 +90,47 @@ const PROJECTS = [
 	},
 
 	{
+		name: 'Snake Game',
+		links: ['https://riyadh-dev.github.io/snake-game/'],
+		repo: 'https://github.com/riyadh-dev/snake-game',
+		thumbnail: imageSources.projects['snake-game'][0],
+		images: imageSources.projects['snake-game'],
+		tags: ['RSolidJS', 'Typescript', 'TailwindCSS'],
+	},
+
+	{
+		name: 'IEC101 Master Sim',
+		links: [
+			'https://github.com/riyadh-dev/iec101-master-sim/releases/download/v1.0.0/IEC101MasterSim.exe',
+		],
+		repo: 'https://github.com/riyadh-dev/iec101-master-sim',
+		thumbnail: imageSources.projects['iec101-master-sim'][1],
+		images: imageSources.projects['iec101-master-sim'],
+		tags: ['.NET', 'WPF', 'C#', 'XAML', 'IEC 60870-5-101'],
+	},
+
+	{
+		name: 'Card Matching Game',
+		links: [
+			'https://riyadh-dev.github.io/memory-matching-game/',
+			'https://riyadh-dev-memory-matching-game.netlify.app/',
+		],
+		repo: 'https://github.com/riyadh-dev/memory-matching-game',
+		thumbnail: imageSources.projects['memory-matching-game'][0],
+		images: imageSources.projects['memory-matching-game'],
+		tags: ['ReactJS', 'PreactJS', 'Typescript', 'CSS'],
+	},
+
+	{
+		name: 'Scientific Consul Management System',
+		links: ['https://scms-client.netlify.app/'],
+		repo: 'https://github.com/riyadh-dev/scms-client',
+		thumbnail: imageSources.projects.scms[1],
+		images: imageSources.projects.scms,
+		tags: ['ReactJS', 'ExpressJS', 'MongoDB', 'MUI', 'GraphQL'],
+	},
+
+	{
 		name: 'Authentication Demo',
 		links: [
 			//'https://authentication-demo.up.railway.app/',
@@ -142,13 +151,13 @@ const PROJECTS = [
 	},
 
 	{
-		name: 'Scientific Consul Management System',
-		links: ['https://scms-client.netlify.app/'],
-		repo: 'https://github.com/riyadh-dev/scms-client',
-		thumbnail: imageSources.projects.scms[1],
-		images: imageSources.projects.scms,
-		tags: ['ReactJS', 'ExpressJS', 'MongoDB', 'MUI', 'GraphQL'],
+		name: 'Portfolio (Vanilla JS)',
+		links: ['https://riyadh-dev.github.io/portfolio-website'],
+		repo: 'https://github.com/riyadh-dev/portfolio-website',
+		thumbnail: imageSources.projects['portfolio-website-image'][4],
+		images: imageSources.projects['portfolio-website-image'],
+		tags: ['HTML', 'Typescript', 'SASS', 'ParcelJS'],
 	},
-];
+]
 
-export default PROJECTS;
+export default PROJECTS

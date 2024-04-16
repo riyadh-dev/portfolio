@@ -16,10 +16,6 @@
 	color: var(--color-gray);
 }
 
-.skills-tab svg {
-	height: var(--h1-font-size);
-}
-
 .skills-icon {
 	font-size: var(--h1-font-size);
 	margin-right: var(--m-0-75);

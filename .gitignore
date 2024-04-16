@@ -20,8 +20,10 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
+# jetbrains setting folder
+.idea/
+
 #cache
 .cspellcache
 .prettiercache
 .eslintcache
-

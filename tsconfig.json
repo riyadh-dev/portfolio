@@ -3,11 +3,9 @@
 	"compilerOptions": {
 		"jsx": "preserve",
 		"jsxImportSource": "solid-js",
-		"verbatimModuleSyntax": true,
 		"baseUrl": ".",
 		"paths": {
-			"@/*": ["src/*"]
+			"~/*": ["src/*"]
 		}
-	},
-	"include": ["src"]
+	}
 }

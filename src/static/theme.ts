@@ -6,6 +6,6 @@ const THEME = {
 		{ text: 'Dim', values: ['15%', '95%', '20%'] },
 		{ text: 'Dark', values: ['10%', '95%', '0%'] },
 	],
-};
+}
 
-export default THEME;
+export default THEME

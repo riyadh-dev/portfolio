@@ -23,6 +23,6 @@ const NAV_ITEMS = [
 		name: 'Contact',
 		href: '#contact',
 	},
-];
+]
 
-export default NAV_ITEMS;
+export default NAV_ITEMS

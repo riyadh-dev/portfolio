@@ -48,6 +48,6 @@ const EXPERIENCE = [
 		jobTitle: 'Degree',
 		description: ['License in Electrical and Electronics Engineering.'],
 	},
-];
+]
 
-export default EXPERIENCE;
+export default EXPERIENCE

@@ -1,8 +1,8 @@
 ---
-import SKILLS from '@/static/skills';
-import { Image } from 'astro:assets';
+import { Image } from 'astro:assets'
+import SKILLS from '~/static/skills'
 
-import '@/styles/skills.css';
+import '~/styles/skills.css'
 ---
 
 <section class='skills section' id='skills'>
@@ -11,28 +11,36 @@ import '@/styles/skills.css';
 
 		<div class='skills-container'>
 			{
-				SKILLS.map(({ categoryName, skills, SVG }, index) => (
+				SKILLS.map(({ catName, skills, catImage }, index) => (
 					<>
 						<input
+							name='skill-tab-radio'
 							type='radio'
 							class='skills-tabs-radio'
-							name='tabs-example'
-							id={categoryName}
+							id={catName}
 							checked={index === 0}
 						/>
-						{/* eslint-disable-next-line astro/jsx-a11y/label-has-associated-control */}
-						<label for={categoryName} class='skills-tab'>
-							<SVG />
+						{/*eslint-disable-next-line
+						astro/jsx-a11y/label-has-associated-control*/}
+						<label for={catName} class='skills-tab'>
+							<Image
+								alt=''
+								src={catImage}
+								loading='lazy'
+								crossorigin='anonymous'
+							/>
 
-							<div>
-								<h1 class='skills-title'>{categoryName}</h1>
-							</div>
+							<h1 class='skills-title'>{catName}</h1>
 						</label>
 						<div class='skills-group'>
 							{skills.map((skill) => (
 								<div class='skill-container'>
 									<Image
-										class={skill.dark ? 'skill-image-lighten' : ''}
+										class={
+											skill.dark
+												? 'skill-image-lighten'
+												: ''
+										}
 										src={skill.image}
 										alt={skill.name}
 										width={52}

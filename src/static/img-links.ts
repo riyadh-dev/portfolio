@@ -1,7 +1,7 @@
 //cspell:disable
 
 const ROOT_URL =
-	'https://res.cloudinary.com/riyadh-demo-cloud/image/upload/f_webp/q_auto:best/portfolio';
+	'https://res.cloudinary.com/riyadh-demo-cloud/image/upload/f_webp/q_auto:best/portfolio'
 
 const imageSources = {
 	logo: `${ROOT_URL}/skdcfiuvaaeyf3f6jqnm.png`,
@@ -92,7 +92,8 @@ const imageSources = {
 			`${ROOT_URL}/iec101-master-sim/w0lkbddusxbjtasisdtp.png`,
 			`${ROOT_URL}/iec101-master-sim/pzact7zpgiddgpprhdto.png`,
 		],
+		'snake-game': [`${ROOT_URL}/snake-game/bfsp9dk0kb6xjunatycx.png`],
 	},
-};
+}
 
-export default imageSources;
+export default imageSources
