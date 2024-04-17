@@ -6,7 +6,7 @@
             &nbsp; &nbsp; &nbsp; &nbsp;
             <img src="./src/assets/images/logos/solid.svg" alt="solid" height="64"/>       
             &nbsp; &nbsp; &nbsp; &nbsp;
-            <img src="https://preactjs.com/assets/app-icon.png" alt="preact" height="64"/>
+            <img src="https://avatars.githubusercontent.com/u/26872990" alt="preact" height="66"/>
 </p>
 
 <p align="center"><h1 align="center">Portfolio</h1></p>
