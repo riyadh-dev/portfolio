@@ -1,4 +1,5 @@
 ---
+import { Icon } from 'astro-icon/components'
 import { Image } from 'astro:assets'
 import SKILLS from '~/static/skills'
 
@@ -11,7 +12,7 @@ import '~/styles/skills.css'
 
 		<div class='skills-container'>
 			{
-				SKILLS.map(({ catName, skills, catImage }, index) => (
+				SKILLS.map(({ catName, skills, catImageName }, index) => (
 					<>
 						<input
 							name='skill-tab-radio'
@@ -23,11 +24,11 @@ import '~/styles/skills.css'
 						{/*eslint-disable-next-line
 						astro/jsx-a11y/label-has-associated-control*/}
 						<label for={catName} class='skills-tab'>
-							<Image
-								alt=''
-								src={catImage}
-								loading='lazy'
-								crossorigin='anonymous'
+							<Icon
+								name={catImageName}
+								size={30}
+								fill='red'
+								stroke='red'
 							/>
 
 							<h1 class='skills-title'>{catName}</h1>

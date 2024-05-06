@@ -31,15 +31,10 @@ import parcelJS from '~/assets/images/logos/parcel.png'
 import turborepo from '~/assets/images/logos/turborepo.svg'
 import vitejs from '~/assets/images/logos/vite.png'
 
-import backend from '~/assets/images/logos/backend.svg'
-import desktop from '~/assets/images/logos/desktop.svg'
-import frontend from '~/assets/images/logos/frontend.svg'
-import other from '~/assets/images/logos/other.svg'
-
 const SKILLS = [
 	{
 		catName: 'Web Frontend',
-		catImage: frontend,
+		catImageName: 'frontend',
 		skills: [
 			{
 				name: 'React',
@@ -106,7 +101,7 @@ const SKILLS = [
 	},
 	{
 		catName: 'Web Backend',
-		catImage: backend,
+		catImageName: 'backend',
 		skills: [
 			{
 				name: 'NodeJS',
@@ -142,7 +137,7 @@ const SKILLS = [
 	},
 	{
 		catName: 'Desktop',
-		catImage: desktop,
+		catImageName: 'desktop',
 		skills: [
 			{
 				name: 'C#',
@@ -168,7 +163,7 @@ const SKILLS = [
 	},
 	{
 		catName: 'Other Skills',
-		catImage: other,
+		catImageName: 'other',
 		skills: [
 			{
 				name: 'ParcelJS',
