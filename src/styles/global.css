@@ -21,7 +21,6 @@ body {
 	background-color: var(--color-light);
 	color: var(--color-dark);
 	line-height: 1.7;
-	font-weight: var(--font-medium);
 	width: 100%;
 }
 

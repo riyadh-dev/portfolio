@@ -30,7 +30,7 @@
 	}
 
 	/*============ Font weight ============*/
-	--font-medium: 400;
+	--font-medium: 500;
 	--font-semi-bold: 600;
 
 	/*============ Margins Bottom ============*/
@@ -58,6 +58,14 @@
 	src:
 		url('/portfolio/fonts/rubik-regular.woff2') format(woff2),
 		url('/portfolio/fonts/rubik-regular.woff') format(woff);
+}
+
+@font-face {
+	font-family: 'Rubik';
+	font-weight: 500;
+	src:
+		url('/portfolio/fonts/rubik-medium.woff2') format(woff2),
+		url('/portfolio/fonts/rubik-medium.woff') format(woff);
 }
 
 @font-face {

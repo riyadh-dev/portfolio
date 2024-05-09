@@ -2,7 +2,7 @@ import { Show, createSignal, onCleanup, onMount } from 'solid-js'
 
 export default function LoadingSpinner() {
 	const [debouncedShow, setDebouncedShow] = createSignal(false)
-	let timer: number | undefined = undefined
+	let timer: NodeJS.Timeout | undefined = undefined
 
 	onMount(() => {
 		timer = setTimeout(() => {
