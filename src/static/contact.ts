@@ -1,9 +1,9 @@
 const CONTACTS = {
 	phoneNumber: '+213 659 46 73 28',
-	email: 'Baatchia_Riyadh@protonmail.com',
+	email: 'riyadh-dev@proton.me',
 	github: 'https://github.com/riyadh-dev',
 	linkedin: 'https://linkedin.com/in/baatchia-riyadh',
 	twitter: '',
-	whatsapp: '',
+	whatsapp: 'https://wa.me/+213659467328',
 }
 export default CONTACTS

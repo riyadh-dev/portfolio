@@ -1,7 +1,7 @@
 //cspell:disable
 
 const ROOT_URL =
-	'https://res.cloudinary.com/riyadh-demo-cloud/image/upload/f_webp/q_auto:best/portfolio'
+	'https://res.cloudinary.com/riyadh-main-cloud/image/upload/f_webp/q_auto:best/portfolio'
 
 const imageSources = {
 	logo: `${ROOT_URL}/skdcfiuvaaeyf3f6jqnm.png`,

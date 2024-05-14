@@ -13,13 +13,13 @@
 
 A portfolio website implemented in various frameworks:
 
-- [Astro](https://github.com/riyadh-dev/portfolio/tree/astro)
-- [Vanilla](https://github.com/riyadh-dev/portfolio/tree/no-framework)
-- [SolidJS](https://github.com/riyadh-dev/portfolio/tree/solid)
-- [PreactJS](https://github.com/riyadh-dev/portfolio/tree/preact)
+-   [Astro](https://github.com/riyadh-dev/portfolio/tree/astro)
+-   [Vanilla](https://github.com/riyadh-dev/portfolio/tree/no-framework)
+-   [SolidJS](https://github.com/riyadh-dev/portfolio/tree/solid)
+-   [PreactJS](https://github.com/riyadh-dev/portfolio/tree/preact)
 
 <p align="center">
-    <img src="https://res.cloudinary.com/riyadh-demo-cloud/image/upload/v1681769940/portfolio/portfolio-website-image/yvtwxepnf71mfmvlskpd.png" width="90%"/>
+    <img src="https://res.cloudinary.com/riyadh-main-cloud/image/upload/v1681769940/portfolio/portfolio-website-image/yvtwxepnf71mfmvlskpd.png" width="90%"/>
 <p>
 
 [Live preview](https://riyadh-dev.github.io/portfolio/)
