@@ -11,6 +11,15 @@ const PROJECTS = [
 	},
 
 	{
+		name: 'Dashboard (frontend only)',
+		links: ['https://dashboard-nextjs-weld.vercel.app/'],
+		repo: 'https://github.com/riyadh-dev/dashboard-nextjs',
+		thumbnail: imageSources.projects['dashboard-nextjs'][0],
+		images: imageSources.projects['dashboard-nextjs'],
+		tags: ['NextJS', 'Typescript', 'RecoilJS', 'TailwindCSS', 'Tremor'],
+	},
+
+	{
 		name: 'Airbnb Clone',
 		links: ['https://airbnb-clone-riyadh-dev.vercel.app/'],
 		repo: 'https://github.com/riyadh-dev/airbnb-clone',
@@ -28,12 +37,49 @@ const PROJECTS = [
 	},
 
 	{
-		name: 'Dashboard (frontend only)',
-		links: ['https://dashboard-nextjs-weld.vercel.app/'],
-		repo: 'https://github.com/riyadh-dev/dashboard-nextjs',
-		thumbnail: imageSources.projects['dashboard-nextjs'][0],
-		images: imageSources.projects['dashboard-nextjs'],
-		tags: ['NextJS', 'Typescript', 'RecoilJS', 'TailwindCSS', 'Tremor'],
+		name: 'Events - Admin',
+		links: ['https://events-admin-dashboard.vercel.app/'],
+		thumbnail: imageSources.projects['events-admin'][0],
+		images: imageSources.projects['events-admin'],
+		tags: [
+			'ReactJS',
+			'Typescript',
+			'TailwindCSS',
+			'ExpressJS',
+			'Firebase',
+			'PostgresSQL',
+		],
+	},
+
+	{
+		name: 'Cash Flow',
+		links: ['https://cash-flow-web.vercel.app/'],
+		thumbnail: imageSources.projects['cash-flow'][0],
+		images: imageSources.projects['cash-flow'],
+		tags: [
+			'ReactJS',
+			'Typescript',
+			'TailwindCSS',
+			'Shadcn UI',
+			'Tanstack Router',
+			'ExpressJS',
+			'PostgresSQL',
+		],
+	},
+
+	{
+		name: 'Events - Exhibit',
+		links: ['https://events-exhibit.vercel.app/'],
+		thumbnail: imageSources.projects['events-exhibit'][0],
+		images: imageSources.projects['events-exhibit'],
+		tags: [
+			'ReactJS',
+			'Typescript',
+			'TailwindCSS',
+			'ExpressJS',
+			'Firebase',
+			'PostgresSQL',
+		],
 	},
 
 	{
@@ -59,12 +105,20 @@ const PROJECTS = [
 	},
 
 	{
-		name: 'Portfolio (UI Frameworks)',
-		links: ['https://riyadh-dev.github.io/portfolio'],
-		repo: 'https://github.com/riyadh-dev/portfolio',
-		thumbnail: imageSources.projects['portfolio-website-image'][0],
-		images: imageSources.projects['portfolio-website-image'],
-		tags: ['SolidJS', 'PreactJS', 'Typescript', 'VitePWA', 'CSS'],
+		name: 'Bookdex',
+		links: ['https://bookdex.vercel.app/'],
+		repo: 'https://github.com/riyadh-dev/bookdex',
+		thumbnail: imageSources.projects['bookdex'][0],
+		images: imageSources.projects['bookdex'],
+		tags: [
+			'SolidJS',
+			'TailwindCSS',
+			'Typescript',
+			'Go',
+			'Go Fiber',
+			'Uber Fx',
+			'PostgresSQL',
+		],
 	},
 
 	{
@@ -88,14 +142,16 @@ const PROJECTS = [
 			'React Query',
 		],
 	},
-
 	{
-		name: 'Snake Game',
-		links: ['https://riyadh-dev.github.io/snake-game/'],
-		repo: 'https://github.com/riyadh-dev/snake-game',
-		thumbnail: imageSources.projects['snake-game'][0],
-		images: imageSources.projects['snake-game'],
-		tags: ['RSolidJS', 'Typescript', 'TailwindCSS'],
+		name: 'Card Matching Game',
+		links: [
+			'https://riyadh-dev.github.io/memory-matching-game/',
+			'https://riyadh-dev-memory-matching-game.netlify.app/',
+		],
+		repo: 'https://github.com/riyadh-dev/memory-matching-game',
+		thumbnail: imageSources.projects['memory-matching-game'][0],
+		images: imageSources.projects['memory-matching-game'],
+		tags: ['ReactJS', 'PreactJS', 'Typescript', 'CSS'],
 	},
 
 	{
@@ -110,24 +166,12 @@ const PROJECTS = [
 	},
 
 	{
-		name: 'Card Matching Game',
-		links: [
-			'https://riyadh-dev.github.io/memory-matching-game/',
-			'https://riyadh-dev-memory-matching-game.netlify.app/',
-		],
-		repo: 'https://github.com/riyadh-dev/memory-matching-game',
-		thumbnail: imageSources.projects['memory-matching-game'][0],
-		images: imageSources.projects['memory-matching-game'],
-		tags: ['ReactJS', 'PreactJS', 'Typescript', 'CSS'],
-	},
-
-	{
-		name: 'Scientific Consul Management System',
-		links: ['https://scms-client.netlify.app/'],
-		repo: 'https://github.com/riyadh-dev/scms-client',
-		thumbnail: imageSources.projects.scms[1],
-		images: imageSources.projects.scms,
-		tags: ['ReactJS', 'ExpressJS', 'MongoDB', 'MUI', 'GraphQL'],
+		name: 'Snake Game',
+		links: ['https://riyadh-dev.github.io/snake-game/'],
+		repo: 'https://github.com/riyadh-dev/snake-game',
+		thumbnail: imageSources.projects['snake-game'][0],
+		images: imageSources.projects['snake-game'],
+		tags: ['SolidJS', 'Typescript', 'TailwindCSS'],
 	},
 
 	{
@@ -151,12 +195,21 @@ const PROJECTS = [
 	},
 
 	{
-		name: 'Portfolio (Vanilla JS)',
-		links: ['https://riyadh-dev.github.io/portfolio-website'],
-		repo: 'https://github.com/riyadh-dev/portfolio-website',
-		thumbnail: imageSources.projects['portfolio-website-image'][4],
+		name: 'SciConsul Manager',
+		links: ['https://scms-client.netlify.app/'],
+		repo: 'https://github.com/riyadh-dev/scms-client',
+		thumbnail: imageSources.projects.scms[1],
+		images: imageSources.projects.scms,
+		tags: ['ReactJS', 'ExpressJS', 'MongoDB', 'MUI', 'GraphQL'],
+	},
+
+	{
+		name: 'Portfolio (UI Frameworks)',
+		links: ['https://riyadh-dev.github.io/portfolio'],
+		repo: 'https://github.com/riyadh-dev/portfolio',
+		thumbnail: imageSources.projects['portfolio-website-image'][0],
 		images: imageSources.projects['portfolio-website-image'],
-		tags: ['HTML', 'Typescript', 'SASS', 'ParcelJS'],
+		tags: ['SolidJS', 'PreactJS', 'Typescript', 'VitePWA', 'CSS'],
 	},
 ]
 

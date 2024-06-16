@@ -1,6 +1,17 @@
 const EXPERIENCE = [
 	{
 		isWork: true,
+		period: '2023 - 2024',
+		company: 'BJD IT',
+		jobTitle: 'Front-end web developer',
+		description: [
+			'Led the architecture and development of multiple front-end applications, with a focus on creating interactive dashboards.',
+			'Implemented responsive design principles to optimize user experience across different devices.',
+			'Integrated third-party APIs, including Firebase, to boost functionality and streamline processes.',
+		],
+	},
+	{
+		isWork: true,
 		period: '2020 - 2022',
 		company: 'Sirius Services - Abb Partner Algeria',
 		jobTitle: 'Software Developer',

@@ -1,3 +1,4 @@
+import astro from '~/assets/images/logos/astro.svg'
 import bootstrap from '~/assets/images/logos/bootstrap.png'
 import chakraUI from '~/assets/images/logos/chakra-ui.png'
 import css from '~/assets/images/logos/css.png'
@@ -10,12 +11,15 @@ import reactQuery from '~/assets/images/logos/react-query.svg'
 import react from '~/assets/images/logos/react.svg'
 import recoilJS from '~/assets/images/logos/recoil.png'
 import sass from '~/assets/images/logos/sass.png'
+import shadcn from '~/assets/images/logos/shadcn.png'
 import solidjs from '~/assets/images/logos/solid.svg'
 import tailwind from '~/assets/images/logos/tailwind.svg'
+import tanstack from '~/assets/images/logos/tanstack.png'
 import typescript from '~/assets/images/logos/ts.png'
 
 import drizzle from '~/assets/images/logos/drizzle.png'
 import express from '~/assets/images/logos/express.png'
+import go from '~/assets/images/logos/go.svg'
 import graphQL from '~/assets/images/logos/graphql.png'
 import mongodb from '~/assets/images/logos/mongodb.svg'
 import node from '~/assets/images/logos/node.png'
@@ -49,8 +53,16 @@ const SKILLS = [
 				image: solidjs,
 			},
 			{
-				name: 'React-Query',
+				name: 'Astro',
+				image: astro,
+			},
+			{
+				name: '@TS/Query',
 				image: reactQuery,
+			},
+			{
+				name: '@TS/Router',
+				image: tanstack,
 			},
 			{
 				name: 'RecoilJS',
@@ -63,6 +75,10 @@ const SKILLS = [
 			{
 				name: 'Tailwind',
 				image: tailwind,
+			},
+			{
+				name: 'Shadcn UI',
+				image: shadcn,
 			},
 			{
 				name: 'MUI',
@@ -106,6 +122,10 @@ const SKILLS = [
 			{
 				name: 'NodeJS',
 				image: node,
+			},
+			{
+				name: 'Go',
+				image: go,
 			},
 			{
 				name: 'MongoDB',

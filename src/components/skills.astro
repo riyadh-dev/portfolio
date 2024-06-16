@@ -21,8 +21,6 @@ import '~/styles/skills.css'
 							id={catName}
 							checked={index === 0}
 						/>
-						{/*eslint-disable-next-line
-						astro/jsx-a11y/label-has-associated-control*/}
 						<label for={catName} class='skills-tab'>
 							<Icon
 								name={catImageName}
@@ -30,18 +28,15 @@ import '~/styles/skills.css'
 								fill='red'
 								stroke='red'
 							/>
-
 							<h1 class='skills-title'>{catName}</h1>
 						</label>
 						<div class='skills-group'>
 							{skills.map((skill) => (
 								<div class='skill-container'>
 									<Image
-										class={
-											skill.dark
-												? 'skill-image-lighten'
-												: ''
-										}
+										class:list={{
+											'skill-image': !skill.dark,
+										}}
 										src={skill.image}
 										alt={skill.name}
 										width={52}

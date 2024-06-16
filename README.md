@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./src/assets/images/logos/astro.png" alt="astro" height="64"/>
+  <img src="./src/assets/images/logos/astro-white.png" alt="astro" height="64"/>
 </p>
 <p align="center"> 
             <img src="./src/assets//images/logos/js.png" alt="vanilla" height="64"/>

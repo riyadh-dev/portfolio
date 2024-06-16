@@ -58,9 +58,13 @@ import '~/styles/projects.css'
 
 								<a
 									aria-label='project repo'
-									href={project.repo}
+									href={
+										project.repo ??
+										'https://github.com/riyadh-dev'
+									}
 									rel='noreferrer'
 									target='_blank'
+									class:list={{ disabled: !project.repo }}
 								>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'

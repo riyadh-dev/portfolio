@@ -91,6 +91,13 @@
 	color: white;
 }
 
+.project-buttons a.disabled {
+	pointer-events: none;
+	cursor: not-allowed;
+	opacity: 0.8;
+	filter: grayscale(100%);
+}
+
 .circular-Button:hover,
 .project-buttons a:hover {
 	filter: brightness(150%);
