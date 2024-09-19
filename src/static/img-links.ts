@@ -130,6 +130,19 @@ const imageSources = {
 			`${ROOT_URL}/bookdex/vxeg6qnamiz61dblwjkb.png`,
 			`${ROOT_URL}/bookdex/xfbua4eb643yodanw9ga.png`,
 		],
+		todo: [
+			`${ROOT_URL}/todo/nprx3awfwfdqm0jfns4t.png`,
+			`${ROOT_URL}/todo/yxdaw0teejkvua8yx5mu.png`,
+			`${ROOT_URL}/todo/fnhzjg1zhjjt5andulzz.png`,
+		],
+		brainwave: [
+			`${ROOT_URL}/brainwave/o3pgnafhcqqljwtytqkg.png`,
+			`${ROOT_URL}/brainwave/lmjfiekvqkp9iuplpol6.png`,
+			`${ROOT_URL}/brainwave/gv0pzkqbh1pqwderonnh.png`,
+			`${ROOT_URL}/brainwave/e10aepichxsyglvhng2e.png`,
+			`${ROOT_URL}/brainwave/lrxypoc7quwkjmqdsryq.png`,
+			`${ROOT_URL}/brainwave/sdu6zgbvbb8oholabemz.png`,
+		],
 	},
 }
 

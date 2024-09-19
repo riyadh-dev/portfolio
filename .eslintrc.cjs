@@ -28,4 +28,5 @@ module.exports = {
 			files: ['.eslintrc.cjs', 'astro.config.mjs'],
 		},
 	],
+	ignorePatterns: ['dist'],
 }

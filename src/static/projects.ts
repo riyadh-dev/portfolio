@@ -31,7 +31,7 @@ const PROJECTS = [
 			'TailwindCSS',
 			'Next-auth',
 			'Jotai',
-			'Drizzle',
+			'Drizzle-ORM',
 			'tRPC',
 		],
 	},
@@ -142,6 +142,7 @@ const PROJECTS = [
 			'React Query',
 		],
 	},
+
 	{
 		name: 'Card Matching Game',
 		links: [
@@ -155,14 +156,12 @@ const PROJECTS = [
 	},
 
 	{
-		name: 'IEC101 Master Sim',
-		links: [
-			'https://github.com/riyadh-dev/iec101-master-sim/releases/download/v1.0.0/IEC101MasterSim.exe',
-		],
-		repo: 'https://github.com/riyadh-dev/iec101-master-sim',
-		thumbnail: imageSources.projects['iec101-master-sim'][1],
-		images: imageSources.projects['iec101-master-sim'],
-		tags: ['.NET', 'WPF', 'C#', 'XAML', 'IEC 60870-5-101'],
+		name: 'Brainwave',
+		links: ['https://riyadh-dev.github.io/brainwave/'],
+		repo: 'https://github.com/riyadh-dev/brainwave',
+		thumbnail: imageSources.projects.brainwave[0],
+		images: imageSources.projects.brainwave,
+		tags: ['AstroJS', 'TailwindCSS', 'Typescript', 'RPC'],
 	},
 
 	{
@@ -172,6 +171,15 @@ const PROJECTS = [
 		thumbnail: imageSources.projects['snake-game'][0],
 		images: imageSources.projects['snake-game'],
 		tags: ['SolidJS', 'Typescript', 'TailwindCSS'],
+	},
+
+	{
+		name: 'Todo App',
+		links: ['https://todo-app-web-riyadh.vercel.app/'],
+		repo: 'https://github.com/riyadh-dev/todo-app',
+		thumbnail: imageSources.projects.todo[0],
+		images: imageSources.projects.todo,
+		tags: ['HonoJS', 'SolidJS', 'Typescript', 'Drizzle-ORM', 'TailwindCSS'],
 	},
 
 	{
@@ -210,6 +218,17 @@ const PROJECTS = [
 		thumbnail: imageSources.projects['portfolio-website-image'][0],
 		images: imageSources.projects['portfolio-website-image'],
 		tags: ['SolidJS', 'PreactJS', 'Typescript', 'VitePWA', 'CSS'],
+	},
+
+	{
+		name: 'IEC101 Master Sim',
+		links: [
+			'https://github.com/riyadh-dev/iec101-master-sim/releases/download/v1.0.0/IEC101MasterSim.exe',
+		],
+		repo: 'https://github.com/riyadh-dev/iec101-master-sim',
+		thumbnail: imageSources.projects['iec101-master-sim'][1],
+		images: imageSources.projects['iec101-master-sim'],
+		tags: ['.NET', 'WPF', 'C#', 'XAML', 'IEC 60870-5-101'],
 	},
 ]
 

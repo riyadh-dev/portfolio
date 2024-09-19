@@ -69,6 +69,7 @@ export default function ThemePanel(props: { closeThemePanel: () => void }) {
 		localStorage.setItem('bgColorIdx', index().toString())
 	}
 
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	clickOutside //preserve import
 
 	return (

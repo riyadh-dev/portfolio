@@ -3,6 +3,8 @@
 	"compilerOptions": {
 		"jsx": "preserve",
 		"jsxImportSource": "solid-js",
+		"noEmit": true,
+		"incremental": true,
 		"baseUrl": ".",
 		"paths": {
 			"~/*": ["src/*"]
