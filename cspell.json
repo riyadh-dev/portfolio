@@ -10,6 +10,7 @@
 		"cloudinary",
 		"crossorigin",
 		"eslintcache",
+		"GSAP",
 		"Hono",
 		"INELEC",
 		"msedge",

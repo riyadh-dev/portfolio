@@ -143,6 +143,13 @@ const imageSources = {
 			`${ROOT_URL}/brainwave/lrxypoc7quwkjmqdsryq.png`,
 			`${ROOT_URL}/brainwave/sdu6zgbvbb8oholabemz.png`,
 		],
+		'landing-pages': [
+			`${ROOT_URL}/landing-pages/sftlndzhm5krgojigtje.png`,
+			`${ROOT_URL}/landing-pages/s4qqhkrgyqyr67jjaqxp.png`,
+			`${ROOT_URL}/landing-pages/t0khey2fmzktgc95k3lm.png`,
+			`${ROOT_URL}/landing-pages/izwimanktwxgrnixyr7r.png`,
+			`${ROOT_URL}/landing-pages/vkdmnnugguo3l6geqpma.png`,
+		],
 	},
 }
 

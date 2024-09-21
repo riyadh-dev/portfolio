@@ -83,11 +83,38 @@ const PROJECTS = [
 	},
 
 	{
-		name: 'Social Media App',
+		name: 'Brainwave',
+		links: ['https://riyadh-dev.github.io/brainwave/'],
+		repo: 'https://github.com/riyadh-dev/brainwave',
+		thumbnail: imageSources.projects.brainwave[0],
+		images: imageSources.projects.brainwave,
+		tags: ['AstroJS', 'TailwindCSS', 'Typescript', 'RPC'],
+	},
+
+	{
+		name: 'Card Matching Game',
 		links: [
-			//'https://social-media-app-production.up.railway.app',
-			'https://social-media-app-eoga.onrender.com/',
+			'https://riyadh-dev.github.io/memory-matching-game/',
+			'https://riyadh-dev-memory-matching-game.netlify.app/',
 		],
+		repo: 'https://github.com/riyadh-dev/memory-matching-game',
+		thumbnail: imageSources.projects['memory-matching-game'][0],
+		images: imageSources.projects['memory-matching-game'],
+		tags: ['ReactJS', 'PreactJS', 'Typescript', 'CSS'],
+	},
+
+	{
+		name: 'Landing Pages',
+		links: ['https://riyadh-dev.github.io/landing-pages/'],
+		repo: 'https://github.com/riyadh-dev/landing-pages/',
+		thumbnail: imageSources.projects['landing-pages'][0],
+		images: imageSources.projects['landing-pages'],
+		tags: ['AstroJS', 'TailwindCSS', 'Typescript', 'GSAP'],
+	},
+
+	{
+		name: 'Social Media App',
+		links: ['https://social-media-app-eoga.onrender.com/'],
 		repo: 'https://github.com/riyadh-dev/social-media-app',
 		thumbnail: imageSources.projects['social-media-app'][5],
 		images: imageSources.projects['social-media-app'],
@@ -144,50 +171,8 @@ const PROJECTS = [
 	},
 
 	{
-		name: 'Card Matching Game',
-		links: [
-			'https://riyadh-dev.github.io/memory-matching-game/',
-			'https://riyadh-dev-memory-matching-game.netlify.app/',
-		],
-		repo: 'https://github.com/riyadh-dev/memory-matching-game',
-		thumbnail: imageSources.projects['memory-matching-game'][0],
-		images: imageSources.projects['memory-matching-game'],
-		tags: ['ReactJS', 'PreactJS', 'Typescript', 'CSS'],
-	},
-
-	{
-		name: 'Brainwave',
-		links: ['https://riyadh-dev.github.io/brainwave/'],
-		repo: 'https://github.com/riyadh-dev/brainwave',
-		thumbnail: imageSources.projects.brainwave[0],
-		images: imageSources.projects.brainwave,
-		tags: ['AstroJS', 'TailwindCSS', 'Typescript', 'RPC'],
-	},
-
-	{
-		name: 'Snake Game',
-		links: ['https://riyadh-dev.github.io/snake-game/'],
-		repo: 'https://github.com/riyadh-dev/snake-game',
-		thumbnail: imageSources.projects['snake-game'][0],
-		images: imageSources.projects['snake-game'],
-		tags: ['SolidJS', 'Typescript', 'TailwindCSS'],
-	},
-
-	{
-		name: 'Todo App',
-		links: ['https://todo-app-web-riyadh.vercel.app/'],
-		repo: 'https://github.com/riyadh-dev/todo-app',
-		thumbnail: imageSources.projects.todo[0],
-		images: imageSources.projects.todo,
-		tags: ['HonoJS', 'SolidJS', 'Typescript', 'Drizzle-ORM', 'TailwindCSS'],
-	},
-
-	{
 		name: 'Authentication Demo',
-		links: [
-			//'https://authentication-demo.up.railway.app/',
-			'https://authentication-demo-jqhr.onrender.com/',
-		],
+		links: ['https://authentication-demo-jqhr.onrender.com/'],
 		repo: 'https://github.com/riyadh-dev/authentication-demo',
 		thumbnail: imageSources.projects['authentication-demo'][0],
 		images: imageSources.projects['authentication-demo'],
@@ -203,21 +188,37 @@ const PROJECTS = [
 	},
 
 	{
+		name: 'Portfolio',
+		links: ['https://riyadh-dev.github.io/portfolio'],
+		repo: 'https://github.com/riyadh-dev/portfolio',
+		thumbnail: imageSources.projects['portfolio-website-image'][0],
+		images: imageSources.projects['portfolio-website-image'],
+		tags: [
+			'AstroJS',
+			'SolidJS',
+			'PreactJS',
+			'Typescript',
+			'VitePWA',
+			'CSS',
+		],
+	},
+
+	{
+		name: 'Snake Game',
+		links: ['https://riyadh-dev.github.io/snake-game/'],
+		repo: 'https://github.com/riyadh-dev/snake-game',
+		thumbnail: imageSources.projects['snake-game'][0],
+		images: imageSources.projects['snake-game'],
+		tags: ['SolidJS', 'Typescript', 'TailwindCSS'],
+	},
+
+	{
 		name: 'SciConsul Manager',
 		links: ['https://scms-client.netlify.app/'],
 		repo: 'https://github.com/riyadh-dev/scms-client',
 		thumbnail: imageSources.projects.scms[1],
 		images: imageSources.projects.scms,
 		tags: ['ReactJS', 'ExpressJS', 'MongoDB', 'MUI', 'GraphQL'],
-	},
-
-	{
-		name: 'Portfolio (UI Frameworks)',
-		links: ['https://riyadh-dev.github.io/portfolio'],
-		repo: 'https://github.com/riyadh-dev/portfolio',
-		thumbnail: imageSources.projects['portfolio-website-image'][0],
-		images: imageSources.projects['portfolio-website-image'],
-		tags: ['SolidJS', 'PreactJS', 'Typescript', 'VitePWA', 'CSS'],
 	},
 
 	{
@@ -229,6 +230,14 @@ const PROJECTS = [
 		thumbnail: imageSources.projects['iec101-master-sim'][1],
 		images: imageSources.projects['iec101-master-sim'],
 		tags: ['.NET', 'WPF', 'C#', 'XAML', 'IEC 60870-5-101'],
+	},
+	{
+		name: 'Todo App',
+		links: ['https://todo-app-web-riyadh.vercel.app/'],
+		repo: 'https://github.com/riyadh-dev/todo-app',
+		thumbnail: imageSources.projects.todo[0],
+		images: imageSources.projects.todo,
+		tags: ['HonoJS', 'SolidJS', 'Typescript', 'Drizzle-ORM', 'TailwindCSS'],
 	},
 ]
 
