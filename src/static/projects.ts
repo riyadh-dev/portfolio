@@ -83,15 +83,6 @@ const PROJECTS = [
 	},
 
 	{
-		name: 'Brainwave',
-		links: ['https://riyadh-dev.github.io/brainwave/'],
-		repo: 'https://github.com/riyadh-dev/brainwave',
-		thumbnail: imageSources.projects.brainwave[0],
-		images: imageSources.projects.brainwave,
-		tags: ['AstroJS', 'TailwindCSS', 'Typescript', 'RPC'],
-	},
-
-	{
 		name: 'Card Matching Game',
 		links: [
 			'https://riyadh-dev.github.io/memory-matching-game/',
@@ -101,6 +92,42 @@ const PROJECTS = [
 		thumbnail: imageSources.projects['memory-matching-game'][0],
 		images: imageSources.projects['memory-matching-game'],
 		tags: ['ReactJS', 'PreactJS', 'Typescript', 'CSS'],
+	},
+
+	{
+		name: 'Todo App',
+		links: ['https://todo-app-web-riyadh.vercel.app/'],
+		repo: 'https://github.com/riyadh-dev/todo-app',
+		thumbnail: imageSources.projects.todo[0],
+		images: imageSources.projects.todo,
+		tags: ['HonoJS', 'SolidJS', 'Typescript', 'Drizzle-ORM', 'TailwindCSS'],
+	},
+
+	{
+		name: 'React Hono Turbo',
+		links: ['https://react-hono-turbo-web.vercel.app/'],
+		repo: 'https://github.com/riyadh-dev/react-hono-turbo',
+		thumbnail: imageSources.projects['react-hono-turbo'][0],
+		images: imageSources.projects['react-hono-turbo'],
+		tags: ['HonoJS', 'ReactJS', 'Typescript', 'Drizzle-ORM', 'TailwindCSS'],
+	},
+
+	{
+		name: 'Brainwave',
+		links: ['https://riyadh-dev.github.io/brainwave/'],
+		repo: 'https://github.com/riyadh-dev/brainwave',
+		thumbnail: imageSources.projects.brainwave[0],
+		images: imageSources.projects.brainwave,
+		tags: ['AstroJS', 'TailwindCSS', 'Typescript', 'RPC'],
+	},
+
+	{
+		name: 'Snake Game',
+		links: ['https://riyadh-dev.github.io/snake-game/'],
+		repo: 'https://github.com/riyadh-dev/snake-game',
+		thumbnail: imageSources.projects['snake-game'][0],
+		images: imageSources.projects['snake-game'],
+		tags: ['SolidJS', 'Typescript', 'TailwindCSS'],
 	},
 
 	{
@@ -204,15 +231,6 @@ const PROJECTS = [
 	},
 
 	{
-		name: 'Snake Game',
-		links: ['https://riyadh-dev.github.io/snake-game/'],
-		repo: 'https://github.com/riyadh-dev/snake-game',
-		thumbnail: imageSources.projects['snake-game'][0],
-		images: imageSources.projects['snake-game'],
-		tags: ['SolidJS', 'Typescript', 'TailwindCSS'],
-	},
-
-	{
 		name: 'SciConsul Manager',
 		links: ['https://scms-client.netlify.app/'],
 		repo: 'https://github.com/riyadh-dev/scms-client',
@@ -230,14 +248,6 @@ const PROJECTS = [
 		thumbnail: imageSources.projects['iec101-master-sim'][1],
 		images: imageSources.projects['iec101-master-sim'],
 		tags: ['.NET', 'WPF', 'C#', 'XAML', 'IEC 60870-5-101'],
-	},
-	{
-		name: 'Todo App',
-		links: ['https://todo-app-web-riyadh.vercel.app/'],
-		repo: 'https://github.com/riyadh-dev/todo-app',
-		thumbnail: imageSources.projects.todo[0],
-		images: imageSources.projects.todo,
-		tags: ['HonoJS', 'SolidJS', 'Typescript', 'Drizzle-ORM', 'TailwindCSS'],
 	},
 ]
 
