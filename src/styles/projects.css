@@ -53,11 +53,12 @@
 	height: 100%;
 	width: 100%;
 	top: 0;
-	padding: 1rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	column-gap: 0.5rem;
+	row-gap: 0.5rem;
 	flex-direction: column;
 	opacity: 0;
 	transition: opacity 0.3s ease-in-out;
@@ -68,7 +69,15 @@
 
 .project-title {
 	color: #fff;
-	font-size: var(--h2-font-size);
+	font-size: 2rem;
+	line-height: normal;
+	text-wrap: balance;
+	padding-inline: 0.5rem;
+}
+@container (max-width: 360px) {
+	.project-tags-container {
+		display: none !important;
+	}
 }
 
 .project-buttons {
@@ -143,12 +152,13 @@
 }
 
 .project-tags-container {
-	width: 360px;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	column-gap: 0.75rem;
 	row-gap: 0.5rem;
+	padding-inline: 0.5rem;
+	overflow-y: auto;
 }
 
 @media (max-width: 1024px) {
