@@ -104,24 +104,6 @@ const PROJECTS = [
 	},
 
 	{
-		name: 'React Hono Turbo',
-		links: ['https://react-hono-turbo-web.vercel.app/'],
-		repo: 'https://github.com/riyadh-dev/react-hono-turbo',
-		thumbnail: imageSources.projects['react-hono-turbo'][0],
-		images: imageSources.projects['react-hono-turbo'],
-		tags: ['HonoJS', 'ReactJS', 'Typescript', 'Drizzle-ORM', 'TailwindCSS'],
-	},
-
-	{
-		name: 'Brainwave',
-		links: ['https://riyadh-dev.github.io/brainwave/'],
-		repo: 'https://github.com/riyadh-dev/brainwave',
-		thumbnail: imageSources.projects.brainwave[0],
-		images: imageSources.projects.brainwave,
-		tags: ['AstroJS', 'TailwindCSS', 'Typescript', 'RPC'],
-	},
-
-	{
 		name: 'Snake Game',
 		links: ['https://riyadh-dev.github.io/snake-game/'],
 		repo: 'https://github.com/riyadh-dev/snake-game',
@@ -137,6 +119,23 @@ const PROJECTS = [
 		thumbnail: imageSources.projects['landing-pages'][0],
 		images: imageSources.projects['landing-pages'],
 		tags: ['AstroJS', 'TailwindCSS', 'Typescript', 'GSAP'],
+	},
+
+	{
+		name: 'Codecton Landing',
+		links: ['https://codecton.com/en/'],
+		thumbnail: imageSources.projects.codecton[0],
+		images: imageSources.projects.codecton,
+		tags: ['AstroJS', 'TailwindCSS', 'Typescript'],
+	},
+
+	{
+		name: 'Brainwave',
+		links: ['https://riyadh-dev.github.io/brainwave/'],
+		repo: 'https://github.com/riyadh-dev/brainwave',
+		thumbnail: imageSources.projects.brainwave[0],
+		images: imageSources.projects.brainwave,
+		tags: ['AstroJS', 'TailwindCSS', 'Typescript'],
 	},
 
 	{
@@ -156,6 +155,15 @@ const PROJECTS = [
 			'React Router',
 			'React Query',
 		],
+	},
+
+	{
+		name: 'React Hono Turbo',
+		links: ['https://react-hono-turbo-web.vercel.app/'],
+		repo: 'https://github.com/riyadh-dev/react-hono-turbo',
+		thumbnail: imageSources.projects['react-hono-turbo'][0],
+		images: imageSources.projects['react-hono-turbo'],
+		tags: ['HonoJS', 'ReactJS', 'Typescript', 'Drizzle-ORM', 'TailwindCSS'],
 	},
 
 	{

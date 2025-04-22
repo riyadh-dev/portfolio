@@ -8,6 +8,7 @@
 		"cacheable",
 		"Chakra",
 		"cloudinary",
+		"Codecton",
 		"crossorigin",
 		"eslintcache",
 		"GSAP",
@@ -35,5 +36,10 @@
 		"withastro",
 		"xmark"
 	],
-	"ignorePaths": ["pnpm-lock.yaml", "dist", "public", "*.svg"]
+	"ignorePaths": [
+		"pnpm-lock.yaml",
+		"dist",
+		"public",
+		"*.svg"
+	]
 }
