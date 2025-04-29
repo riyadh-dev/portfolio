@@ -113,15 +113,6 @@ const PROJECTS = [
 	},
 
 	{
-		name: 'Landing Pages',
-		links: ['https://riyadh-dev.github.io/landing-pages/'],
-		repo: 'https://github.com/riyadh-dev/landing-pages/',
-		thumbnail: imageSources.projects['landing-pages'][0],
-		images: imageSources.projects['landing-pages'],
-		tags: ['AstroJS', 'TailwindCSS', 'Typescript', 'GSAP'],
-	},
-
-	{
 		name: 'Codecton Landing',
 		links: ['https://codecton.com/en/'],
 		thumbnail: imageSources.projects.codecton[0],
@@ -136,6 +127,48 @@ const PROJECTS = [
 		thumbnail: imageSources.projects.brainwave[0],
 		images: imageSources.projects.brainwave,
 		tags: ['AstroJS', 'TailwindCSS', 'Typescript'],
+	},
+
+	{
+		name: 'Gomhani Landing',
+		links: ['https://gomhani.codecton.com/en/'],
+		thumbnail: imageSources.projects.gomhani[0],
+		images: imageSources.projects.gomhani,
+		tags: ['AstroJS', 'TailwindCSS', 'Typescript'],
+	},
+
+	{
+		name: 'React Hono Turbo',
+		links: ['https://react-hono-turbo-web.vercel.app/'],
+		repo: 'https://github.com/riyadh-dev/react-hono-turbo',
+		thumbnail: imageSources.projects['react-hono-turbo'][0],
+		images: imageSources.projects['react-hono-turbo'],
+		tags: ['HonoJS', 'ReactJS', 'Typescript', 'Drizzle-ORM', 'TailwindCSS'],
+	},
+
+	{
+		name: 'Landing Pages',
+		links: ['https://riyadh-dev.github.io/landing-pages/'],
+		repo: 'https://github.com/riyadh-dev/landing-pages/',
+		thumbnail: imageSources.projects['landing-pages'][0],
+		images: imageSources.projects['landing-pages'],
+		tags: ['AstroJS', 'TailwindCSS', 'Typescript', 'GSAP'],
+	},
+
+	{
+		name: 'Portfolio',
+		links: ['https://riyadh-dev.github.io/portfolio'],
+		repo: 'https://github.com/riyadh-dev/portfolio',
+		thumbnail: imageSources.projects['portfolio-website-image'][0],
+		images: imageSources.projects['portfolio-website-image'],
+		tags: [
+			'AstroJS',
+			'SolidJS',
+			'PreactJS',
+			'Typescript',
+			'VitePWA',
+			'CSS',
+		],
 	},
 
 	{
@@ -155,15 +188,6 @@ const PROJECTS = [
 			'React Router',
 			'React Query',
 		],
-	},
-
-	{
-		name: 'React Hono Turbo',
-		links: ['https://react-hono-turbo-web.vercel.app/'],
-		repo: 'https://github.com/riyadh-dev/react-hono-turbo',
-		thumbnail: imageSources.projects['react-hono-turbo'][0],
-		images: imageSources.projects['react-hono-turbo'],
-		tags: ['HonoJS', 'ReactJS', 'Typescript', 'Drizzle-ORM', 'TailwindCSS'],
 	},
 
 	{
@@ -219,22 +243,6 @@ const PROJECTS = [
 			'MongoDB',
 			'CSURF',
 			'HTTPOnly cookies',
-		],
-	},
-
-	{
-		name: 'Portfolio',
-		links: ['https://riyadh-dev.github.io/portfolio'],
-		repo: 'https://github.com/riyadh-dev/portfolio',
-		thumbnail: imageSources.projects['portfolio-website-image'][0],
-		images: imageSources.projects['portfolio-website-image'],
-		tags: [
-			'AstroJS',
-			'SolidJS',
-			'PreactJS',
-			'Typescript',
-			'VitePWA',
-			'CSS',
 		],
 	},
 

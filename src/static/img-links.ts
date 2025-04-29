@@ -162,6 +162,15 @@ const imageSources = {
 			`${ROOT_URL}/codecton/epr5pwywadxewtij7rmh.png`,
 			`${ROOT_URL}/codecton/blwyb4k82xajamoyqtgb.png`,
 		],
+		gomhani: [
+			`${ROOT_URL}/gomhani/binsjgmxy2bbxs4tswr9.png`,
+			`${ROOT_URL}/gomhani/tuiv5vbqrddmpnydelpi.png`,
+			`${ROOT_URL}/gomhani/cmem6swg35iy6ustwu4p.png`,
+			`${ROOT_URL}/gomhani/ix1s2xpaboam67uvrd6g.png`,
+			`${ROOT_URL}/gomhani/kbgcnycxwojb6yrk16ns.png`,
+			`${ROOT_URL}/gomhani/pezjqavyppy4enso58n8.png`,
+			`${ROOT_URL}/gomhani/tmzorrobve1zfoaidbhg.png`,
+		],
 	},
 }
 

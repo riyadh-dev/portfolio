@@ -11,6 +11,7 @@
 		"Codecton",
 		"crossorigin",
 		"eslintcache",
+		"gomhani",
 		"GSAP",
 		"Hono",
 		"INELEC",
@@ -36,10 +37,5 @@
 		"withastro",
 		"xmark"
 	],
-	"ignorePaths": [
-		"pnpm-lock.yaml",
-		"dist",
-		"public",
-		"*.svg"
-	]
+	"ignorePaths": ["pnpm-lock.yaml", "dist", "public", "*.svg"]
 }
