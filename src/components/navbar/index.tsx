@@ -56,18 +56,17 @@ export default function Navbar() {
 					<div class='nav-list'>
 						<For each={NAV_ITEMS}>
 							{(item) => (
-								<button onClick={closeNavbar}>
-									<a
-										href={item.href}
-										class='nav-link nav-item'
-										classList={{
-											'active-link':
-												currentSection() === item.href,
-										}}
-									>
-										{item.name}
-									</a>
-								</button>
+								<a
+									href={item.href}
+									onClick={closeNavbar}
+									class='nav-link nav-item'
+									classList={{
+										'active-link':
+											currentSection() === item.href,
+									}}
+								>
+									{item.name}
+								</a>
 							)}
 						</For>
 					</div>

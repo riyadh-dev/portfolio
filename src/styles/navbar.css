@@ -40,8 +40,9 @@
 }
 .nav-list {
 	display: flex;
-	column-gap: 3rem;
+	column-gap: 1rem;
 	font-weight: var(--font-medium);
+	align-items: center;
 }
 .nav-btn-group {
 	display: flex;
@@ -59,6 +60,11 @@
 .nav-close,
 .nav-toggle {
 	display: none;
+}
+.nav-link {
+	padding: 0.5rem 1rem;
+	border-radius: var(--btn-border-radius);
+	transition: background-color 0.3s;
 }
 
 @media (width < 992px) {
@@ -99,12 +105,8 @@
 }
 
 .active-link {
-	line-height: 1;
-	padding: 0.5rem 2rem;
-	border-radius: var(--btn-border-radius);
 	background-color: var(--color-primary);
 	color: white;
-	transition: background-color 0.3s;
 }
 
 #nav-theme-btn {
