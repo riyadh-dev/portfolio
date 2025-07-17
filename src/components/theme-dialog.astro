@@ -1,0 +1,125 @@
+---
+import THEME_DATA from '~/static/theme'
+import '~/styles/theme-dialog.css'
+---
+
+<dialog id='theme-dialog' class='theme-dialog'>
+	<h2>Customize The Theme</h2>
+	<p>Manage the font size, color and theme mode.</p>
+
+	<div class='theme-font-size'>
+		<h3>Font Size</h3>
+		<div class='theme-font-size-slider'>
+			<h6>Aa</h6>
+			<div>
+				{
+					THEME_DATA.fontSizes.map((val) => (
+						<button
+							aria-label={`font-${val}`}
+							data-font-size={val}
+							class='font-size-btn'
+						/>
+					))
+				}
+			</div>
+			<h3>Aa</h3>
+		</div>
+	</div>
+
+	<div class='theme-color'>
+		<h3>Color</h3>
+		<div>
+			{
+				THEME_DATA.primary.map((val) => (
+					<button
+						aria-label={`primary-${val}`}
+						data-primary={val}
+						class='primary-btn'
+					/>
+				))
+			}
+		</div>
+	</div>
+
+	<div class='theme-background'>
+		<h3>Theme Mode</h3>
+		<div>
+			{
+				THEME_DATA.bg.map((val) => (
+					<button data-bg={val} class='bg-btn'>
+						{val}
+					</button>
+				))
+			}
+		</div>
+	</div>
+</dialog>
+
+<script>
+	const [fontBtns, primaryBtns, bgBtns] = [
+		document.querySelectorAll<HTMLButtonElement>('.font-size-btn'),
+		document.querySelectorAll<HTMLButtonElement>('.primary-btn'),
+		document.querySelectorAll<HTMLButtonElement>('.bg-btn'),
+	]
+
+	updateBgBtns()
+	updateFontSizeBtns()
+	updatePrimaryBtns()
+
+	for (const btn of fontBtns)
+		btn.addEventListener('click', () => {
+			localStorage.setItem('font-size', btn.dataset.fontSize ?? 'base')
+			document.documentElement.setAttribute(
+				'data-font-size',
+				btn.dataset.fontSize ?? 'base'
+			)
+			updateFontSizeBtns()
+		})
+
+	for (const btn of primaryBtns)
+		btn.addEventListener('click', () => {
+			localStorage.setItem('primary', btn.dataset.primary ?? 'rose')
+			document.documentElement.setAttribute(
+				'data-primary',
+				btn.dataset.primary ?? 'rose'
+			)
+			updatePrimaryBtns()
+		})
+
+	for (const btn of bgBtns)
+		btn.addEventListener('click', () => {
+			localStorage.setItem('bg', btn.dataset.bg ?? 'dark')
+			document.documentElement.setAttribute(
+				'data-bg',
+				btn.dataset.bg ?? 'dark'
+			)
+			updateBgBtns()
+		})
+
+	function updateFontSizeBtns() {
+		const fontSize = document.documentElement.dataset.fontSize
+		for (const btn of fontBtns)
+			btn.classList[fontSize === btn.dataset.fontSize ? 'add' : 'remove'](
+				'active'
+			)
+	}
+
+	function updatePrimaryBtns() {
+		const primary = document.documentElement.dataset.primary
+		for (const btn of primaryBtns)
+			btn.classList[primary === btn.dataset.primary ? 'add' : 'remove'](
+				'active'
+			)
+	}
+
+	function updateBgBtns() {
+		const bg = document.documentElement.dataset.bg
+		for (const btn of bgBtns)
+			btn.classList[bg === btn.dataset.bg ? 'add' : 'remove']('active')
+	}
+
+	const dialog = document.querySelector<HTMLDialogElement>('#theme-dialog')
+	dialog?.addEventListener('click', (e) => {
+		if (e.target === dialog) dialog.close()
+	})
+</script>

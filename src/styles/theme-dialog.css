@@ -1,24 +1,18 @@
-.theme-panel-container {
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	width: 100vw;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 100;
+.theme-dialog::backdrop {
 	background: rgba(0, 0, 0, 0.5);
-	font-size: var(--small-font-size);
-	display: flex;
 }
 
-.theme-panel {
-	background: var(--color-white);
+.theme-dialog {
+	background: var(--color-light);
+	color: var(--color-dark);
+	border-color: var(--color-light);
+	text-align: center;
+	font-size: var(--small-font-size);
 	padding: 3rem;
 	border-radius: var(--card-border-radius);
 	width: 95%;
 	max-width: 600px;
+	margin: auto;
 }
 
 .theme-font-size {

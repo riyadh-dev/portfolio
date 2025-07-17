@@ -4,14 +4,16 @@ import Contact from '~/components/contact.astro'
 import Experience from '~/components/experience.astro'
 import Footer from '~/components/footer.astro'
 import Home from '~/components/home.astro'
-import Navbar from '~/components/navbar/index.astro'
+import Navbar from '~/components/navbar.astro'
 import Projects from '~/components/projects/index.astro'
 import Skills from '~/components/skills.astro'
+import ThemeDialog from '~/components/theme-dialog.astro'
 import Layout from '../layouts/layout.astro'
 ---
 
 <Layout title='Riyadh Baatchia'>
 	<Navbar />
+	<ThemeDialog />
 	<Home />
 	<About />
 	<Projects />
