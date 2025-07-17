@@ -1,73 +1,39 @@
-import {
-	For,
-	batch,
-	createSignal,
-	onCleanup,
-	onMount,
-	type Accessor,
-} from 'solid-js'
+import { createEffect, createSignal, For, onCleanup, onMount } from 'solid-js'
 import THEME from '~/static/theme'
 import clickOutside from '~/utils/click-outside'
 
 import '~/styles/theme-panel.css'
 
 export default function ThemePanel(props: { closeThemePanel: () => void }) {
+	const [fontSize, setFontSize] = createSignal(
+		localStorage.getItem('font-size') ?? 'base'
+	)
+	const [primary, setPrimary] = createSignal(
+		localStorage.getItem('primary') ?? 'rose'
+	)
+	const [bg, setBg] = createSignal(localStorage.getItem('bg') ?? 'dark')
+
+	createEffect(() => {
+		document.documentElement.dataset.fontSize = fontSize()
+		localStorage.setItem('font-size', fontSize())
+	})
+
+	createEffect(() => {
+		document.documentElement.dataset.primary = primary()
+		localStorage.setItem('primary', primary())
+	})
+
+	createEffect(() => {
+		document.documentElement.dataset.bg = bg()
+		localStorage.setItem('bg', bg())
+	})
+
 	onMount(() => (document.body.style.overflow = 'hidden'))
 
 	onCleanup(() => {
 		document.body.style.position = ''
 		document.body.style.overflow = 'auto'
 	})
-
-	const [fontSizeIdx, setFontSizeIdx] = createSignal(0)
-	const [colorHueIdx, setColorHueIdx] = createSignal(0)
-	const [bgColorIdx, setBgColorIdx] = createSignal(0)
-
-	onMount(() =>
-		batch(() => {
-			setFontSizeIdx(
-				parseInt(localStorage.getItem('fontSizeIdx') ?? '2', 10)
-			)
-			setColorHueIdx(
-				parseInt(localStorage.getItem('colorHueIdx') ?? '2', 10)
-			)
-			setBgColorIdx(
-				parseInt(localStorage.getItem('bgColorIdx') ?? '1', 10)
-			)
-		})
-	)
-
-	const style = document.documentElement.style
-	const handleColorHueIndxChange = (index: Accessor<number>) => {
-		setColorHueIdx(index())
-		style.setProperty('--primary-color-hue', THEME.colorHues[colorHueIdx()])
-		localStorage.setItem('colorHueIdx', index().toString())
-	}
-
-	const handleFontSizeIndxChange = (index: Accessor<number>) => {
-		setFontSizeIdx(index())
-		style.fontSize = THEME.fontSizes[index()]
-		localStorage.setItem('fontSizeIdx', index().toString())
-	}
-
-	const handleBgColorIndxChange = (index: Accessor<number>) => {
-		setBgColorIdx(index())
-
-		style.setProperty(
-			'--light-color-lightness',
-			THEME.backgrounds[bgColorIdx()].values[0]
-		)
-		style.setProperty(
-			'--dark-color-lightness',
-			THEME.backgrounds[bgColorIdx()].values[1]
-		)
-		style.setProperty(
-			'--white-color-lightness',
-			THEME.backgrounds[bgColorIdx()].values[2]
-		)
-
-		localStorage.setItem('bgColorIdx', index().toString())
-	}
 
 	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	clickOutside //preserve import
@@ -84,16 +50,13 @@ export default function ThemePanel(props: { closeThemePanel: () => void }) {
 						<h6>Aa</h6>
 						<div>
 							<For each={THEME.fontSizes}>
-								{(_, index) => (
+								{(val) => (
 									<button
-										aria-label={`font-size-${index()}`}
-										onClick={[
-											handleFontSizeIndxChange,
-											index,
-										]}
-										class={`font-size-${index() + 1}`}
+										aria-label={`font-${val}`}
+										onClick={[setFontSize, val]}
+										data-font-size={val}
 										classList={{
-											active: index() === fontSizeIdx(),
+											active: val === fontSize(),
 										}}
 									/>
 								)}
@@ -106,14 +69,14 @@ export default function ThemePanel(props: { closeThemePanel: () => void }) {
 				<div class='theme-color'>
 					<h3>Color</h3>
 					<div>
-						<For each={THEME.colorHues}>
-							{(_, index) => (
+						<For each={THEME.primary}>
+							{(val) => (
 								<button
-									aria-label={`color-${index()}`}
-									onClick={[handleColorHueIndxChange, index]}
-									class={`color-${index() + 1}`}
+									aria-label={`primary-${val}`}
+									onClick={[setPrimary, val]}
+									data-primary={val}
 									classList={{
-										active: index() === colorHueIdx(),
+										active: val === primary(),
 									}}
 								/>
 							)}
@@ -124,17 +87,17 @@ export default function ThemePanel(props: { closeThemePanel: () => void }) {
 				<div class='theme-background'>
 					<h3>Theme Mode</h3>
 					<div>
-						<For each={THEME.backgrounds}>
-							{({ text }, index) => (
+						<For each={THEME.bg}>
+							{(val) => (
 								<button
 									style={{ width: '100%' }}
-									onClick={[handleBgColorIndxChange, index]}
-									class={`bg-${index() + 1}`}
+									onClick={[setBg, val]}
+									data-bg={val}
 									classList={{
-										active: index() === bgColorIdx(),
+										active: val === bg(),
 									}}
 								>
-									{text}
+									{val}
 								</button>
 							)}
 						</For>

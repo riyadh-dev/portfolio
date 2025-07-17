@@ -1,18 +1,4 @@
 :root {
-	--header-height: 5rem;
-	/*{ text: 'Dim', values: ['15%', '95%', '20%'] },*/
-	/*============ Colors ============*/
-	--primary-color-hue: 352;
-	--dark-color-lightness: 15%;
-	--light-color-lightness: 95%;
-	--white-color-lightness: 20%;
-
-	--color-white: hsl(252, 30%, var(--white-color-lightness));
-	--color-light: hsl(252, 30%, var(--light-color-lightness));
-	--color-gray: hsl(252, 15%, 65%);
-	--color-primary: hsl(var(--primary-color-hue), 69.9%, 53.1%);
-	--color-dark: hsl(252, 30%, var(--dark-color-lightness));
-
 	/*============ Font and topography ============*/
 	--body-font: 'Rubik', sans-serif;
 	--h1-font-size: 2.25rem;
@@ -20,14 +6,6 @@
 	--h3-font-size: 1.25rem;
 	--normal-font-size: 1rem;
 	--small-font-size: 0.875rem;
-
-	@media (width < 992px) {
-		--h1-font-size: 1.75rem;
-		--h2-font-size: 1.5rem;
-		--h3-font-size: 1rem;
-		--normal-font-size: 0.938rem;
-		--small-font-size: 0.813rem;
-	}
 
 	/*============ Font weight ============*/
 	--font-medium: 500;
@@ -50,6 +28,65 @@
 
 	/*============ Box shadow ============*/
 	--box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+
+	/*==== Misc ====*/
+	--header-height: 5rem;
+	--color-gray: #a29cc4;
+}
+
+@media (max-width: 48rem) {
+	:root {
+		--h1-font-size: 1.75rem;
+		--h2-font-size: 1.5rem;
+		--h3-font-size: 1rem;
+		--normal-font-size: 0.938rem;
+		--small-font-size: 0.813rem;
+	}
+}
+
+[data-primary='indigo'] {
+	--color-primary: #5534db;
+}
+[data-primary='green'] {
+	--color-primary: #27a736;
+}
+[data-primary='rose'] {
+	--color-primary: #db344a;
+}
+[data-primary='gold'] {
+	--color-primary: #dbbc34;
+}
+[data-primary='blue'] {
+	--color-primary: #3452db;
+}
+
+[data-bg='light'] {
+	--color-light: #edeafb;
+	--color-dark: #2e2b3b;
+	--color-white: #ffffff;
+}
+[data-bg='dark'] {
+	--color-light: #170e33;
+	--color-dark: #edeafb;
+	--color-white: #20133f;
+}
+[data-bg='midnight'] {
+	--color-light: #100c26;
+	--color-dark: #edeafb;
+	--color-white: #000000;
+}
+
+[data-font-size='sm'] {
+	font-size: 12px;
+}
+[data-font-size='md'] {
+	font-size: 14px;
+}
+[data-font-size='base'] {
+	font-size: 16px;
+}
+[data-font-size='lg'] {
+	font-size: 18px;
 }
 
 @font-face {

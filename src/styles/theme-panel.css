@@ -68,26 +68,6 @@
 	align-items: center;
 }
 
-.theme-color .color-1 {
-	background: #6b4de6;
-}
-
-.theme-color .color-2 {
-	background: #4de65e;
-}
-
-.theme-color .color-3 {
-	background: #e64d61;
-}
-
-.theme-color .color-4 {
-	background: #e6c94d;
-}
-
-.theme-color .color-5 {
-	background: #4d69e6;
-}
-
 .theme-color div button {
 	width: 1.8rem;
 	height: 1.8rem;
@@ -96,7 +76,7 @@
 }
 
 .theme-color div button.active {
-	border: 0.25em solid #fff;
+	border: 0.25em solid white;
 }
 
 .theme-background {
@@ -118,30 +98,10 @@
 	justify-content: space-evenly;
 	border-radius: 0.5rem;
 	font-weight: 600;
+	background: var(--color-white);
+	color: var(--color-dark);
 }
 
 .theme-background div button.active {
 	border: 2px solid var(--color-primary);
-}
-
-.theme-background div button span {
-	width: 1.4rem;
-	height: 1.4rem;
-	border: 2px solid var(--color-gray);
-	border-radius: 50%;
-}
-
-.theme-background div .bg-1 {
-	background: #e7e4f1;
-	color: #241e38;
-}
-
-.theme-background div .bg-2 {
-	background: #241e38;
-	color: #fff;
-}
-
-.theme-background div .bg-3 {
-	background: #151221;
-	color: #fff;
 }

@@ -10,8 +10,22 @@ const { title } = Astro.props
 ---
 
 <!doctype html>
-<html lang='en'>
+<html lang='en' data-primary='rose' data-bg='dark' data-font-size='base'>
 	<head>
+		<script is:inline>
+			document.documentElement.setAttribute(
+				'data-primary',
+				localStorage.getItem('primary') ?? 'rose'
+			)
+			document.documentElement.setAttribute(
+				'data-bg',
+				localStorage.getItem('bg') ?? 'dark'
+			)
+			document.documentElement.setAttribute(
+				'data-font-size',
+				localStorage.getItem('font-size') ?? 'base'
+			)
+		</script>
 		<meta charset='UTF-8' />
 		<meta name='description' content='Riyadh Baatchia Portfolio' />
 		<meta name='viewport' content='width=device-width' />
