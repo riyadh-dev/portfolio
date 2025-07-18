@@ -1,6 +1,6 @@
 import imageSources from './img-links'
 
-const PROJECTS = [
+export default [
 	{
 		name: 'Online Store',
 		links: ['https://e-commerce-app-self.vercel.app/'],
@@ -266,5 +266,3 @@ const PROJECTS = [
 		tags: ['.NET', 'WPF', 'C#', 'XAML', 'IEC 60870-5-101'],
 	},
 ]
-
-export default PROJECTS

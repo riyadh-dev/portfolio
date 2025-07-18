@@ -13,7 +13,7 @@ import '~/styles/gallery-slider.css'
 
 export default function GallerySlider(props: {
 	closeGallerySlider: () => void
-	images: string[]
+	images: readonly string[]
 }) {
 	const [imageIndex, setImageIndex] = createSignal(0)
 	const [imageLoaded, setImageLoaded] = createSignal(false)

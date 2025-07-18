@@ -1,9 +1,8 @@
 //cspell:disable
-
 const ROOT_URL =
 	'https://res.cloudinary.com/riyadh-main-cloud/image/upload/f_webp/q_auto:best/portfolio'
 
-const imageSources = {
+export default {
 	logo: `${ROOT_URL}/skdcfiuvaaeyf3f6jqnm.png`,
 	projects: {
 		'social-media-app': [
@@ -172,6 +171,4 @@ const imageSources = {
 			`${ROOT_URL}/gomhani/tmzorrobve1zfoaidbhg.png`,
 		],
 	},
-}
-
-export default imageSources
+} as const

@@ -4,7 +4,7 @@ import GallerySlider from './gallery-slider'
 
 import '~/styles/projects.css'
 
-export default function GalleryButton(props: { images: string[] }) {
+export default function GalleryButton(props: { images: readonly string[] }) {
 	const [showGallerySlider, setShowGallerySlider] = createSignal(false)
 
 	return (

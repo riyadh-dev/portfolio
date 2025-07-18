@@ -1,7 +1,5 @@
-const THEME_DATA = {
+export default {
 	fontSizes: ['sm', 'md', 'base', 'lg'],
 	primary: ['indigo', 'green', 'rose', 'gold', 'blue'],
 	bg: ['light', 'dark', 'midnight'],
-}
-
-export default THEME_DATA
+} as const

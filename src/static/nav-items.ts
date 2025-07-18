@@ -1,4 +1,4 @@
-const NAV_ITEMS = [
+export default [
 	{
 		name: 'Home',
 		href: '#home',
@@ -23,6 +23,4 @@ const NAV_ITEMS = [
 		name: 'Contact',
 		href: '#contact',
 	},
-]
-
-export default NAV_ITEMS
+] as const

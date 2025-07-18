@@ -35,7 +35,7 @@ import parcelJS from '~/assets/images/logos/parcel.png'
 import turborepo from '~/assets/images/logos/turborepo.svg'
 import vitejs from '~/assets/images/logos/vite.png'
 
-const SKILLS = [
+export default [
 	{
 		catName: 'Web Frontend',
 		catImageName: 'frontend',
@@ -199,6 +199,4 @@ const SKILLS = [
 			},
 		],
 	},
-]
-
-export default SKILLS
+] as const

@@ -1,4 +1,4 @@
-const EXPERIENCE = [
+export default [
 	{
 		isWork: true,
 		period: '2023 - 2024',
@@ -59,6 +59,4 @@ const EXPERIENCE = [
 		jobTitle: 'Degree',
 		description: ['License in Electrical and Electronics Engineering.'],
 	},
-]
-
-export default EXPERIENCE
+] as const
