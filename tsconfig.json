@@ -1,13 +1,11 @@
 {
 	"extends": "astro/tsconfigs/strict",
 	"compilerOptions": {
-		"jsx": "preserve",
-		"jsxImportSource": "solid-js",
-		"noEmit": true,
-		"incremental": true,
 		"baseUrl": ".",
 		"paths": {
 			"~/*": ["src/*"]
 		}
-	}
+	},
+	"include": [".astro/types.d.ts", "**/*", ".prettierrc.mjs"],
+	"exclude": ["dist"]
 }

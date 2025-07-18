@@ -9,34 +9,32 @@
 		"check": "astro check",
 		"preview": "astro preview",
 		"astro": "astro",
-		"lint": "eslint . --fix --cache --max-warnings 0",
+		"lint": "eslint . --fix --cache --max-warnings 0 --cache-location node_modules/.cache/.eslintcache",
 		"format": "prettier . -w -u -c --cache",
 		"check-spelling": "cspell . --cache"
 	},
 	"dependencies": {
-		"@astrojs/check": "^0.9.4",
-		"@astrojs/solid-js": "^5.0.5",
-		"astro": "^5.5.2",
+		"astro": "^5.12.0",
 		"astro-icon": "^1.1.5",
-		"solid-js": "^1.9.5",
-		"typescript": "^5.8.2"
+		"dev": "^0.1.3",
+		"typescript": "^5.8.3"
 	},
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^8.26.1",
-		"@typescript-eslint/parser": "^8.26.1",
-		"cspell": "^8.17.5",
-		"eslint": "^8.57.1",
-		"eslint-config-prettier": "^10.1.1",
+		"@eslint/js": "^9.31.0",
+		"@typescript-eslint/parser": "^8.37.0",
+		"cspell": "^9.1.5",
+		"eslint": "^9.31.0",
+		"eslint-config-prettier": "^10.1.5",
 		"eslint-plugin-astro": "^1.3.1",
 		"eslint-plugin-jsx-a11y": "^6.10.2",
-		"eslint-plugin-solid": "^0.14.5",
 		"husky": "^9.1.7",
-		"lint-staged": "^15.5.0",
-		"prettier": "^3.5.3",
+		"lint-staged": "^16.1.2",
+		"prettier": "^3.6.2",
 		"prettier-plugin-astro": "^0.14.1",
-		"sharp": "^0.33.5"
+		"sharp": "^0.34.3",
+		"typescript-eslint": "^8.37.0"
 	},
-	"packageManager": "pnpm@10.6.3",
+	"packageManager": "bun@1.2.18",
 	"lint-staged": {
 		"*": [
 			"cspell --cache",

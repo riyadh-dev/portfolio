@@ -194,8 +194,8 @@ export default [
 		name: 'Bookdex',
 		links: ['https://bookdex.vercel.app/'],
 		repo: 'https://github.com/riyadh-dev/bookdex',
-		thumbnail: imageSources.projects['bookdex'][0],
-		images: imageSources.projects['bookdex'],
+		thumbnail: imageSources.projects.bookdex[0],
+		images: imageSources.projects.bookdex,
 		tags: [
 			'SolidJS',
 			'TailwindCSS',

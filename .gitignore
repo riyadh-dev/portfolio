@@ -22,8 +22,3 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
-
-#cache
-.cspellcache
-.prettiercache
-.eslintcache

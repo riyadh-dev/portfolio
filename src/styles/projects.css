@@ -117,6 +117,7 @@
 	filter: brightness(150%);
 }
 
+.circular-Button svg,
 .project-buttons svg {
 	fill: white;
 	height: 1.25rem;

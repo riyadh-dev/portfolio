@@ -1,3 +1,9 @@
-/* eslint-disable @typescript-eslint/triple-slash-reference */
-/// <reference path="../.astro/types.d.ts" />
-/// <reference types="astro/client" />
+import '../.astro/types'
+import 'astro/astro-jsx'
+import 'astro/client'
+
+declare global {
+	namespace JSX {
+		type Element = HTMLElement
+	}
+}

@@ -1,12 +1,22 @@
 import astro from '~/assets/images/logos/astro.svg'
 import bootstrap from '~/assets/images/logos/bootstrap.png'
 import chakraUI from '~/assets/images/logos/chakra-ui.png'
+import csharp from '~/assets/images/logos/csharp.png'
 import css from '~/assets/images/logos/css.png'
+import dotnet from '~/assets/images/logos/dotnet.svg'
+import drizzle from '~/assets/images/logos/drizzle.png'
+import express from '~/assets/images/logos/express.png'
+import go from '~/assets/images/logos/go.svg'
+import graphQL from '~/assets/images/logos/graphql.png'
 import html from '~/assets/images/logos/html.png'
 import jotai from '~/assets/images/logos/jotai.png'
 import javascript from '~/assets/images/logos/js.png'
+import mongodb from '~/assets/images/logos/mongodb.svg'
 import mui from '~/assets/images/logos/mui.svg'
 import nextjs from '~/assets/images/logos/next.png'
+import node from '~/assets/images/logos/node.png'
+import parcelJS from '~/assets/images/logos/parcel.png'
+import postgresql from '~/assets/images/logos/postgres.png'
 import reactQuery from '~/assets/images/logos/react-query.svg'
 import react from '~/assets/images/logos/react.svg'
 import recoilJS from '~/assets/images/logos/recoil.png'
@@ -15,25 +25,12 @@ import shadcn from '~/assets/images/logos/shadcn.png'
 import solidjs from '~/assets/images/logos/solid.svg'
 import tailwind from '~/assets/images/logos/tailwind.svg'
 import tanstack from '~/assets/images/logos/tanstack.png'
-import typescript from '~/assets/images/logos/ts.png'
-
-import drizzle from '~/assets/images/logos/drizzle.png'
-import express from '~/assets/images/logos/express.png'
-import go from '~/assets/images/logos/go.svg'
-import graphQL from '~/assets/images/logos/graphql.png'
-import mongodb from '~/assets/images/logos/mongodb.svg'
-import node from '~/assets/images/logos/node.png'
-import postgresql from '~/assets/images/logos/postgres.png'
 import trpc from '~/assets/images/logos/trpc.png'
-import webSocket from '~/assets/images/logos/ws.png'
-
-import csharp from '~/assets/images/logos/csharp.png'
-import dotnet from '~/assets/images/logos/dotnet.svg'
-import xaml from '~/assets/images/logos/xaml.png'
-
-import parcelJS from '~/assets/images/logos/parcel.png'
+import typescript from '~/assets/images/logos/ts.png'
 import turborepo from '~/assets/images/logos/turborepo.svg'
 import vitejs from '~/assets/images/logos/vite.png'
+import webSocket from '~/assets/images/logos/ws.png'
+import xaml from '~/assets/images/logos/xaml.png'
 
 export default [
 	{
@@ -199,4 +196,4 @@ export default [
 			},
 		],
 	},
-] as const
+]
