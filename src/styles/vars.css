@@ -31,7 +31,6 @@
 
 	/*==== Misc ====*/
 	--header-height: 5rem;
-	--color-gray: #a29cc4;
 }
 
 @media (max-width: 48rem) {
@@ -45,35 +44,40 @@
 }
 
 [data-primary='indigo'] {
-	--color-primary: #5534db;
+	--color-primary: #6366f1;
 }
-[data-primary='green'] {
-	--color-primary: #27a736;
+[data-primary='emerald'] {
+	--color-primary: #10b981;
 }
-[data-primary='rose'] {
-	--color-primary: #db344a;
+[data-primary='ruby'] {
+	--color-primary: #f43f5e;
 }
-[data-primary='gold'] {
-	--color-primary: #dbbc34;
+[data-primary='amber'] {
+	--color-primary: #f59e0b;
 }
-[data-primary='blue'] {
-	--color-primary: #3452db;
+[data-primary='sky'] {
+	--color-primary: #0ea5e9;
 }
 
 [data-bg='light'] {
-	--color-light: #edeafb;
-	--color-dark: #2e2b3b;
-	--color-white: #ffffff;
+	--color-base-100: #ffffff;
+	--color-base-200: #f5f7fa;
+	--color-base-300: #cbd5e1;
+	--color-base-content: #111827;
 }
+
 [data-bg='dark'] {
-	--color-light: #170e33;
-	--color-dark: #edeafb;
-	--color-white: #20133f;
+	--color-base-100: #1e293b;
+	--color-base-200: #0f172a;
+	--color-base-300: #475569;
+	--color-base-content: #f8fafc;
 }
+
 [data-bg='midnight'] {
-	--color-light: #100c26;
-	--color-dark: #edeafb;
-	--color-white: #000000;
+	--color-base-100: #000000;
+	--color-base-200: #0a0a0a;
+	--color-base-300: #334155;
+	--color-base-content: #f1f5f9;
 }
 
 [data-font-size='sm'] {

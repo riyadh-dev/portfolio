@@ -76,7 +76,7 @@
 	height: 100%;
 	padding: 1rem 1rem 1rem 0;
 	background: none;
-	color: var(--color-dark);
+	color: var(--color-base-content);
 	outline: none;
 	border: none;
 	z-index: 1;

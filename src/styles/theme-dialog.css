@@ -3,9 +3,9 @@
 }
 
 .theme-dialog {
-	background: var(--color-light);
-	color: var(--color-dark);
-	border-color: var(--color-light);
+	background: var(--color-base-200);
+	color: var(--color-base-content);
+	border-color: var(--color-base-200);
 	text-align: center;
 	font-size: var(--small-font-size);
 	padding: 3rem;
@@ -23,7 +23,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: var(--color-light);
+	background: var(--color-base-200);
 	border-radius: var(--card-border-radius);
 	padding: 0.6rem 1rem;
 }
@@ -54,7 +54,7 @@
 }
 
 .theme-color div {
-	background: var(--color-light);
+	background: var(--color-base-200);
 	border-radius: var(--card-border-radius);
 	padding: 0.6rem 1rem;
 	display: flex;
@@ -70,7 +70,7 @@
 }
 
 .theme-color div button.active {
-	border: 0.25em solid white;
+	border: 0.25em solid #d6ccff;
 }
 
 .theme-background {
@@ -92,8 +92,8 @@
 	justify-content: space-evenly;
 	border-radius: 0.5rem;
 	font-weight: 600;
-	background: var(--color-white);
-	color: var(--color-dark);
+	background: var(--color-base-100);
+	color: var(--color-base-content);
 }
 
 .theme-background div button.active {

@@ -1,5 +1,5 @@
 export default {
 	fontSizes: ['sm', 'md', 'base', 'lg'],
-	primary: ['indigo', 'green', 'rose', 'gold', 'blue'],
+	primary: ['indigo', 'emerald', 'ruby', 'amber', 'sky'],
 	bg: ['light', 'dark', 'midnight'],
 } as const

@@ -1,6 +1,6 @@
 .skills-container {
 	border-radius: var(--card-border-radius);
-	background-color: var(--color-white);
+	background-color: var(--color-base-100);
 	display: flex;
 	justify-content: space-between;
 	row-gap: var(--m-2-5);
