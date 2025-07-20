@@ -12,7 +12,8 @@
 		"lint": "eslint . --fix --cache --max-warnings 0 --cache-location node_modules/.cache/.eslintcache",
 		"format": "prettier . -w -u -c --cache",
 		"check:spelling": "cspell . --cache --cache-location node_modules/.cache/.cspellcache",
-		"checks": "bun run check & bun run check:spelling && bun run lint && bun run format"
+		"checks": "bun run check & bun run check:spelling && bun run lint && bun run format",
+		"clean": "rm -rf node_modules dist .astro bun.lock"
 	},
 	"dependencies": {
 		"astro": "^5.12.0",
