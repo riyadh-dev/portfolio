@@ -90,7 +90,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	border-radius: 0.5rem;
+	border-radius: var(--btn-border-radius);
 	font-weight: 600;
 	background: var(--color-base-100);
 	color: var(--color-base-content);

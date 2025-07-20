@@ -12,7 +12,7 @@
 .project-card {
 	position: relative;
 	aspect-ratio: 16 / 9;
-	border-radius: 0.25rem;
+	border-radius: var(--card-border-radius);
 	overflow: hidden;
 	text-align: center;
 }
@@ -65,7 +65,7 @@
 
 .project-tag {
 	background-color: var(--color-primary);
-	padding: 0.25rem 0.75rem;
+	padding: 0.25rem 1rem;
 	border-radius: 0.75rem;
 	color: white;
 	font-size: small;

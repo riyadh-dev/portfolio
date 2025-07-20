@@ -24,7 +24,7 @@
 
 	/*============ Border radius ============*/
 	--btn-border-radius: 0.25rem;
-	--card-border-radius: 1.25rem;
+	--card-border-radius: 0.5rem;
 
 	/*============ Box shadow ============*/
 	--box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
