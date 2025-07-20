@@ -3,11 +3,7 @@ import { defineConfig } from 'astro/config'
 
 // https://astro.build/config
 export default defineConfig({
-	integrations: [
-		icon({
-			iconDir: './src/assets/images/logos',
-		}),
-	],
+	integrations: [icon()],
 	server: {
 		port: 3000,
 	},

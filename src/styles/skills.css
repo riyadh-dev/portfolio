@@ -13,7 +13,7 @@
 	align-items: center;
 	cursor: pointer;
 	column-gap: var(--m-0-75);
-	color: var(--color-gray);
+	color: var(--color-base-content);
 }
 
 .skills-icon {
@@ -43,7 +43,7 @@
 }
 
 .skills-tabs-radio:checked + .skills-tab svg {
-	fill: var(--color-primary);
+	color: var(--color-primary);
 	transition: color 0.5s ease;
 }
 

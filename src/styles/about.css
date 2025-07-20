@@ -27,6 +27,5 @@
 }
 
 .stats-item svg {
-	height: var(--h2-font-size);
-	fill: var(--color-base-content);
+	color: var(--color-base-content);
 }

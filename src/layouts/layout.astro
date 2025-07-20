@@ -10,12 +10,12 @@ const { title } = Astro.props
 ---
 
 <!doctype html>
-<html lang='en' data-primary='rose' data-bg='dark' data-font-size='base'>
+<html lang='en' data-primary='ruby' data-bg='dark' data-font-size='base'>
 	<head>
 		<script is:inline>
 			Object.assign(document.documentElement.dataset, {
 				fontSize: localStorage.getItem('font-size') ?? 'base',
-				primary: localStorage.getItem('primary') ?? 'rose',
+				primary: localStorage.getItem('primary') ?? 'ruby',
 				bg: localStorage.getItem('bg') ?? 'dark',
 			})
 		</script>

@@ -51,7 +51,6 @@
 }
 .nav-btn-group svg {
 	fill: var(--color-base-content);
-	width: 1.5rem;
 	display: block;
 }
 #btn-open-nav,
@@ -92,9 +91,6 @@
 		margin-right: auto;
 		padding-bottom: 1.5rem;
 		display: block;
-	}
-	#btn-close-nav svg {
-		height: 1.75rem;
 	}
 	#btn-open-nav {
 		display: block;

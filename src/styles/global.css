@@ -40,7 +40,7 @@ a {
 }
 
 svg {
-	fill: var(--color-base-content);
+	color: var(--color-base-content);
 }
 
 h1,

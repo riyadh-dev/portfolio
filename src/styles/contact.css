@@ -42,9 +42,6 @@
 	align-items: center;
 	column-gap: 0.5rem;
 }
-.contact-description svg {
-	height: 1.25rem;
-}
 
 .contact-inputs {
 	display: grid;
@@ -55,7 +52,7 @@
 .contact-content {
 	position: relative;
 	height: 3rem;
-	border-bottom: 2px solid var(--color-gray);
+	border-bottom: 2px solid var(--color-base-content);
 }
 .contact-content span {
 	position: absolute;

@@ -34,11 +34,12 @@
 }
 
 .timeline-icon {
-	width: 1.5rem;
+	width: 2rem;
+	height: 2rem;
 	position: absolute;
 	top: 0;
-	left: -0.15rem;
-	fill: var(--color-primary);
+	left: -0.4rem;
+	color: var(--color-primary);
 	background-color: var(--color-base-100);
 	padding-top: 0.35rem;
 	padding-bottom: 0.35rem;
@@ -46,10 +47,9 @@
 
 .timeline-date {
 	font-size: var(--small-font-size);
-	color: var(--color-gray);
+	color: var(--color-base-content);
 }
 .timeline-date svg {
-	height: 1rem;
 	margin-right: 0.5rem;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .timeline-subtitle {
-	color: var(--color-gray);
+	color: var(--color-base-content);
 	margin-bottom: var(--m-0-75);
 }
 
