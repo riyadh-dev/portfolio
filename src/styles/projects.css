@@ -15,6 +15,9 @@
 	border-radius: var(--card-border-radius);
 	overflow: hidden;
 	text-align: center;
+
+	container-type: inline-size;
+	container-name: project-card;
 }
 
 .project-card::before {
@@ -40,6 +43,7 @@
 	justify-content: space-between;
 	align-items: center;
 	flex-direction: column;
+	row-gap: 0.5rem;
 	opacity: 0;
 	transition: opacity 0.3s ease-in-out;
 }
@@ -51,6 +55,7 @@
 .project-title {
 	color: white;
 	font-size: 2rem;
+	line-height: normal;
 	text-wrap: balance;
 }
 
@@ -79,8 +84,8 @@
 .circular-Button-no-hover,
 .circular-Button,
 .project-buttons a {
-	width: 50px;
-	height: 50px;
+	width: 3rem;
+	height: 3rem;
 	background-color: var(--color-primary);
 	display: flex;
 	justify-content: center;
@@ -229,19 +234,22 @@
 	}
 }
 
-@media screen and (max-width: 64rem) {
+@media (max-width: 64rem) {
 	.projects-container {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 }
 
-@media screen and (max-width: 40rem) {
+@media (max-width: 40rem) {
 	#projects .container {
 		padding-inline: 1rem;
 	}
 	.projects-container {
 		grid-template-columns: repeat(1, minmax(0, 1fr));
 	}
+}
+
+@container project-card (max-width: 20rem) {
 	.project-tags-container {
 		display: none;
 	}

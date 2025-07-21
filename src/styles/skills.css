@@ -65,7 +65,7 @@
 	filter: invert(0.6);
 }
 
-@media (width < 760px) {
+@media (max-width: 48rem) {
 	.skills-icon {
 		margin: 0;
 		font-size: 40px;

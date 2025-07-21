@@ -19,7 +19,7 @@
 	row-gap: 2rem;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 40rem) {
 	.contact-container {
 		justify-content: center;
 		row-gap: 2.5rem;
@@ -40,7 +40,8 @@
 .contact-description {
 	display: inline-flex;
 	align-items: center;
-	column-gap: 0.5rem;
+	column-gap: 0.75rem;
+	line-height: normal;
 }
 
 .contact-inputs {

@@ -81,7 +81,7 @@ h3 {
 /*============ Buttons ============*/
 .btn {
 	padding: 0.75rem 2rem;
-	line-height: 1;
+	line-height: normal;
 	border-radius: var(--btn-border-radius);
 }
 .btn:focus {

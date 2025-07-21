@@ -31,6 +31,7 @@
 	background-color: var(--color-primary);
 	top: 0;
 	left: var(--m-0-5);
+	border-radius: var(--card-border-radius);
 }
 
 .timeline-icon {

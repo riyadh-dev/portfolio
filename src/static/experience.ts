@@ -1,6 +1,16 @@
 export default [
 	{
 		isWork: true,
+		period: '2024 - Present',
+		company: 'CODECTON',
+		jobTitle: 'Senior Full-stack web developer',
+		description: [
+			'Led the development of a full-stack web application, implementing a robust architecture using modern frameworks and best practices.',
+			'Developed and deployed high-performance APIs using modern technologies and best practices, ensuring scalability, maintainability, and optimal response times.',
+		],
+	},
+	{
+		isWork: true,
 		period: '2023 - 2024',
 		company: 'BJD IT',
 		jobTitle: 'Front-end web developer',

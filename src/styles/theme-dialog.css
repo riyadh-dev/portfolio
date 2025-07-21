@@ -99,3 +99,9 @@
 .theme-background div button.active {
 	border: 2px solid var(--color-primary);
 }
+
+@media (max-width: 40rem) {
+	.theme-dialog {
+		padding-inline: 0.5rem;
+	}
+}
