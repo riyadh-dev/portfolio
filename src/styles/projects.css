@@ -249,7 +249,7 @@
 	}
 }
 
-@container project-card (max-width: 20rem) {
+@container project-card (max-width: 26rem) {
 	.project-tags-container {
 		display: none;
 	}
